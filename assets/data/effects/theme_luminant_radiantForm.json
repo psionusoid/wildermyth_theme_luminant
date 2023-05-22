@@ -1,0 +1,47 @@
+{
+"id": "theme_luminant_radiantForm",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_radiantForm",
+	"modId": "theme_luminant",
+	"author": "psionusoid",
+	"aiPriority": "-1",
+	"tags": [ "okToMarkDone", "sneaky" ]
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "phantomflare",
+	"priority": "1",
+	"extraUI": {
+		"overrideDamageType": "MAGIC",
+		"overrideCooldownShown": "6-(theme_light_upgrade*2)"
+	}
+},
+"targets": [
+	{ "template": "SELF" }
+],
+"outcomes": [
+	{
+		"class": "Animate",
+		"script": "figures.swapWeapon",
+		"audio": "Characters/Default/Ability_Heroism"
+	},
+	{
+		"class": "Aspects",
+		"addAspects": [
+			{ "id": "theme_luminant_radiantFormUsed", "value": "1" }
+		]
+	},
+	{
+		"class": "Aspects",
+		"STUB": "We manually add the cooldown, so it can be decreased for the upgrade",
+		"addAspects": [
+			{
+				"id": "cooldown|theme_luminant_radiantForm",
+				"value": "6-(self.theme_light_upgrade*2)"
+			}
+		]
+	}
+]
+}

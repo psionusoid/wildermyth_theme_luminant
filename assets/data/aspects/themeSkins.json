@@ -1,0 +1,52 @@
+[
+{
+	"modId": "theme_luminant",
+	"id": "themeSkin_lightTint",
+	"importance": -1,
+	"invalidatesSkin": true,
+	"skinLayers": [
+		{
+			"name": "head_tattooFireM",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_tattooFireF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_fire_tattoo",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "replaceLegL_lava",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_fire_leftLeg"
+		},
+		{
+			"name": "replaceLegR_lava",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_fire_rightLeg"
+		},
+		{
+			"name": "replaceArmL_lava",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_fire_leftArm"
+		},
+		{
+			"name": "replaceArmR_lava",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_fire_rightArm"
+		}
+	],
+	"lifespan": "all",
+	"themeSkin": "light",
+	"themeSkinSpecificAspects": [
+		{
+			"themePiece": "aura",
+			"applyAspect": "humanSkin_overrideStreakColor|self.ASPECT_PARAM2.humanSkin_colorSelections|1.0"
+		}
+	]
+}
+]

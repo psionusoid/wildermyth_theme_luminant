@@ -1,0 +1,636 @@
+{
+"id": "light",
+"name": "Luminant",
+"blurb": "A soft glow emanates from <self>, waiting to be released.",
+"modId": "theme_luminant",
+"forbidCombineWith": [ "tree" ],
+"pieces": [
+	{
+		"id": "leftEye",
+		"name": "Radiant Eye (L)",
+		"blurb": "<self>'s left eye shines brightly.",
+		"layers": [
+			{
+				"name": "face_eyeLightML",
+				"depth": 4250,
+				"headOffset": true,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "maleHead"
+			},
+			{
+				"name": "face_eyeLightFL",
+				"depth": 4250,
+				"headOffset": true,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "femaleHead"
+			}
+		],
+		"canBeAwardedRandomly": false,
+		"applyOnHeal": false
+	},
+	{
+		"id": "rightEye",
+		"name": "Radiant Eye (R)",
+		"blurb": "<self>'s right eye shines brightly.",
+		"layers": [
+			{
+				"name": "face_eyeLightMR",
+				"depth": 4250,
+				"headOffset": true,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "maleHead"
+			},
+			{
+				"name": "face_eyeLightFR",
+				"depth": 4250,
+				"headOffset": true,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "femaleHead"
+			}
+		],
+		"canBeAwardedRandomly": false,
+		"applyOnHeal": false
+	},
+	{
+		"id": "auraRadiant",
+		"name": "Radiant Aura",
+		"blurb": "<self>'s hair and face shine brightly.",
+		"slots": [ "head" ],
+		"layers": [
+			{
+				"name": "head_auraRadiantM",
+				"depth": 4052,
+				"headOffset": true,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "maleHead"
+			},
+			{
+				"name": "head_auraRadiantF",
+				"depth": 4052,
+				"headOffset": true,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "femaleHead"
+			}
+		],
+		"extraAspects": [ "humanSkin_overrideStreakValue|1.0" ],
+		"baseThemeSkinExtraAspects": [
+			"humanSkin_overrideStreakColor|ffffff|1.0",
+			"humanSkin_overrideHairColor|fcfe2f|1"
+		],
+		"canBeAwardedRandomly": false,
+		"applyOnHeal": false
+	},
+	{
+		"id": "leftArm",
+		"name": "Radiant Arm (L)",
+		"blurb": "<self>'s left arm radiates brilliant light.",
+		"slots": [ "leftArm" ],
+		"replaces": [ "leftArm" ],
+		"layers": [
+			{ "name": "armL", "tint": "skin", "depth": 1200, "rigMode": "oneHanded" },
+			{
+				"name": "handL_open",
+				"tint": "skin",
+				"depth": 6000,
+				"ifLeftHandGrasp": "open",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handL_closed",
+				"tint": "skin",
+				"depth": 6000,
+				"ifLeftHandGrasp": "weapon",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handL_bookFront",
+				"tint": "skin",
+				"depth": 6000,
+				"ifLeftHandGrasp": "book",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handL_bookBehind",
+				"tint": "skin",
+				"depth": 4999,
+				"ifLeftHandGrasp": "book",
+				"rigMode": "oneHanded"
+			},
+			{ "name": "armL2upper", "tint": "skin", "depth": 1200, "rigMode": "twoHanded" },
+			{ "name": "armL2lower", "tint": "skin", "depth": 3000, "rigMode": "twoHanded" },
+			{
+				"name": "handL_2handed",
+				"tint": "skin",
+				"depth": 8000,
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "ArmL_R",
+				"depth": 1201,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handL_R",
+				"depth": 6001,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "armL2upper_R",
+				"depth": 1201,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "armL2lower_R",
+				"depth": 3001,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "handL_2handed_R",
+				"depth": 8001,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			}
+		],
+		"effects": [
+			"theme_luminant_radiantBeam",
+			"defaultSecondaryMoveFeedbackNoLOS|6.6+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam"
+		],
+		"extraAspects": [
+			"themeAbility_ranged",
+			"themeAbility_rangedNoLOS",
+			"attackRange|0|6.6|rangedNonWeapon",
+			"hasRangedNoLOS"
+		],
+		"canBeAwardedRandomly": false,
+		"applyOnHeal": false
+	},
+	{
+		"id": "rightArm",
+		"name": "Radiant Arm (R)",
+		"blurb": "<self>'s right arm radiates brilliant light.",
+		"slots": [ "rightArm" ],
+		"replaces": [ "rightArm" ],
+		"layers": [
+			{ "name": "armR", "tint": "skin", "depth": 1200, "rigMode": "oneHanded" },
+			{
+				"name": "handR",
+				"tint": "skin",
+				"depth": 8000,
+				"ifRightHandGrasp": "open",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handR",
+				"tint": "skin",
+				"depth": 8000,
+				"ifRightHandGrasp": "weapon",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handR_bookBehind",
+				"tint": "skin",
+				"depth": 6000,
+				"ifRightHandGrasp": "book",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handR_bookFront",
+				"tint": "skin",
+				"depth": 8001,
+				"ifRightHandGrasp": "book",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "armR2",
+				"tint": "skin",
+				"depth": 1200,
+				"grip": null,
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "handR_2handed",
+				"tint": "skin",
+				"depth": 8000,
+				"grip": null,
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "armR_R",
+				"depth": 1201,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handR_R",
+				"depth": 8001,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "armR2_R",
+				"depth": 1201,
+				"grip": null,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "handR_2handed_R",
+				"depth": 8001,
+				"grip": null,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			}
+		],
+		"effects": [ "theme_luminant_radiantBlast", "defaultMoveFeedbackMelee|2.1|flameArmMelee" ],
+		"extraAspects": [ "themeAbility_melee" ],
+		"canBeAwardedRandomly": false,
+		"applyOnHeal": false
+	},
+	{
+		"id": "leftLeg",
+		"name": "Radiant Leg (L)",
+		"blurb": "<self>'s left leg radiates brilliant light.",
+		"slots": [ "leftLeg" ],
+		"replaces": [ "leftLeg" ],
+		"layers": [
+			{ "name": "legL", "tint": "skin", "depth": 1100 },
+			{ "name": "legL_R", "depth": 1101, "ifNoOwnerAspect": "themeSkin_light*" }
+		],
+		"effects": [ "theme_luminant_flashStep" ],
+		"stats": { "SPEED": 1.7 },
+		"canBeAwardedRandomly": false,
+		"applyOnHeal": false
+	},
+	{
+		"id": "rightLeg",
+		"name": "Radiant Leg (R)",
+		"blurb": "<self>'s right leg radiates brilliant light.",
+		"slots": [ "rightLeg" ],
+		"replaces": [ "rightLeg" ],
+		"layers": [
+			{ "name": "legR", "tint": "skin", "depth": 1100 },
+			{ "name": "legR_R", "depth": 1101, "ifNoOwnerAspect": "themeSkin_light*" }
+		],
+		"stats": { "SPEED": 1.7 },
+		"canBeAwardedRandomly": false,
+		"applyOnHeal": false
+	},
+	{
+		"id": "aura",
+		"name": "Luminant Aura",
+		"blurb": "<self>'s face glows softly.",
+		"slots": [ "head" ],
+		"layers": [
+			{
+				"name": "head_auraLightM",
+				"depth": 4052,
+				"headOffset": true,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "maleHead"
+			},
+			{
+				"name": "head_auraRadiantM",
+				"depth": 4052,
+				"headOffset": true,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "maleHead"
+			},
+			{
+				"name": "head_auraLightF",
+				"depth": 4052,
+				"headOffset": true,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "femaleHead"
+			},
+			{
+				"name": "head_auraRadiantF",
+				"depth": 4052,
+				"headOffset": true,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "femaleHead"
+			},
+			{
+				"name": "face_eyeLightML",
+				"depth": 4250,
+				"headOffset": true,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "maleHead"
+			},
+			{
+				"name": "face_eyeLightFL",
+				"depth": 4250,
+				"headOffset": true,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "femaleHead"
+			},
+			{
+				"name": "face_eyeLightMR",
+				"depth": 4250,
+				"headOffset": true,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "maleHead"
+			},
+			{
+				"name": "face_eyeLightFR",
+				"depth": 4250,
+				"headOffset": true,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "femaleHead"
+			}
+		],
+		"effects": [ "theme_luminant_radiantForm" ],
+		"extraAspects": [ "humanSkin_overrideStreakValue|0.8" ],
+		"baseThemeSkinExtraAspects": [ "humanSkin_overrideStreakColor|fcfe2f|1" ]
+	},
+	{
+		"id": "leftArmLatent",
+		"name": "Luminant Arm (L)",
+		"blurb": "<self>'s left arm glows softly.",
+		"slots": [ "leftArm" ],
+		"replaces": [ "leftArm" ],
+		"drawEquipmentHere": true,
+		"layers": [
+			{ "name": "armL", "tint": "skin", "depth": 1200, "rigMode": "oneHanded" },
+			{
+				"name": "handL_open",
+				"tint": "skin",
+				"depth": 6000,
+				"ifLeftHandGrasp": "open",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handL_closed",
+				"tint": "skin",
+				"depth": 6000,
+				"ifLeftHandGrasp": "weapon",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handL_bookFront",
+				"tint": "skin",
+				"depth": 6000,
+				"ifLeftHandGrasp": "book",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handL_bookBehind",
+				"tint": "skin",
+				"depth": 4999,
+				"ifLeftHandGrasp": "book",
+				"rigMode": "oneHanded"
+			},
+			{ "name": "armL2upper", "tint": "skin", "depth": 1200, "rigMode": "twoHanded" },
+			{ "name": "armL2lower", "tint": "skin", "depth": 3000, "rigMode": "twoHanded" },
+			{
+				"name": "handL_2handed",
+				"tint": "skin",
+				"depth": 8000,
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "ArmL_L",
+				"depth": 1201,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "ArmL_R",
+				"depth": 1201,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handL_L",
+				"depth": 6001,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handL_R",
+				"depth": 6001,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "armL2upper_L",
+				"depth": 1201,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "armL2upper_R",
+				"depth": 1201,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "armL2lower_L",
+				"depth": 3001,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "armL2lower_R",
+				"depth": 3001,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "handL_2handed_L",
+				"depth": 8001,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "handL_2handed_R",
+				"depth": 8001,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			}
+		]
+	},
+	{
+		"id": "rightArmLatent",
+		"name": "Luminant Arm (R)",
+		"blurb": "<self>'s right arm glows softly.",
+		"slots": [ "rightArm" ],
+		"replaces": [ "rightArm" ],
+		"drawEquipmentHere": true,
+		"layers": [
+			{ "name": "armR", "tint": "skin", "depth": 1200, "rigMode": "oneHanded" },
+			{
+				"name": "handR",
+				"tint": "skin",
+				"depth": 8000,
+				"ifRightHandGrasp": "weapon",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handR",
+				"tint": "skin",
+				"depth": 8000,
+				"ifRightHandGrasp": "open",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handR_bookBehind",
+				"tint": "skin",
+				"depth": 6000,
+				"ifRightHandGrasp": "book",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handR_bookFront",
+				"tint": "skin",
+				"depth": 8001,
+				"ifRightHandGrasp": "book",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "armR2",
+				"tint": "skin",
+				"depth": 1200,
+				"grip": null,
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "handR_2handed",
+				"tint": "skin",
+				"depth": 8000,
+				"grip": null,
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "armR_L",
+				"depth": 1201,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "armR_R",
+				"depth": 1201,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handR_L",
+				"depth": 8001,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "handR_R",
+				"depth": 8001,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "oneHanded"
+			},
+			{
+				"name": "armR2_L",
+				"depth": 1201,
+				"grip": null,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "armR2_R",
+				"depth": 1201,
+				"grip": null,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "handR_2handed_L",
+				"depth": 8001,
+				"grip": null,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "handR_2handed_R",
+				"depth": 8001,
+				"grip": null,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"rigMode": "twoHanded"
+			}
+		]
+	},
+	{
+		"id": "leftLegLatent",
+		"name": "Luminant Leg (L)",
+		"blurb": "<self>'s left leg glows softly.",
+		"slots": [ "leftLeg" ],
+		"replaces": [ "leftLeg" ],
+		"drawEquipmentHere": true,
+		"layers": [
+			{ "name": "legL", "tint": "skin", "depth": 1100 },
+			{
+				"name": "legL_L",
+				"depth": 1101,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+			},
+			{
+				"name": "legL_R",
+				"depth": 1101,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*"
+			}
+		],
+		"stats": { "SPEED": 1.7 }
+	},
+	{
+		"id": "rightLegLatent",
+		"name": "Luminant Leg (R)",
+		"blurb": "<self>'s right leg glows softly.",
+		"slots": [ "rightLeg" ],
+		"replaces": [ "rightLeg" ],
+		"drawEquipmentHere": true,
+		"layers": [
+			{ "name": "legR", "tint": "skin", "depth": 1100 },
+			{
+				"name": "legR_L",
+				"depth": 1101,
+				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+			},
+			{
+				"name": "legR_R",
+				"depth": 1101,
+				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+				"ifNoOwnerAspect": "themeSkin_light*"
+			}
+		],
+		"stats": { "SPEED": 1.7 }
+	}
+]
+}

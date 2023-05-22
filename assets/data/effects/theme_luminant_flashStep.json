@@ -1,0 +1,57 @@
+{
+"id": "theme_luminant_flashStep",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_flashStep",
+	"modId": "theme_luminant",
+	"author": "psionusoid",
+	"tags": [ "okToMarkDone", "sneaky" ]
+},
+"type": "ABILITY",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "zealousLeap",
+	"priority": "1",
+	"showInCharacterSheet": false,
+	"extraUI": {}
+},
+"targets": [
+	{
+		"template": "SELF",
+		"STUB": "Can't be pinned for the base ability, can be for the upgrade",
+		"choose": "BY_SCORE",
+		"scoreFunction": "(1-min(1,pinned))+warriorDeck_zealousLeap_upgrade",
+		"scoreThreshold": "1",
+		"cost": { "class": "ActionPoints", "actionPoints": "free" },
+		"missionFeedback": { "orientTo": "targetTile" }
+	},
+	{
+		"role": "targetTile",
+		"template": "TILE",
+		"missionFeedback": {
+			"rangeFeedback": "FRIENDLY_EFFECT_RANGE",
+			"suggestionFeedback": "FRIENDLY_EFFECT_SUGGESTION_SHINE",
+			"hoverFeedback": "PATH_TARGET",
+			"applyRoleFootprint": "self",
+			"showMovementFeedback": true
+		},
+		"minRange": "0.9",
+		"range": "3+(self.POTENCY/2)",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "validMoveEnd",
+		"roleMustFit": "self"
+	}
+],
+"outcomes": [
+	{ "class": "MoveEntity", "directlyToTile": "targetTile" },
+	{
+		"class": "Test",
+		"value": "self.warriorDeck_zealousLeap_upgrade",
+		"threshold": "1",
+		"onPass": {
+			"class": "Aspects",
+			"removeAspects": [ "pinned" ]
+		}
+	}
+]
+}

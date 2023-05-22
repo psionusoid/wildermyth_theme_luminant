@@ -1,0 +1,157 @@
+{
+"id": "theme_luminant_radiantBeam",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_radiantBeam",
+	"modId": "theme_luminant",
+	"author": "psionusoid",
+	"tags": [ "ranged", "themeUsageOverride", "theme_luminant_radiantBeam" ]
+},
+"type": "ABILITY",
+"verb": "ATTACK",
+"ability": {
+	"icon": "fireleash",
+	"category": "attackAbility",
+	"priority": "3",
+	"showDescriptionInTooltip": true,
+	"branchableAbilityType": "standardRanged"
+},
+"targets": [
+	{
+		"template": "SELF",
+		"cost": { "class": "ActionPoints", "actionPoints": "attack" },
+		"missionFeedback": { "orientTo": "focus" }
+	},
+	{
+		"template": "TILE",
+		"missionFeedback": {
+			"rangeFeedback": "FRIENDLY_EFFECT_RANGE",
+			"suggestionFeedback": "FRIENDLY_EFFECT_SUGGESTION",
+			"hoverFeedback": "ATTACK_HOVER"
+		},
+		"minRange": "0.9",
+		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "floor"
+	},
+	{
+		"role": "target",
+		"template": "TILE",
+		"choose": "RANDOM_HALF",
+		"manifold": {
+			"from": "self",
+			"to": "focus",
+			"thickness": [ "1", "2" ],
+			"excludeSource": true,
+			"distanceInDirection": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
+		},
+		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "floor"
+	},
+	{
+		"role": "targetTile",
+		"template": "TILE",
+		"STUB": "Gets the furthest away tile, to use for the particle effect.",
+		"choose": "ONE_FURTHEST",
+		"manifold": {
+			"from": "self",
+			"to": "focus",
+			"thickness": [ "1", "2" ],
+			"excludeSource": true,
+			"distanceInDirection": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
+		},
+		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "floor"
+	},
+	{
+		"role": "hero2",
+		"template": "UNIT_AT_TILE",
+		"STUB": "If self has the noFriendlyFire aspect, these will be forbidden from matching in target2 (used by things like guardian, rather than trying to prevent it from happening)",
+		"choose": "ANY",
+		"missionFeedback": null,
+		"manifold": {
+			"from": "self",
+			"to": "focus",
+			"thickness": [ "1", "2" ],
+			"excludeSource": true,
+			"distanceInDirection": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
+		},
+		"aspects": [ "alive", "ALLY" ],
+		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "floor",
+		"test": "GREATER_THAN_OR_EQUAL_TO",
+		"a": "self.noFriendlyFire",
+		"b": "1"
+	},
+	{
+		"role": "target2",
+		"template": "UNIT_AT_TILE",
+		"choose": "ANY",
+		"missionFeedback": {
+			"hoverScript": "figures.attackHovered",
+			"rangeFeedback": "ATTACK_SUGGESTION",
+			"suggestionFeedback": "ATTACK_SUGGESTION",
+			"hoverFeedback": "ATTACK_HOVER"
+		},
+		"manifold": {
+			"from": "self",
+			"to": "focus",
+			"thickness": [ "1", "2" ],
+			"excludeSource": true,
+			"distanceInDirection": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
+		},
+		"notAlreadyMatchedAs": [ "hero2" ],
+		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "floor"
+	}
+],
+"outcomes": [
+	{
+		"class": "AttackRoll",
+		"defender": "target2",
+		"attackAnimationType": "magic",
+		"showAbilityName": "ifEnemy",
+		"particles": [
+			{
+				"script": "projectileTrailLightBeam",
+				"setPosition": "self",
+				"setPosition2": "targetTile",
+				"delay": -0.3
+			}
+		],
+		"audioOverride": {
+			"attackStartCue": "",
+			"attackHitCue": "Characters/Theme/Celestial/shootingStar"
+		},
+		"defenseRollTags": [ "range" ],
+		"attackStrength": "self.RANGE_ACCURACY",
+		"onHit": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Damage",
+					"amount": "(1d3+1)+(self.PHYSICAL_DAMAGE_BONUS+self.POTENCY)",
+					"type": "MAGIC",
+					"overrideStuntDamage": "4",
+					"onStunt": {
+						"class": "DoAll",
+						"outcomes": [
+							{
+								"class": "Aspects",
+								"addAspects": [
+									{ "id": "blinded", "value": "1" }
+								]
+							}
+						]
+					},
+					"numDefenders": "COUNT.target2"
+				}
+			]
+		}
+	}
+]
+}

@@ -1,0 +1,34 @@
+{
+"budget": "64",
+"emitterLifetime": "1",
+"loopLimit": "1",
+"loopBehavior": "reset",
+"rules": [
+	{
+		"class": "Once",
+		"when": "0",
+		"doAll": [
+			{
+				"class": "Emit",
+				"numberOfParticles": "1",
+				"image": [ "particle_lightburst2" ],
+				"light": "gain",
+				"size": "1",
+				"killTime": "0.5",
+				"initializeWith": [
+					{ "class": "SetSize", "size": "1" },
+					{ "class": "SetPosition", "x": "0", "y": "0" }
+				]
+			}
+		]
+	},
+	{ "class": "BasicPhysics" },
+	{ "class": "Lifetime" },
+	{
+		"class": "SetColor",
+		"color": { "r": "1", "g": "1", "b": "1", "a": "life~{1|1|1|0.2|0.1|0}" }
+	},
+	{ "class": "OrientToVelocity", "offsetDegrees": "90" },
+	{ "class": "SetSize", "size": "life~{0|4|4.5|4.79999971}" }
+]
+}

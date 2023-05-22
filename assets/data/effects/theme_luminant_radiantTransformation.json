@@ -1,0 +1,77 @@
+{
+"id": "theme_luminant_radiantTransformation",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_radiantTransformation",
+	"modId": "theme_luminant",
+	"author": "psionusoid",
+	"STUB": "Deprecated version of the radiant form transformation effect",
+	"sort": 2
+},
+"type": "ASPECT_ADDED",
+"targets": [
+	{
+		"template": "SELF",
+		"cost": { "class": "ActionPoints", "actionPoints": null }
+	}
+],
+"outcomes": [
+	{ "class": "ApplyTheme", "target": "self", "theme": "light", "piece": "leftEye" },
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "aura"
+	},
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "leftArmLatent"
+	},
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "rightArmLatent"
+	},
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "leftLegLatent"
+	},
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "rightLegLatent"
+	},
+	{
+		"class": "ApplyTheme",
+		"target": "self",
+		"theme": "light",
+		"piece": "rightEye"
+	},
+	{
+		"class": "ApplyTheme",
+		"target": "self",
+		"theme": "light",
+		"piece": "auraRadiant"
+	},
+	{ "class": "ApplyTheme", "target": "self", "theme": "light", "piece": "leftArm" },
+	{
+		"class": "ApplyTheme",
+		"target": "self",
+		"theme": "light",
+		"piece": "rightArm"
+	},
+	{ "class": "ApplyTheme", "target": "self", "theme": "light", "piece": "leftLeg" },
+	{
+		"class": "ApplyTheme",
+		"target": "self",
+		"theme": "light",
+		"piece": "rightLeg"
+	}
+]
+}

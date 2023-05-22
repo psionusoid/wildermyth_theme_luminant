@@ -1,0 +1,27 @@
+{
+"scenarioInfo": {
+	"id": "theme_luminant_light_shrine",
+	"type": "MISSION",
+	"nameKey": "theme_luminant_light_shrine.name",
+	"blurbKey": "theme_luminant_light_shrine.blurb",
+	"rosterSlots": [
+		{ "type": "greenhorn", "archetype": "warrior" },
+		{ "type": "greenhorn", "archetype": "warrior" },
+		{ "type": "greenhorn", "archetype": "hunter" },
+		{ "type": "greenhorn", "archetype": "hunter" },
+		{ "type": "greenhorn", "archetype": "mystic" }
+	]
+},
+"playableFactions": [
+	{ "factionRole": "HERO", "plotRole": "attacker" },
+	{ "factionRole": "VILLAIN", "plotRole": "defender" }
+],
+"site": { "type": "SITE", "siteMissionPlanId": "theme_luminant_light_shrine" },
+"inhabitants": [
+	{
+		"factionRole": "VILLAIN",
+		"threat": { "flavor": "thrixl", "strength": 6 },
+		"calamities": 6
+	}
+]
+}

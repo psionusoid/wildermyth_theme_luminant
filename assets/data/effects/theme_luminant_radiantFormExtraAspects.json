@@ -1,0 +1,49 @@
+{
+"id": "theme_luminant_radiantFormExtraAspects",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_radiantFormExtraAspects",
+	"modId": "theme_luminant",
+	"author": "psionusoid",
+	"STUB": "Special effect that modifies the cost of all attack actions for this unit. This is how Battledance works, for example.",
+	"sort": 2
+},
+"type": "ASPECT_ADDED",
+"targets": [
+	{
+		"template": "SELF",
+		"cost": { "class": "ActionPoints", "actionPoints": null }
+	}
+],
+"outcomes": [
+	{
+		"class": "Aspects",
+		"addAspects": [
+			{
+				"id": "humanSkin_overrideStreakColor|ffffff|1.0",
+				"value": "1",
+				"merge": "replace"
+			},
+			{ "id": "humanSkin_overrideStreakValue|1.0", "value": "1", "merge": "replace" },
+			{
+				"id": "humanSkin_overrideHairColor|fcfe2f|1",
+				"value": "1",
+				"merge": "replace"
+			},
+			{ "id": "themeAbility_ranged", "value": "1" },
+			{ "id": "themeAbility_rangedNoLOS", "value": "1" },
+			{ "id": "attackRange|0|6.6|rangedNonWeapon", "value": "1" },
+			{ "id": "hasRangedNoLOS", "value": "1" },
+			{ "id": "themeAbility_melee", "value": "1" }
+		],
+		"removeAspects": [
+			"humanSkin_drawLeftArmEquipmentAnyway",
+			"humanSkin_drawRightArmEquipmentAnyway",
+			"humanSkin_drawLeftLegEquipmentAnyway",
+			"humanSkin_drawRightLegEquipmentAnyway",
+			"humanSkin_overrideStreakColor|fcfe2f|1",
+			"humanSkin_overrideStreakValue|0.8"
+		]
+	}
+]
+}

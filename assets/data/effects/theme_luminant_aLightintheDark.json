@@ -1,0 +1,4198 @@
+{
+"id": "theme_luminant_aLightintheDark",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_aLightintheDark",
+	"modId": "theme_luminant",
+	"author": "psionusoid"
+},
+"type": "ENCOUNTER_HEROES_ARRIVE_HOSTILE_SITE",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "melee",
+	"priority": "1",
+	"cooldown": "oncePerGame",
+	"encounterEnabled": true,
+	"musicOverride": "Music/Comics - High Magic Encounters"
+},
+"targets": [
+	{ "template": "EVENT" },
+	{
+		"template": "COMPANY",
+		"aspectValues": [
+			{ "id": "chapterNumber", "minValue": "1" }
+		]
+	},
+	{ "template": "INJECTED_TILE" },
+	{ "template": "INJECTED_SITE" },
+	{ "template": "INJECTED_PARTY" },
+	{ "template": "INJECTED_THREAT" },
+	{
+		"role": "bookish",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": "max(BOOKISH,(60*hook_Curious),(60*hook_Lucky))",
+		"scoreThreshold": "60",
+		"notAlreadyMatchedAs": []
+	},
+	{
+		"role": "snark",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": "SNARK",
+		"notAlreadyMatchedAs": [ "bookish" ]
+	},
+	{
+		"role": "hero3",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": "LEADER",
+		"notAlreadyMatchedAs": [ "bookish", "snark" ]
+	},
+	{
+		"role": "hero4",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": null,
+		"notAlreadyMatchedAs": [ "bookish", "snark", "hero3" ]
+	},
+	{
+		"role": "hero5",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": null,
+		"notAlreadyMatchedAs": [ "bookish", "snark", "hero3", "hero4" ]
+	},
+	{
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": "max(BOOKISH,(60*hook_Curious),(60*hook_Lucky))",
+		"aspectValues": [
+			{ "id": "themeSlotFilled_head", "forbidden": true },
+			{ "id": "themeSlotFilled_leftArm", "forbidden": true },
+			{ "id": "themeSlotFilled_rightArm", "forbidden": true },
+			{ "id": "themeSlotFilled_leftLeg", "forbidden": true },
+			{ "id": "themeSlotFilled_rightLeg", "forbidden": true }
+		],
+		"notAlreadyMatchedAs": [],
+		"themes": { "eligibleForTheme": "light", "eligibleForPiece": "aura" }
+	},
+	{
+		"role": "volunteer2",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": null,
+		"aspectValues": [
+			{ "id": "themeSlotFilled_head", "forbidden": true },
+			{ "id": "themeSlotFilled_leftArm", "forbidden": true },
+			{ "id": "themeSlotFilled_rightArm", "forbidden": true },
+			{ "id": "themeSlotFilled_leftLeg", "forbidden": true },
+			{ "id": "themeSlotFilled_rightLeg", "forbidden": true }
+		],
+		"notAlreadyMatchedAs": [ "volunteer" ],
+		"themes": { "eligibleForTheme": "light", "eligibleForPiece": "aura" }
+	},
+	{
+		"role": "volunteer3",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": null,
+		"aspectValues": [
+			{ "id": "themeSlotFilled_head", "forbidden": true },
+			{ "id": "themeSlotFilled_leftArm", "forbidden": true },
+			{ "id": "themeSlotFilled_rightArm", "forbidden": true },
+			{ "id": "themeSlotFilled_leftLeg", "forbidden": true },
+			{ "id": "themeSlotFilled_rightLeg", "forbidden": true }
+		],
+		"notAlreadyMatchedAs": [ "volunteer", "volunteer2" ],
+		"themes": { "eligibleForTheme": "light", "eligibleForPiece": "aura" }
+	},
+	{
+		"role": "ship",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": "SHIP_WITH.volunteer",
+		"notAlreadyMatchedAs": [ "volunteer" ]
+	},
+	{
+		"role": "ship2",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": "SHIP_WITH.volunteer2",
+		"notAlreadyMatchedAs": [ "volunteer2" ]
+	},
+	{
+		"role": "friend",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": "SHIP_WITH.volunteer3",
+		"notAlreadyMatchedAs": [ "volunteer3" ]
+	},
+	{
+		"role": "healer",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": "HEALER"
+	},
+	{
+		"template": "CHOICE",
+		"promptScript": [
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"bg": "comicBG_deepistCastleWalls.jpg",
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-happy",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.766, "y": 0.426 },
+							"size": 0.5,
+							"drawDepth": 1,
+							"nameTag": "bottomRight",
+							"head": { "rotate": -2.499 },
+							"color": { "r": "0.47727272", "g": "0.47727272", "b": "0.47727272", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.509, "y": 0.544 },
+							"size": 0.4,
+							"nameTag": null,
+							"color": { "r": "0.47727272", "g": "0.47727272", "b": "0.47727272", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"equipment": {},
+							"anchor": { "x": 0.357, "y": 0.532 },
+							"size": 0.33,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.47727272", "g": "0.47727272", "b": "0.47727272", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"equipment": {},
+							"anchor": { "x": 0.224, "y": 0.602 },
+							"size": 0.3,
+							"nameTag": "none",
+							"foot": { "rotate": 0 },
+							"color": { "r": "0.47727272", "g": "0.47727272", "b": "0.47727272", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"equipment": {},
+							"anchor": { "x": 0.093, "y": 0.653 },
+							"size": 0.28,
+							"nameTag": "none",
+							"color": { "r": "0.47727272", "g": "0.47727272", "b": "0.47727272", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder4.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.353, "y": 0.034 },
+							"size": 0.2,
+							"drawDepth": 1,
+							"nameTag": "none",
+							"foot": { "rotate": 32.905 },
+							"color": { "r": "0.50196081", "g": "0.50196081", "b": "0.50196081", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder4.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.189, "y": 0.132 },
+							"size": 0.2,
+							"drawDepth": 1,
+							"nameTag": "none",
+							"foot": { "rotate": 89.639 },
+							"color": { "r": "0.45028409", "g": "0.45028409", "b": "0.45028409", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder2.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.083, "y": 0.093 },
+							"size": 0.3,
+							"drawDepth": 0.9,
+							"nameTag": "none",
+							"foot": { "rotate": 73.496 },
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder1.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.261, "y": 0.022 },
+							"size": 0.35,
+							"drawDepth": 0.9,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.887, "y": 0.236 },
+							"size": 2.2518,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_001~1_narration",
+							"style": "narration"
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"bg": "comicBG_deepistCastleWalls.jpg",
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-joy",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.831, "y": 0.355 },
+							"size": 0.5,
+							"drawDepth": 1,
+							"nameTag": "bottomRight",
+							"head": { "rotate": -2.499 },
+							"color": { "r": "0.53977275", "g": "0.53977275", "b": "0.53977275", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.597, "y": 0.407 },
+							"size": 0.4,
+							"nameTag": null,
+							"color": { "r": "0.53725493", "g": "0.53725493", "b": "0.53725493", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"equipment": {},
+							"anchor": { "x": 0.404, "y": 0.366 },
+							"size": 0.33,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.53725493", "g": "0.53725493", "b": "0.53725493", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"equipment": {},
+							"anchor": { "x": 0.261, "y": 0.525 },
+							"size": 0.3,
+							"nameTag": "none",
+							"foot": { "rotate": 0 },
+							"color": { "r": "0.47727272", "g": "0.47727272", "b": "0.47727272", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"equipment": {},
+							"anchor": { "x": 0.163, "y": 0.533 },
+							"size": 0.28,
+							"nameTag": "none",
+							"color": { "r": "0.47727272", "g": "0.47727272", "b": "0.47727272", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder4.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.353, "y": 0.034 },
+							"size": 0.2,
+							"drawDepth": 1,
+							"nameTag": "none",
+							"foot": { "rotate": 32.905 },
+							"color": { "r": "0.46448863", "g": "0.46448863", "b": "0.46448863", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder4.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.189, "y": 0.132 },
+							"size": 0.2,
+							"drawDepth": 1,
+							"nameTag": "none",
+							"foot": { "rotate": 89.639 },
+							"color": { "r": "0.4375", "g": "0.4375", "b": "0.4375", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder2.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.083, "y": 0.093 },
+							"size": 0.3,
+							"drawDepth": 0.9,
+							"nameTag": "none",
+							"foot": { "rotate": 73.496 },
+							"color": { "r": "0.60511363", "g": "0.60511363", "b": "0.60511363", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder1.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.261, "y": 0.022 },
+							"size": 0.35,
+							"drawDepth": 0.9,
+							"nameTag": "none",
+							"color": { "r": "0.70880681", "g": "0.70880681", "b": "0.70880681", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.958, "y": 0.151 },
+							"size": 2.4101,
+							"drawDepth": 0,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_002~1_bookish",
+							"pointerOwner": "bookish",
+							"padXFraction": 0.559,
+							"padYFraction": 0.076,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_002~2_hero3",
+							"pointerOwner": "hero3",
+							"padXFraction": 0.38,
+							"padYFraction": 0.285,
+							"shrinkToFitText": true
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "twoThirds",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-interested",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.797, "y": 0.344 },
+							"size": 0.682,
+							"nameTag": "none",
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"form": "frame-skeptical",
+							"equipment": {},
+							"anchor": { "x": 0.437, "y": 0.466 },
+							"size": 0.6336,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"equipment": {},
+							"anchor": { "x": 0.134, "y": 0.621 },
+							"size": 0.4591,
+							"nameTag": "none",
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder2.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.057, "y": 0.035 },
+							"size": 0.2,
+							"drawDepth": 2.5,
+							"nameTag": "none",
+							"foot": { "rotate": -115.063 },
+							"color": { "r": "0.671875", "g": "0.671875", "b": "0.671875", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 1.088, "y": 0.171 },
+							"size": 2.5965,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_003~1_snark",
+							"pointerOwner": "snark",
+							"padXFraction": 0.249,
+							"padYFraction": 0.043,
+							"shrinkToFitText": true,
+							"pointerAdjust": { "rotate": 0, "pointerOrientH": "onRight", "pointerOrientV": "up" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "twoThirds",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-talk",
+							"equipment": {},
+							"anchor": { "x": 0.904, "y": 0.29 },
+							"size": 0.682,
+							"nameTag": null,
+							"head": { "rotate": -13.683, "scaleY": -1 },
+							"foot": { "rotate": 5.429 },
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.521, "y": 0.479 },
+							"size": 0.63,
+							"nameTag": "none",
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"equipment": {},
+							"anchor": { "x": 0.178, "y": 0.592 },
+							"size": 0.4591,
+							"nameTag": "none",
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder2.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.037, "y": 0.035 },
+							"size": 0.2,
+							"drawDepth": 2.5,
+							"nameTag": "none",
+							"foot": { "rotate": -92.502 },
+							"color": { "r": "0.87642044", "g": "0.87642044", "b": "0.87642044", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 1.092, "y": 0.123 },
+							"size": 2.8438,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_004~1_bookish",
+							"pointerOwner": "bookish"
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "twoFifths",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.27, "y": 0.298 },
+							"size": 0.61342025,
+							"nameTag": "none",
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"form": "frame-talk",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.764, "y": 0.44 },
+							"size": 0.5139903,
+							"nameTag": "none",
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": -0.183, "y": 0.144 },
+							"size": 2.2422,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_005~1_snark",
+							"pointerOwner": "snark"
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "fourFifth",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.081, "y": 0.23 },
+							"size": 0.5,
+							"nameTag": "none",
+							"head": { "rotate": -10.305, "scaleY": -1 },
+							"foot": { "rotate": 6.116 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.256, "y": 0.319 },
+							"size": 0.45,
+							"nameTag": "none",
+							"head": { "scaleY": -1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-surprised",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.378, "y": 0.412 },
+							"size": 0.4,
+							"nameTag": "none",
+							"head": { "rotate": -10.886, "scaleY": -1 },
+							"foot": { "rotate": 0 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"form": "frame-surprised",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.761, "y": 0.368 },
+							"size": 0.38,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.877, "y": 0.463 },
+							"size": 0.35,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder1.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.58378494, "y": 0.106 },
+							"size": 0.1,
+							"nameTag": "none",
+							"color": { "r": "0.87926137", "g": "0.87926137", "b": "0.87926137", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:boulder2.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.5381595, "y": 0.459 },
+							"size": 0.0867,
+							"nameTag": "none",
+							"foot": { "rotate": -28.657 },
+							"color": { "r": "0.890625", "g": "0.890625", "b": "0.890625", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:comicEmotion_exclamation.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.344, "y": 0.592 },
+							"size": 0.4101,
+							"nameTag": "none"
+						},
+						{
+							"assetSpec": "comic:actionLines_dash.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.57963717, "y": 0.297 },
+							"size": 0.1,
+							"nameTag": "none",
+							"foot": { "rotate": -90 }
+						},
+						{
+							"assetSpec": "comic:actionLines_dash.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.5340117, "y": 0.758 },
+							"size": 0.15,
+							"nameTag": "none",
+							"foot": { "rotate": -90 }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": -0.058, "y": 0.086 },
+							"size": 2.0566,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_006~1_action",
+							"style": "action",
+							"padXFraction": 0.571
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "fiveSixths",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-sad",
+							"equipment": {
+								"equipItemsById": []
+							},
+							"anchor": { "x": 0.10965499, "y": 0.342 },
+							"size": 0.5,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.53977275", "g": "0.53977275", "b": "0.53977275", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.26266062, "y": 0.449 },
+							"size": 0.45,
+							"nameTag": "none",
+							"color": { "r": "0.53977275", "g": "0.53977275", "b": "0.53977275", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"equipment": {},
+							"anchor": { "x": 0.3951851, "y": 0.471 },
+							"size": 0.4,
+							"nameTag": "none",
+							"head": { "scaleY": -1 },
+							"color": { "r": "0.53725493", "g": "0.53725493", "b": "0.53725493", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.78793967, "y": 0.39 },
+							"size": 0.38,
+							"nameTag": "none",
+							"color": { "r": "0.53725493", "g": "0.53725493", "b": "0.53725493", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.8867307, "y": 0.471 },
+							"size": 0.35,
+							"nameTag": "none",
+							"color": { "r": "0.53977275", "g": "0.53977275", "b": "0.53977275", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": -0.037, "y": 0.114 },
+							"size": 2.103,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_007~1_hero3",
+							"pointerOwner": "hero3"
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "twoThirds",
+					"actorSlots": [
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.5, "y": 0.486 },
+							"size": 0.8589,
+							"color": { "r": "0.69886363", "g": "0.69886363", "b": "0.69886363", "a": "1" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_008~1_narration",
+							"style": "narration"
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "half",
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"equipment": {},
+							"anchor": { "x": 1.313, "y": 0.476 },
+							"nameTag": "none",
+							"color": { "r": "0.72156864", "g": "0.72156864", "b": "0.72156864", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.443, "y": 0.437 },
+							"size": 0.9172,
+							"nameTag": "none",
+							"color": { "r": "0.72869319", "g": "0.72869319", "b": "0.72869319", "a": "1" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_009~1_snark",
+							"pointerOwner": "snark"
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "half",
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.281, "y": 0.478 },
+							"nameTag": "none",
+							"head": { "scaleY": -1 },
+							"color": { "r": "0.72443181", "g": "0.72443181", "b": "0.72443181", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.862, "y": 0.145 },
+							"size": 3.9492,
+							"drawDepth": 0,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_010~1_bookish",
+							"pointerOwner": "bookish"
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-happy",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.359, "y": 0.315 },
+							"size": 0.2935,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"form": "frame-dubious",
+							"equipment": {},
+							"anchor": { "x": 0.275, "y": 0.34 },
+							"size": 0.3,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-talk",
+							"equipment": {},
+							"anchor": { "x": 0.206, "y": 0.338 },
+							"size": 0.315,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"equipment": {},
+							"anchor": { "x": 0.133, "y": 0.365 },
+							"size": 0.33,
+							"drawDepth": 3.5,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"equipment": {},
+							"anchor": { "x": 0.06, "y": 0.361 },
+							"size": 0.37,
+							"drawDepth": 1,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.617, "y": 0.399 },
+							"size": 0.3304,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.696, "y": 0.378 },
+							"size": 0.33,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.831, "y": 0.346 },
+							"size": 0.35,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.928, "y": 0.357 },
+							"size": 0.35,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.438, "y": 0.227 },
+							"size": 1.8475,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_011~1_narration",
+							"style": "narration"
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_011~2_hero3",
+							"pointerOwner": "hero3",
+							"padXFraction": 0.217,
+							"padYFraction": 0.225,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_011~3_bookish",
+							"pointerOwner": "bookish",
+							"padXFraction": 0.415,
+							"padYFraction": 0.37,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_011~4_snark",
+							"pointerOwner": "snark",
+							"shrinkToFitText": true
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-angry",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.391, "y": 0.334 },
+							"size": 0.2935,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"head": { "scaleY": -1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"form": "frame-dubious",
+							"equipment": {},
+							"anchor": { "x": 0.289, "y": 0.347 },
+							"size": 0.3,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-interested",
+							"equipment": {},
+							"anchor": { "x": 0.206, "y": 0.338 },
+							"size": 0.315,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"equipment": {},
+							"anchor": { "x": 0.128, "y": 0.348 },
+							"size": 0.33,
+							"drawDepth": 3.5,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"equipment": {},
+							"anchor": { "x": 0.06, "y": 0.361 },
+							"size": 0.37,
+							"drawDepth": 1,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.617, "y": 0.399 },
+							"size": 0.3304,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.69, "y": 0.398 },
+							"size": 0.33,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.831, "y": 0.346 },
+							"size": 0.35,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.931, "y": 0.359 },
+							"size": 0.35,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.469, "y": 0.246 },
+							"size": 1.7031,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_012~1_snark",
+							"pointerOwner": "snark",
+							"padXFraction": 0.316,
+							"padYFraction": 0.108,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_012~2_hero3",
+							"pointerOwner": "hero3",
+							"padXFraction": 0.171,
+							"padYFraction": 0.389,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_012~3_bookish",
+							"pointerOwner": "bookish"
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "fiveSixths",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-talk",
+							"facing": "left",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.507, "y": 0.374 },
+							"size": 0.38460046,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.252, "y": 0.379 },
+							"size": 0.39311802,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-interested",
+							"equipment": {},
+							"anchor": { "x": 0.13, "y": 0.349 },
+							"size": 0.4127739,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.776, "y": 0.413 },
+							"size": 0.43295395,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.91, "y": 0.393 },
+							"size": 0.43242982,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 1.127, "y": 0.385 },
+							"size": 0.45863765,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 1.252, "y": 0.359 },
+							"size": 0.45863765,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.376, "y": 0.266 },
+							"size": 1.9611347,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_013~1_bookish",
+							"pointerOwner": "bookish",
+							"padXFraction": 0.036,
+							"padYFraction": 0.051,
+							"widthFraction": 0.9947461,
+							"shrinkToFitText": true
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "fiveSixths",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-talk",
+							"facing": "left",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.366, "y": 0.348 },
+							"size": 0.2935,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.178, "y": 0.355 },
+							"size": 0.3,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-interested",
+							"equipment": {},
+							"anchor": { "x": 0.085, "y": 0.332 },
+							"size": 0.315,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.578, "y": 0.381 },
+							"size": 0.3304,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.68, "y": 0.366 },
+							"size": 0.33,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.846, "y": 0.36 },
+							"size": 0.35,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.941, "y": 0.34 },
+							"size": 0.35,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.278, "y": 0.263 },
+							"size": 1.5904,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_014~1_hero3",
+							"pointerOwner": "hero3",
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_014~2_bookish",
+							"pointerOwner": "bookish",
+							"padXFraction": 0.258,
+							"padYFraction": 0.247,
+							"shrinkToFitText": true
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "threeFourths",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-happy",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.22713125, "y": 0.398 },
+							"size": 0.38727555,
+							"drawDepth": 8,
+							"nameTag": "none",
+							"head": { "rotate": 10.425, "scaleY": 1 },
+							"color": { "r": "0.63778406", "g": "0.63778406", "b": "0.63778406", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.2900328, "y": 0.453 },
+							"size": 0.4359654,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.41052032, "y": 0.425 },
+							"size": 0.4354376,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.68427503, "y": 0.425 },
+							"size": 0.46182773,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.82336724, "y": 0.399 },
+							"size": 0.46182773,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.3910297, "y": 0.293 },
+							"size": 1.7683,
+							"drawDepth": 7,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "threeFifths",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-skeptical",
+							"facing": "left",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.73181903, "y": 0.493 },
+							"size": 0.38194382,
+							"drawDepth": 11,
+							"nameTag": "none",
+							"head": { "rotate": 17.871, "scaleY": 1 },
+							"color": { "r": "0.63778406", "g": "0.63778406", "b": "0.63778406", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.045469016, "y": 0.502 },
+							"size": 0.42996335,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": -0.13005114, "y": 0.519 },
+							"size": 0.4294428,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.50745136, "y": 0.473 },
+							"size": 0.4554696,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.41969126, "y": 0.439 },
+							"size": 0.4554696,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.5902439, "y": 0.401 },
+							"size": 1.8559,
+							"drawDepth": 10.5,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						},
+						{
+							"role": "hero3",
+							"equipment": {},
+							"anchor": { "x": 0.085, "y": 0.448 },
+							"size": 0.35,
+							"head": { "rotate": 20.556 },
+							"color": { "r": "0.53267044", "g": "0.53267044", "b": "0.53267044", "a": "1" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "half",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-interested",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.527, "y": 0.446 },
+							"size": 0.38194382,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"head": { "rotate": -24.636, "scaleY": 1 },
+							"color": { "r": "0.63778406", "g": "0.63778406", "b": "0.63778406", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.235, "y": 0.529 },
+							"size": 0.42996335,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.053, "y": 0.503 },
+							"size": 0.4294428,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.823, "y": 0.457 },
+							"size": 0.4554696,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.717, "y": 0.423 },
+							"size": 0.4554696,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.55113637", "g": "0.55113637", "b": "0.55113637", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.701, "y": 0.314 },
+							"size": 2.0689,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						},
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.921, "y": 0.423 },
+							"size": 0.33,
+							"head": { "rotate": -11.31 },
+							"color": { "r": "0.57386363", "g": "0.57386363", "b": "0.57386363", "a": "1" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-joy",
+							"facing": "left",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.5082473, "y": 0.54 },
+							"size": 0.4263882,
+							"drawDepth": 9.5,
+							"nameTag": "none",
+							"head": { "rotate": 20.987, "scaleY": 1 },
+							"color": { "r": "0.63778406", "g": "0.63778406", "b": "0.63778406", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.2938182, "y": 0.553 },
+							"size": 0.47999546,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.01547271, "y": 0.527 },
+							"size": 0.4794143,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 1.1948328, "y": 0.481 },
+							"size": 0.5084697,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 1.031949, "y": 0.447 },
+							"size": 0.5084697,
+							"drawDepth": 9,
+							"nameTag": "none",
+							"color": { "r": "0.55113637", "g": "0.55113637", "b": "0.55113637", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.124749064, "y": 0.5 },
+							"size": 2.309645,
+							"drawDepth": 7,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "sixth",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-happy",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.448, "y": 0.437 },
+							"size": 0.90896714,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"head": { "rotate": 7.056, "scaleY": 1 },
+							"color": { "r": "0.63778406", "g": "0.63778406", "b": "0.63778406", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 1.433, "y": 0.533 },
+							"size": 1.023246,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.838, "y": 0.507 },
+							"size": 1.0220073,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 3.353, "y": 0.461 },
+							"size": 1.0839471,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 3.006, "y": 0.427 },
+							"size": 1.0839471,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.55113637", "g": "0.55113637", "b": "0.55113637", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 1.212, "y": 0.337 },
+							"size": 4.923661,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-talk",
+							"facing": "left",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.491, "y": 0.336 },
+							"size": 0.32,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"equipment": {},
+							"anchor": { "x": 0.205, "y": 0.334 },
+							"size": 0.3,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-interested",
+							"equipment": {},
+							"anchor": { "x": 0.307, "y": 0.334 },
+							"size": 0.315,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"equipment": {},
+							"anchor": { "x": 0.124, "y": 0.32 },
+							"size": 0.28,
+							"drawDepth": 3.5,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"equipment": {},
+							"anchor": { "x": 0.038, "y": 0.287 },
+							"size": 0.3,
+							"drawDepth": 2.5,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.617, "y": 0.399 },
+							"size": 0.3304,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.697, "y": 0.365 },
+							"size": 0.33,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.831, "y": 0.346 },
+							"size": 0.35,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.93, "y": 0.348 },
+							"size": 0.35,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.404, "y": 0.242 },
+							"size": 1.5771,
+							"drawDepth": 2.75,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_020~1_bookish",
+							"pointerOwner": "bookish",
+							"padXFraction": 0.356,
+							"padYFraction": 0.028,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_020~2_hero3",
+							"pointerOwner": "hero3",
+							"padXFraction": 0.362,
+							"padYFraction": 0.852,
+							"shrinkToFitText": true,
+							"pointerAdjust": { "dX": 12.252874, "dY": 73.51724, "pointerOrientV": "down" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-happy",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.418, "y": 0.331 },
+							"size": 0.32,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.327, "y": 0.336 },
+							"size": 0.3,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-interested",
+							"facing": "left",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.241, "y": 0.349 },
+							"size": 0.315,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.124, "y": 0.32 },
+							"size": 0.28,
+							"drawDepth": 3.5,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.038, "y": 0.287 },
+							"size": 0.3,
+							"drawDepth": 2.5,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.617, "y": 0.399 },
+							"size": 0.3304,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.697, "y": 0.365 },
+							"size": 0.33,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.831, "y": 0.346 },
+							"size": 0.35,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.93, "y": 0.348 },
+							"size": 0.35,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.168, "y": 0.251 },
+							"size": 1.5771,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-happy",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.348, "y": 0.341 },
+							"size": 0.32,
+							"drawDepth": 2,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.253, "y": 0.345 },
+							"size": 0.3,
+							"drawDepth": 2.6,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-interested",
+							"facing": "left",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.176, "y": 0.336 },
+							"size": 0.315,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.075, "y": 0.339 },
+							"size": 0.28,
+							"drawDepth": 11,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": -0.012, "y": 0.319 },
+							"size": 0.3,
+							"drawDepth": 2.5,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.617, "y": 0.399 },
+							"size": 0.3304,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.49573863", "g": "0.49573863", "b": "0.49573863", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.7, "y": 0.37 },
+							"size": 0.33,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.831, "y": 0.346 },
+							"size": 0.35,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.48579547", "g": "0.48579547", "b": "0.48579547", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.925, "y": 0.356 },
+							"size": 0.35,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.38210228", "g": "0.38210228", "b": "0.38210228", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam1.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.868, "y": 0.641 },
+							"size": 0.6,
+							"nameTag": "none",
+							"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.10369318" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.097, "y": 0.226 },
+							"size": 1.8692,
+							"drawDepth": 2.25,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-interested",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.325, "y": 0.351 },
+							"size": 0.32,
+							"drawDepth": 2,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.60511363", "g": "0.60511363", "b": "0.60511363", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.224, "y": 0.345 },
+							"size": 0.3,
+							"drawDepth": 2.6,
+							"nameTag": "none",
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-interested",
+							"facing": "left",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.138, "y": 0.349 },
+							"size": 0.315,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.028, "y": 0.331 },
+							"size": 0.28,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "0.57670456", "g": "0.57670456", "b": "0.57670456", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.617, "y": 0.399 },
+							"size": 0.3304,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.66761363", "g": "0.66761363", "b": "0.66761363", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.698, "y": 0.381 },
+							"size": 0.33,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.55255681", "g": "0.55255681", "b": "0.55255681", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.831, "y": 0.346 },
+							"size": 0.35,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.67613637", "g": "0.67613637", "b": "0.67613637", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.927, "y": 0.332 },
+							"size": 0.35,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.55681819", "g": "0.55681819", "b": "0.55681819", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam1.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.868, "y": 0.641 },
+							"size": 0.6,
+							"nameTag": "none",
+							"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.23011364" }
+						},
+						{
+							"assetSpec": "comic:comicEmotion_question.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.308, "y": 0.531 },
+							"size": 0.3849,
+							"drawDepth": -10,
+							"nameTag": "none",
+							"foot": { "rotate": -10.128 }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.058, "y": 0.224 },
+							"size": 1.9346,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-surprised",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.28, "y": 0.35 },
+							"size": 0.32,
+							"drawDepth": 2,
+							"nameTag": "none",
+							"head": { "rotate": -9.598, "scaleY": -1 },
+							"color": { "r": "0.80255681", "g": "0.80255681", "b": "0.80255681", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.18, "y": 0.344 },
+							"size": 0.3,
+							"drawDepth": 2.6,
+							"nameTag": "none",
+							"head": { "rotate": 0 },
+							"color": { "r": "0.71022725", "g": "0.71022725", "b": "0.71022725", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-interested",
+							"facing": "left",
+							"equipment": {
+								"equipItemsById": [ "torch" ]
+							},
+							"anchor": { "x": 0.102, "y": 0.368 },
+							"size": 0.315,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"color": { "r": "0.68607956", "g": "0.68607956", "b": "0.68607956", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.617, "y": 0.399 },
+							"size": 0.3304,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.88920456", "g": "0.88920456", "b": "0.88920456", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.7, "y": 0.384 },
+							"size": 0.33,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.74715906", "g": "0.74715906", "b": "0.74715906", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.831, "y": 0.346 },
+							"size": 0.35,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "0.86505681", "g": "0.86505681", "b": "0.86505681", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.928, "y": 0.345 },
+							"size": 0.35,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "0.78409094", "g": "0.78409094", "b": "0.78409094", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam1.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.868, "y": 0.641 },
+							"size": 0.6,
+							"nameTag": "none",
+							"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.54829544" }
+						},
+						{
+							"assetSpec": "comic:comicEmotion_exclamation.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.254, "y": 0.514 },
+							"size": 0.3608,
+							"nameTag": "none"
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.019, "y": 0.228 },
+							"size": 2.169,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.39772728" }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-joy",
+							"equipment": {},
+							"anchor": { "x": 0.31, "y": 0.351 },
+							"size": 0.32,
+							"drawDepth": 2,
+							"nameTag": "none",
+							"head": { "rotate": 0.756, "scaleY": 1 },
+							"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"form": "frame-surprised",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.187, "y": 0.337 },
+							"size": 0.3,
+							"drawDepth": 2.6,
+							"nameTag": "none",
+							"head": { "scaleY": -1 },
+							"color": { "r": "0.83796698", "g": "0.84297919", "b": "0.68258893", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-surprised",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.112, "y": 0.378 },
+							"size": 0.315,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"head": { "scaleY": -1 },
+							"color": { "r": "0.83796698", "g": "0.84297919", "b": "0.68258893", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.617, "y": 0.399 },
+							"size": 0.3304,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.694, "y": 0.36 },
+							"size": 0.33,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.831, "y": 0.346 },
+							"size": 0.35,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.929, "y": 0.33 },
+							"size": 0.35,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam1.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.868, "y": 0.641 },
+							"size": 0.6,
+							"nameTag": "none",
+							"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.43181819" }
+						},
+						{
+							"assetSpec": "comic:lightBeam.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.593, "y": 0.479 },
+							"size": 0.5554,
+							"drawDepth": 11,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.694, "y": 0.41 },
+							"size": 0.5554,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.839, "y": 0.534 },
+							"size": 0.5554,
+							"drawDepth": 11,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.947, "y": 0.459 },
+							"size": 0.5554,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": -0.001, "y": 0.056 },
+							"size": 2.2656,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.29403409" }
+						},
+						{
+							"assetSpec": "item:item_offhand_torch.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.015, "y": 0.027 },
+							"size": 0.155,
+							"drawDepth": 2.3,
+							"nameTag": "none",
+							"foot": { "rotate": 78.769 },
+							"color": { "r": "0.83529413", "g": "0.8392157", "b": "0.68235296", "a": "1" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_025~1_bookish",
+							"pointerOwner": "bookish",
+							"padXFraction": 0.307,
+							"padYFraction": 0.114,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_025~2_action",
+							"style": "action",
+							"padXFraction": 0.706,
+							"padYFraction": 0.069
+						},
+						{
+							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textKey": "~01~prompt~panel_025~3_snark",
+							"pointerOwner": "snark",
+							"padXFraction": 0.236,
+							"padYFraction": 0.857,
+							"shrinkToFitText": true,
+							"pointerAdjust": {
+								"dX": 6.5977015,
+								"dY": 71.63216,
+								"pointerOrientH": "onRight",
+								"pointerOrientV": "down"
+							}
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "bookish",
+							"form": "frame-happy",
+							"equipment": {},
+							"anchor": { "x": 0.369, "y": 0.334 },
+							"size": 0.3090996,
+							"drawDepth": 2,
+							"nameTag": "none",
+							"head": { "rotate": 0.756, "scaleY": 1 },
+							"color": { "r": "0.98570132", "g": "0.9931761", "b": "0.75398302", "a": "1" }
+						},
+						{
+							"role": "snark",
+							"form": "frame-interested",
+							"equipment": {},
+							"anchor": { "x": 0.258, "y": 0.36 },
+							"size": 0.305,
+							"drawDepth": 2.6,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+						},
+						{
+							"role": "hero3",
+							"form": "frame-interested",
+							"equipment": {},
+							"anchor": { "x": 0.161, "y": 0.35 },
+							"size": 0.3,
+							"drawDepth": 3,
+							"nameTag": "none",
+							"head": { "scaleY": 1 },
+							"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+						},
+						{
+							"role": "hero4",
+							"form": "frame-surprised",
+							"equipment": {},
+							"anchor": { "x": 0.019637078, "y": 0.39750877 },
+							"size": 0.2897809,
+							"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+						},
+						{
+							"role": "hero5",
+							"form": "frame-surprised",
+							"equipment": {},
+							"anchor": { "x": 0.08071768, "y": 0.38612086 },
+							"size": 0.2897809,
+							"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone5.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.6130145, "y": 0.40244043 },
+							"size": 0.31914535,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone6.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.689, "y": 0.401 },
+							"size": 0.31875902,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone7.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.8197249, "y": 0.35124576 },
+							"size": 0.33807772,
+							"drawDepth": 10,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+						},
+						{
+							"assetSpec": "scenery:standingStone4.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.911, "y": 0.389 },
+							"size": 0.33807772,
+							"drawDepth": 5,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam1.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.8554646, "y": 0.63619703 },
+							"size": 0.5795618,
+							"nameTag": "none",
+							"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.43181819" }
+						},
+						{
+							"assetSpec": "comic:lightBeam.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.58983207, "y": 0.47971535 },
+							"size": 0.5364811,
+							"drawDepth": 11,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.6912554, "y": 0.3493139 },
+							"size": 0.5364811,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.82745236, "y": 0.5328418 },
+							"size": 0.5364811,
+							"drawDepth": 11,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:lightBeam.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.928, "y": 0.456 },
+							"size": 0.5364811,
+							"drawDepth": 4,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+						},
+						{
+							"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.103, "y": -0.089 },
+							"size": 2.1708,
+							"drawDepth": 0.95,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.375" }
+						}
+					]
+				}
+			}
+		],
+		"options": [
+			{
+				"id": "one",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"size": "fourth",
+							"showNameTags": false,
+							"actorSlots": [
+								{
+									"role": "volunteer",
+									"form": "frame-scheming",
+									"anchor": { "x": 0.46, "y": 0.442 },
+									"size": 1.05569,
+									"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textKey": "~02~choice_one~panel_001~1_volunteer",
+									"pointerOwner": "volunteer"
+								},
+								{
+									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textKey": "~02~choice_one~panel_001~2_darken",
+									"style": "darken",
+									"location": "bottomRight",
+									"padXFraction": 0.105,
+									"padYFraction": 0.007,
+									"shrinkToFitText": true
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "two",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"size": "fourth",
+							"showNameTags": false,
+							"actorSlots": [
+								{
+									"role": "volunteer2",
+									"anchor": { "x": 0.488, "y": 0.418 },
+									"size": 1.05569,
+									"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textKey": "~03~choice_two~panel_001~1_volunteer2",
+									"pointerOwner": "volunteer2"
+								},
+								{
+									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textKey": "~03~choice_two~panel_001~2_darken",
+									"style": "darken",
+									"location": "bottomRight",
+									"padXFraction": 0.086,
+									"padYFraction": 0.009,
+									"shrinkToFitText": true
+								}
+							]
+						}
+					}
+				],
+				"ifTargetIsPresent": "volunteer2"
+			},
+			{
+				"id": "three",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"size": "fourth",
+							"showNameTags": false,
+							"actorSlots": [
+								{
+									"role": "volunteer3",
+									"anchor": { "x": 0.5, "y": 0.418 },
+									"size": 1.05569,
+									"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textKey": "~04~choice_three~panel_001~1_volunteer3",
+									"pointerOwner": "volunteer3"
+								},
+								{
+									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textKey": "~04~choice_three~panel_001~2_darken",
+									"style": "darken",
+									"location": "bottomRight",
+									"padXFraction": 0.113,
+									"padYFraction": 0.007,
+									"shrinkToFitText": true
+								}
+							]
+						}
+					}
+				],
+				"ifTargetIsPresent": "volunteer3"
+			},
+			{
+				"id": "four",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"size": "fourth",
+							"showNameTags": false,
+							"actorSlots": [
+								{
+									"role": "healer",
+									"form": "frame-interested",
+									"anchor": { "x": 0.44, "y": 0.453 },
+									"size": 1.05569,
+									"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textKey": "~05~choice_four~panel_001~1_healer",
+									"pointerOwner": "healer"
+								},
+								{
+									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textKey": "~05~choice_four~panel_001~2_darken",
+									"style": "darken",
+									"location": "bottomLeft",
+									"padXFraction": 0.225,
+									"padYFraction": 0.014,
+									"widthFraction": 0.7172583,
+									"shrinkToFitText": true
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+],
+"outcomes": [
+	{
+		"class": "IfPlayerChose",
+		"target": "volunteer",
+		"ifPlayerChose": "one",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"preTransformation": true,
+										"role": "volunteer",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.527, "y": 0.45 },
+										"size": 0.39860573,
+										"drawDepth": 6,
+										"head": { "rotate": 5.19 },
+										"color": { "r": "0.96039975", "g": "0.97063851", "b": "0.64299786", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-happy",
+										"equipment": {},
+										"anchor": { "x": 0.21, "y": 0.452 },
+										"size": 0.41932583,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": 1 },
+										"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.06, "y": 0.488 },
+										"size": 0.4137643,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.541, "y": 0.545 },
+										"size": 0.43295392,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.646, "y": 0.526 },
+										"size": 0.43242982,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.821, "y": 0.476 },
+										"size": 0.45863765,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.954, "y": 0.448 },
+										"size": 0.45863765,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.87, "y": 0.862 },
+										"size": 0.786236,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.43181819" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.509, "y": 0.65 },
+										"size": 0.72779244,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.644, "y": 0.533 },
+										"size": 0.72779244,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.832, "y": 0.721 },
+										"size": 0.72779244,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.969, "y": 0.614 },
+										"size": 0.72779244,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFourths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.242, "y": 0.536 },
+										"size": 0.5007927,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.18, "y": 0.542 },
+										"size": 0.5001865,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.66, "y": 0.453 },
+										"size": 0.53050077,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.822, "y": 0.494 },
+										"size": 0.53050077,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.646, "y": 0.869 },
+										"size": 0.9094299,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.265625" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.2, "y": 0.658 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.162, "y": 0.672 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.695, "y": 0.74 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.844, "y": 0.697 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"preTransformation": true,
+										"role": "volunteer",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.562, "y": 0.385 },
+										"size": 0.46106255,
+										"drawDepth": 6,
+										"head": { "rotate": 13.325 },
+										"foot": { "rotate": 2.831 },
+										"color": { "r": "0.98872507", "g": "1", "b": "0.6392045", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFifths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.252, "y": 0.504 },
+										"size": 0.3848279,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.19050929, "y": 0.53227437 },
+										"size": 0.3843621,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.65474534, "y": 0.46388343 },
+										"size": 0.40765676,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.8114251, "y": 0.49538937 },
+										"size": 0.40765676,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.64120513, "y": 0.7835535 },
+										"size": 0.69884014,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.265625" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.20985243, "y": 0.6214131 },
+										"size": 0.646893,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.17310044, "y": 0.6321712 },
+										"size": 0.646893,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.6885959, "y": 0.68442506 },
+										"size": 0.646893,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.8327025, "y": 0.6513822 },
+										"size": 0.646893,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"role": "npc",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.532, "y": 0.463 },
+										"size": 0.35424975,
+										"head": { "rotate": 9.588 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFourths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.223, "y": 0.649 },
+										"size": 0.5007927,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.174, "y": 0.69 },
+										"size": 0.5001865,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.636, "y": 0.603 },
+										"size": 0.53050077,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.816, "y": 0.642 },
+										"size": 0.53050077,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.64, "y": 1.017 },
+										"size": 0.9094299,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.265625" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.194, "y": 0.806 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.156, "y": 0.82 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.679, "y": 0.885 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.838, "y": 0.845 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"role": "volunteer",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.488, "y": 0.57 },
+										"size": 0.46106255,
+										"drawDepth": 6,
+										"head": { "rotate": -24.97 },
+										"foot": {},
+										"color": { "r": "0.97104007", "g": "0.97498065", "b": "0.84888297", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"animation": { "overridePanelOrder": 1 },
+								"actorSlots": [
+									{
+										"role": "volunteer",
+										"form": "frame-talk",
+										"equipment": {},
+										"anchor": { "x": 0.846, "y": 0.462 },
+										"size": 0.3282881,
+										"drawDepth": 6,
+										"nameTag": "none",
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.85871738", "g": "0.8635031", "b": "0.71036053", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.397, "y": 0.387 },
+										"size": 0.33824578,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.307, "y": 0.371 },
+										"size": 0.3337596,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "hero3",
+										"equipment": {},
+										"anchor": { "x": 0.213, "y": 0.401 },
+										"size": 0.3282881,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "hero4",
+										"equipment": {},
+										"anchor": { "x": 0.055, "y": 0.429 },
+										"size": 0.31710544,
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "hero5",
+										"equipment": {},
+										"anchor": { "x": 0.13, "y": 0.426 },
+										"size": 0.31710544,
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.65, "y": 0.447 },
+										"size": 0.34923875,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.733, "y": 0.445 },
+										"size": 0.348816,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.876, "y": 0.39 },
+										"size": 0.36995634,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.976, "y": 0.431 },
+										"size": 0.36995634,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.914, "y": 0.703 },
+										"size": 0.6342109,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.16477273" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.624, "y": 0.531 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.736, "y": 0.389 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.884, "y": 0.589 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.995, "y": 0.505 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.163, "y": -0.133 },
+										"size": 2.4206,
+										"drawDepth": 0.95,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.41903409" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textKey": "~06~player_chose_one~panel_005~1_ship",
+										"pointerOwner": "ship",
+										"padXFraction": 0.202,
+										"padYFraction": 0.114,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textKey": "~06~player_chose_one~panel_005~2_volunteer",
+										"pointerOwner": "volunteer",
+										"padXFraction": 0.887,
+										"padYFraction": 0.348,
+										"widthFraction": 0.056993313
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"animation": { "overridePanelOrder": 1 },
+								"actorSlots": [
+									{
+										"role": "volunteer",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.877, "y": 0.462 },
+										"size": 0.3282881,
+										"drawDepth": 6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.74923652", "g": "0.75117427", "b": "0.68916661", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-grim",
+										"equipment": {},
+										"anchor": { "x": 0.43, "y": 0.382 },
+										"size": 0.33824578,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.342, "y": 0.377 },
+										"size": 0.3337596,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "hero3",
+										"form": "frame-angry",
+										"equipment": {},
+										"anchor": { "x": 0.25, "y": 0.404 },
+										"size": 0.3282881,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "hero4",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.09, "y": 0.424 },
+										"size": 0.31710544,
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "hero5",
+										"form": "frame-angry",
+										"equipment": {},
+										"anchor": { "x": 0.169, "y": 0.412 },
+										"size": 0.31710544,
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.683, "y": 0.442 },
+										"size": 0.34923875,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.766, "y": 0.44 },
+										"size": 0.348816,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.909, "y": 0.385 },
+										"size": 0.36995634,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 1.009, "y": 0.426 },
+										"size": 0.36995634,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.947, "y": 0.698 },
+										"size": 0.6342109,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.16477273" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.657, "y": 0.526 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.769, "y": 0.384 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.917, "y": 0.584 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 1.028, "y": 0.5 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.202, "y": -0.093 },
+										"size": 2.3634,
+										"drawDepth": 0.95,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.41193181" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textKey": "~06~player_chose_one~panel_006~1_action",
+										"style": "action",
+										"padXFraction": 0.026,
+										"padYFraction": 0.072,
+										"shrinkToFitText": true
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"role": "volunteer",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.573, "y": 0.382 },
+										"size": 0.29586983,
+										"drawDepth": 6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-grim",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.42, "y": 0.319 },
+										"size": 0.30484417,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.312, "y": 0.343 },
+										"size": 0.300801,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "hero3",
+										"form": "frame-rage",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.206, "y": 0.343 },
+										"size": 0.29586983,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "hero4",
+										"form": "frame-angry",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.043, "y": 0.33 },
+										"size": 0.28579143,
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "hero5",
+										"form": "frame-rage",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.13, "y": 0.368 },
+										"size": 0.28579143,
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.66, "y": 0.386 },
+										"size": 0.3147516,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "0.70028406", "g": "0.70028406", "b": "0.70028406", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.735, "y": 0.385 },
+										"size": 0.3143706,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "0.75852275", "g": "0.75852275", "b": "0.75852275", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.864, "y": 0.336 },
+										"size": 0.33342335,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "0.57386363", "g": "0.57386363", "b": "0.57386363", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.954, "y": 0.373 },
+										"size": 0.33342335,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "0.71022725", "g": "0.71022725", "b": "0.71022725", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.899, "y": 0.617 },
+										"size": 0.57158285,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.07102273" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.213, "y": -0.025 },
+										"size": 2.5926,
+										"drawDepth": 0.95,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textKey": "~06~player_chose_one~panel_007~1_hero3",
+										"pointerOwner": "hero3",
+										"padXFraction": 0.086,
+										"padYFraction": 0.143,
+										"shrinkToFitText": true
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer",
+					"theme": "light",
+					"piece": "aura",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer",
+					"theme": "light",
+					"piece": "leftArmLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer",
+					"theme": "light",
+					"piece": "rightArmLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer",
+					"theme": "light",
+					"piece": "leftLegLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer",
+					"theme": "light",
+					"piece": "rightLegLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "Mission",
+					"goal": "liberate",
+					"combatants": [
+						{ "role": "party", "side": "player" },
+						{ "role": "foes", "side": "enemy" }
+					],
+					"missionPlanOverride": "theme_luminant_light_shrine"
+				}
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"target": "volunteer2",
+		"ifPlayerChose": "two",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"actorSlots": [
+									{ "role": "volunteer2" }
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textKey": "~07~player_chose_two~panel_001~1_volunteer2",
+										"pointerOwner": "volunteer2"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer2",
+					"theme": "light",
+					"piece": "aura",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer2",
+					"theme": "light",
+					"piece": "leftArmLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer2",
+					"theme": "light",
+					"piece": "rightArmLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer2",
+					"theme": "light",
+					"piece": "leftLegLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer2",
+					"theme": "light",
+					"piece": "rightLegLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "Mission",
+					"goal": "liberate",
+					"combatants": [
+						{ "role": "party", "side": "player" },
+						{ "role": "foes", "side": "enemy" }
+					]
+				}
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"target": "volunteer3",
+		"ifPlayerChose": "three",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"actorSlots": [
+									{ "role": "volunteer3" }
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textKey": "~08~player_chose_three~panel_001~1_volunteer3",
+										"pointerOwner": "volunteer3"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer3",
+					"theme": "light",
+					"piece": "aura",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer3",
+					"theme": "light",
+					"piece": "leftArmLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer3",
+					"theme": "light",
+					"piece": "rightArmLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer3",
+					"theme": "light",
+					"piece": "leftLegLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "ApplyTheme",
+					"target": "volunteer3",
+					"theme": "light",
+					"piece": "rightLegLatent",
+					"replaceInjuredLimbs": true
+				},
+				{
+					"class": "Mission",
+					"goal": "liberate",
+					"combatants": [
+						{ "role": "party", "side": "player" },
+						{ "role": "foes", "side": "enemy" }
+					]
+				}
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"target": "healer",
+		"ifPlayerChose": "four",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"actorSlots": [
+									{ "role": "healer" }
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textKey": "~09~player_chose_four~panel_001~1_healer",
+										"pointerOwner": "healer"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"class": "ModifyStats",
+					"target": "party",
+					"stat": "RECOVERY_RATE",
+					"value": "5"
+				},
+				{
+					"class": "Mission",
+					"goal": "liberate",
+					"combatants": [
+						{ "role": "party", "side": "player" },
+						{ "role": "foes", "side": "enemy" }
+					]
+				}
+			]
+		}
+	}
+],
+"implications": {
+	"generatedTargets": [
+		{
+			"createEntity": {
+				"query": {
+					"baseTag": "human",
+					"inRelationTo": "volunteer",
+					"cloneRelatedEntity": true,
+					"aspectValues": { "theme_luminant_radiantFormUsed": "1" }
+				},
+				"additionalOutcome": {
+					"class": "DoAll",
+					"outcomes": [
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "auraRadiant",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "leftEye",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "rightEye",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "leftArm",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "rightArm",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "leftLeg",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "rightLeg",
+							"replaceInjuredLimbs": true
+						}
+					]
+				}
+			}
+		},
+		{
+			"role": "npc2",
+			"createEntity": {
+				"query": { "baseTag": "human" },
+				"control": "none"
+			}
+		},
+		{
+			"role": "npc3",
+			"createEntity": {
+				"query": { "baseTag": "human" },
+				"control": "none"
+			}
+		},
+		{
+			"role": "npc4",
+			"createEntity": {
+				"query": { "baseTag": "human" },
+				"control": "none"
+			}
+		}
+	]
+}
+}

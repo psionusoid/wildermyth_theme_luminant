@@ -1,0 +1,15 @@
+[
+{
+	"modId": "theme_luminant",
+	"id": "theme_light_upgrade",
+	"effects": [
+		"attackActionWithTagDoesNotEndTurn|theme_luminant_radiantBlast",
+		"attackActionWithTagDoesNotEndTurn|theme_luminant_radiantBeam"
+	],
+	"boostType": "ABILITY_MISC",
+	"legacyAbilityChoice": true,
+	"importance": 5,
+	"abilityRequiresOneAspectOf": [ "themePiece_light_aura" ],
+	"info": { "abilityDeckUsage": "upgrade", "abilityDeckIcon": "phantomflare" }
+}
+]

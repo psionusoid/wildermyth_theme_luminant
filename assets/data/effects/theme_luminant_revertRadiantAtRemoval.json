@@ -1,0 +1,87 @@
+{
+"id": "theme_luminant_revertRadiantAtRemoval",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_revertRadiantAtRemoval",
+	"modId": "theme_luminant",
+	"author": "psionusoid"
+},
+"type": "ENTITY_REMOVED",
+"targets": [
+	{ "template": "SELF" }
+],
+"outcomes": [
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "leftEye"
+	},
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "rightEye"
+	},
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "auraRadiant"
+	},
+	{ "class": "ApplyTheme", "target": "self", "theme": "light", "piece": "aura" },
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "leftArm"
+	},
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "rightArm"
+	},
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "leftLeg"
+	},
+	{
+		"class": "RemoveTheme",
+		"target": "self",
+		"specificTheme": "light",
+		"specificPiece": "rightLeg"
+	},
+	{
+		"class": "ApplyTheme",
+		"target": "self",
+		"theme": "light",
+		"piece": "leftArmLatent"
+	},
+	{
+		"class": "ApplyTheme",
+		"target": "self",
+		"theme": "light",
+		"piece": "rightArmLatent"
+	},
+	{
+		"class": "ApplyTheme",
+		"target": "self",
+		"theme": "light",
+		"piece": "leftLegLatent"
+	},
+	{
+		"class": "ApplyTheme",
+		"target": "self",
+		"theme": "light",
+		"piece": "rightLegLatent"
+	},
+	{
+		"class": "Aspects",
+		"target": "self",
+		"removeAspects": [ "theme_luminant_radiantFormUsed" ]
+	}
+]
+}

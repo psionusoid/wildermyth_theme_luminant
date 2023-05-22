@@ -1,0 +1,144 @@
+{
+"id": "theme_luminant_radiantBlast",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_radiantBlast",
+	"modId": "theme_luminant",
+	"author": "psionusoid",
+	"aiPriority": "1900",
+	"tags": [ "melee", "theme_luminant_radiantBlast" ]
+},
+"type": "ABILITY",
+"verb": "ATTACK",
+"ability": {
+	"icon": "flashcone",
+	"priority": "20",
+	"extraUI": { "overrideDamageType": "MAGIC", "overrideRangeShown": "2.1+self.BONUS_RANGE" },
+	"cooldown": null,
+	"branchableAbilityType": "standardMelee"
+},
+"targets": [
+	{
+		"template": "SELF",
+		"cost": { "class": "ActionPoints", "actionPoints": "attack" },
+		"missionFeedback": { "orientTo": "focus" }
+	},
+	{
+		"template": "TILE",
+		"missionFeedback": {
+			"rangeFeedback": "FRIENDLY_EFFECT_RANGE",
+			"suggestionFeedback": "FRIENDLY_EFFECT_SUGGESTION",
+			"hoverFeedback": "ATTACK_HOVER"
+		},
+		"minRange": "0.9",
+		"range": "2.1+self.BONUS_RANGE",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "floor"
+	},
+	{
+		"role": "targetTile",
+		"template": "TILE",
+		"STUB": "Gets the furthest away tile, to use for the particle effect.",
+		"choose": "ONE_FURTHEST",
+		"manifold": {
+			"from": "self",
+			"to": "focus",
+			"thickness": [ "1.6", "3" ],
+			"excludeSource": true,
+			"distanceInDirection": "2.1+self.BONUS_RANGE"
+		},
+		"range": "2.1+self.BONUS_RANGE",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "floor"
+	},
+	{
+		"role": "hero2",
+		"template": "UNIT_AT_TILE",
+		"STUB": "If self has the noFriendlyFire aspect, these will be forbidden from matching in target2 (used by things like guardian, rather than trying to prevent it from happening) (Not currently actually relevant for scorpion tail)",
+		"choose": "ANY",
+		"missionFeedback": null,
+		"manifold": {
+			"from": "self",
+			"to": "focus",
+			"thickness": [ "1.6", "3" ],
+			"excludeSource": true,
+			"distanceInDirection": "2.1+self.BONUS_RANGE"
+		},
+		"aspects": [ "alive", "ALLY" ],
+		"range": "2.1+self.BONUS_RANGE",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "floor",
+		"test": "GREATER_THAN_OR_EQUAL_TO",
+		"a": "self.noFriendlyFire",
+		"b": "1"
+	},
+	{
+		"role": "target2",
+		"template": "UNIT_AT_TILE",
+		"choose": "ANY",
+		"missionFeedback": {
+			"hoverScript": "figures.attackHovered",
+			"rangeFeedback": "ATTACK_SUGGESTION",
+			"suggestionFeedback": "ATTACK_SUGGESTION",
+			"hoverFeedback": "ATTACK_HOVER"
+		},
+		"manifold": {
+			"from": "self",
+			"to": "focus",
+			"thickness": [ "1.6", "3" ],
+			"excludeSource": true,
+			"distanceInDirection": "2.1+self.BONUS_RANGE"
+		},
+		"notAlreadyMatchedAs": [ "hero2" ],
+		"range": "2.1+self.BONUS_RANGE",
+		"lineOfSight": "TERRAIN_ONLY",
+		"tileFilter": "floor"
+	}
+],
+"outcomes": [
+	{
+		"class": "AttackRoll",
+		"defender": "target2",
+		"attackAnimationType": "ranged",
+		"showAbilityName": "ifEnemy",
+		"particles": [
+			{
+				"script": "projectileTrailLightBeam",
+				"setPosition": "self",
+				"setPosition2": "targetTile",
+				"delay": -0.5
+			}
+		],
+		"audioOverride": {
+			"attackStartCue": "Characters/Theme/Celestial/fallingStar",
+			"attackHitCue": "Characters/Theme/Celestial/fallingStar"
+		},
+		"defenseRollTags": [ "melee" ],
+		"attackStrength": "self.MELEE_ACCURACY",
+		"onHit": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Damage",
+					"amount": "(3+1d2)+floor((attacker.PHYSICAL_DAMAGE_BONUS+attacker.POTENCY))",
+					"type": "MAGIC",
+					"pierce": "0",
+					"overrideStuntDamage": "4",
+					"onStunt": {
+						"class": "DoAll",
+						"outcomes": [
+							{
+								"class": "Aspects",
+								"addAspects": [
+									{ "id": "blinded", "value": "1" }
+								]
+							}
+						]
+					},
+					"numDefenders": "COUNT.target2"
+				}
+			]
+		}
+	}
+]
+}
