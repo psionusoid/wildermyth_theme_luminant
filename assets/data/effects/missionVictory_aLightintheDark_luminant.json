@@ -1,0 +1,89 @@
+{
+"id": "missionVictory_aLightintheDark_luminant",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "missionVictory_aLightintheDark_luminant",
+	"modId": "theme_luminant",
+	"author": "psionusoid",
+	"STUB": "Victories occur at the end of missions. No choice is needed in most cases, we can just tell a brief story."
+},
+"type": "ENCOUNTER_MISSION_VICTORY",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "utility",
+	"category": "attack",
+	"priority": "1",
+	"encounterScore": 10000,
+	"musicOverride": "Music/Comics - High Magic Encounters"
+},
+"targets": [
+	{ "template": "EVENT" },
+	{ "template": "COMPANY", "choose": "ANY" },
+	{ "template": "INJECTED_SITE" },
+	{ "template": "INJECTED_TILE" },
+	{ "role": "threat", "template": "INJECTED_THREAT", "choose": "ANY" },
+	{ "template": "INJECTED_PARTY", "choose": "ANY" },
+	{ "template": "DEAD_HEROES" },
+	{ "template": "MAIMED_HEROES" },
+	{ "template": "LIVING_FOES" },
+	{ "template": "DEAD_FOES" },
+	{
+		"role": "target",
+		"template": "PICK_BY_SCORE",
+		"scoreFunction": null,
+		"fromRoles": [ "party", "maimedHero" ],
+		"aspects": [ "theme_light" ]
+	},
+	{
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "(FAMILY_WITH.target*10)+(SHIP_WITH.target*10)",
+		"fromRoles": [ "party", "maimedHero" ],
+		"notAlreadyMatchedAs": [ "target" ]
+	},
+	{
+		"role": "hero",
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "SHIP_WITH.target*10",
+		"fromRoles": [ "party", "maimedHero" ],
+		"notAlreadyMatchedAs": [ "target", "volunteer" ]
+	},
+	{
+		"role": "volunteer2",
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "0",
+		"notAlreadyMatchedAs": [ "target", "hero", "volunteer" ]
+	},
+	{
+		"role": "volunteer3",
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "0",
+		"notAlreadyMatchedAs": [ "target", "hero", "volunteer" ]
+	}
+],
+"outcomes": [
+	{
+		"class": "Description",
+		"lightweight": false,
+		"script": [
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"textSlots": [
+						{
+							"textSourceFile": "missionVictory_aLightintheDark_luminant",
+							"textKey": "~01~~panel_001~1_narration",
+							"style": "narration"
+						}
+					]
+				}
+			}
+		]
+	}
+]
+}
