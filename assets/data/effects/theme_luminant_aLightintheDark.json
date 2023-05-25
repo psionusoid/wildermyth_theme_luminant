@@ -3911,7 +3911,7 @@
 						{ "role": "foes", "side": "enemy" }
 					],
 					"missionPlanOverride": "theme_luminant_light_shrine",
-					"victoryEventIds": [ "missionVictory_aLightintheDark_luminant" ]
+					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantA" ]
 				}
 			]
 		}
@@ -3985,7 +3985,7 @@
 						{ "role": "party", "side": "player" },
 						{ "role": "foes", "side": "enemy" }
 					],
-					"victoryEventIds": [ "missionVictory_aLightintheDark_luminant" ]
+					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantB" ]
 				}
 			]
 		}
@@ -4059,7 +4059,7 @@
 						{ "role": "party", "side": "player" },
 						{ "role": "foes", "side": "enemy" }
 					],
-					"victoryEventIds": [ "missionVictory_aLightintheDark_luminant" ]
+					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantB" ]
 				}
 			]
 		}

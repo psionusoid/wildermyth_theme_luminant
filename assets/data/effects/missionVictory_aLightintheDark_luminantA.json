@@ -1,8 +1,8 @@
 {
-"id": "missionVictory_aLightintheDark_luminant",
+"id": "missionVictory_aLightintheDark_luminantA",
 "info": {
 	"dataVersion": 1,
-	"sourceFile": "missionVictory_aLightintheDark_luminant",
+	"sourceFile": "missionVictory_aLightintheDark_luminantA",
 	"modId": "theme_luminant",
 	"author": "psionusoid",
 	"STUB": "Victories occur at the end of missions. No choice is needed in most cases, we can just tell a brief story."
@@ -76,7 +76,7 @@
 					"showNameTags": false,
 					"textSlots": [
 						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminant",
+							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
 							"textKey": "~01~~panel_001~1_narration",
 							"style": "narration"
 						}
