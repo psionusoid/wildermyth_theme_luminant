@@ -3528,7 +3528,8 @@
 										"pointerOwner": "volunteer",
 										"padXFraction": 0.887,
 										"padYFraction": 0.348,
-										"widthFraction": 0.056993313
+										"widthFraction": 0.068574645,
+										"shrinkToFitText": true
 									}
 								]
 							}
