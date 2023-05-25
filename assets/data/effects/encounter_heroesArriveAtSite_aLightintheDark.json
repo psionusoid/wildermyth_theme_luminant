@@ -1,8 +1,8 @@
 {
-"id": "theme_luminant_aLightintheDark",
+"id": "encounter_heroesArriveAtSite_aLightintheDark",
 "info": {
 	"dataVersion": 1,
-	"sourceFile": "theme_luminant_aLightintheDark",
+	"sourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 	"modId": "theme_luminant",
 	"author": "psionusoid"
 },
@@ -250,7 +250,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_001~1_narration",
 							"style": "narration"
 						}
@@ -366,7 +366,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_002~1_bookish",
 							"pointerOwner": "bookish",
 							"padXFraction": 0.559,
@@ -374,7 +374,7 @@
 							"shrinkToFitText": true
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_002~2_hero3",
 							"pointerOwner": "hero3",
 							"padXFraction": 0.38,
@@ -443,7 +443,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_003~1_snark",
 							"pointerOwner": "snark",
 							"padXFraction": 0.249,
@@ -511,7 +511,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_004~1_bookish",
 							"pointerOwner": "bookish"
 						}
@@ -556,7 +556,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_005~1_snark",
 							"pointerOwner": "snark"
 						}
@@ -679,7 +679,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_006~1_action",
 							"style": "action",
 							"padXFraction": 0.571
@@ -753,7 +753,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_007~1_hero3",
 							"pointerOwner": "hero3"
 						}
@@ -775,7 +775,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_008~1_narration",
 							"style": "narration"
 						}
@@ -805,7 +805,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_009~1_snark",
 							"pointerOwner": "snark"
 						}
@@ -840,7 +840,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_010~1_bookish",
 							"pointerOwner": "bookish"
 						}
@@ -961,12 +961,12 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_011~1_narration",
 							"style": "narration"
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_011~2_hero3",
 							"pointerOwner": "hero3",
 							"padXFraction": 0.217,
@@ -974,7 +974,7 @@
 							"shrinkToFitText": true
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_011~3_bookish",
 							"pointerOwner": "bookish",
 							"padXFraction": 0.415,
@@ -982,7 +982,7 @@
 							"shrinkToFitText": true
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_011~4_snark",
 							"pointerOwner": "snark",
 							"shrinkToFitText": true
@@ -1104,7 +1104,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_012~1_snark",
 							"pointerOwner": "snark",
 							"padXFraction": 0.316,
@@ -1112,7 +1112,7 @@
 							"shrinkToFitText": true
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_012~2_hero3",
 							"pointerOwner": "hero3",
 							"padXFraction": 0.171,
@@ -1120,7 +1120,7 @@
 							"shrinkToFitText": true
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_012~3_bookish",
 							"pointerOwner": "bookish"
 						}
@@ -1222,7 +1222,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_013~1_bookish",
 							"pointerOwner": "bookish",
 							"padXFraction": 0.036,
@@ -1328,13 +1328,13 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_014~1_hero3",
 							"pointerOwner": "hero3",
 							"shrinkToFitText": true
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_014~2_bookish",
 							"pointerOwner": "bookish",
 							"padXFraction": 0.258,
@@ -1850,7 +1850,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_020~1_bookish",
 							"pointerOwner": "bookish",
 							"padXFraction": 0.356,
@@ -1858,7 +1858,7 @@
 							"shrinkToFitText": true
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_020~2_hero3",
 							"pointerOwner": "hero3",
 							"padXFraction": 0.362,
@@ -2511,7 +2511,7 @@
 					],
 					"textSlots": [
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_025~1_bookish",
 							"pointerOwner": "bookish",
 							"padXFraction": 0.307,
@@ -2519,14 +2519,14 @@
 							"shrinkToFitText": true
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_025~2_action",
 							"style": "action",
 							"padXFraction": 0.706,
 							"padYFraction": 0.069
 						},
 						{
-							"textSourceFile": "theme_luminant_aLightintheDark",
+							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_025~3_snark",
 							"pointerOwner": "snark",
 							"padXFraction": 0.236,
@@ -2723,12 +2723,12 @@
 							],
 							"textSlots": [
 								{
-									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 									"textKey": "~02~choice_one~panel_001~1_volunteer",
 									"pointerOwner": "volunteer"
 								},
 								{
-									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 									"textKey": "~02~choice_one~panel_001~2_darken",
 									"style": "darken",
 									"location": "bottomRight",
@@ -2759,12 +2759,12 @@
 							],
 							"textSlots": [
 								{
-									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 									"textKey": "~03~choice_two~panel_001~1_volunteer2",
 									"pointerOwner": "volunteer2"
 								},
 								{
-									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 									"textKey": "~03~choice_two~panel_001~2_darken",
 									"style": "darken",
 									"location": "bottomRight",
@@ -2796,12 +2796,12 @@
 							],
 							"textSlots": [
 								{
-									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 									"textKey": "~04~choice_three~panel_001~1_volunteer3",
 									"pointerOwner": "volunteer3"
 								},
 								{
-									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 									"textKey": "~04~choice_three~panel_001~2_darken",
 									"style": "darken",
 									"location": "bottomRight",
@@ -2834,12 +2834,12 @@
 							],
 							"textSlots": [
 								{
-									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 									"textKey": "~05~choice_four~panel_001~1_healer",
 									"pointerOwner": "healer"
 								},
 								{
-									"textSourceFile": "theme_luminant_aLightintheDark",
+									"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 									"textKey": "~05~choice_four~panel_001~2_darken",
 									"style": "darken",
 									"location": "bottomLeft",
@@ -3515,7 +3515,7 @@
 								],
 								"textSlots": [
 									{
-										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 										"textKey": "~06~player_chose_one~panel_005~1_ship",
 										"pointerOwner": "ship",
 										"padXFraction": 0.202,
@@ -3523,7 +3523,7 @@
 										"shrinkToFitText": true
 									},
 									{
-										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 										"textKey": "~06~player_chose_one~panel_005~2_volunteer",
 										"pointerOwner": "volunteer",
 										"padXFraction": 0.887,
@@ -3708,7 +3708,7 @@
 								],
 								"textSlots": [
 									{
-										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 										"textKey": "~06~player_chose_one~panel_006~1_action",
 										"style": "action",
 										"padXFraction": 0.026,
@@ -3856,7 +3856,7 @@
 								],
 								"textSlots": [
 									{
-										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 										"textKey": "~06~player_chose_one~panel_007~1_hero3",
 										"pointerOwner": "hero3",
 										"padXFraction": 0.086,
@@ -3934,7 +3934,7 @@
 								],
 								"textSlots": [
 									{
-										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 										"textKey": "~07~player_chose_two~panel_001~1_volunteer2",
 										"pointerOwner": "volunteer2"
 									}
@@ -4008,7 +4008,7 @@
 								],
 								"textSlots": [
 									{
-										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 										"textKey": "~08~player_chose_three~panel_001~1_volunteer3",
 										"pointerOwner": "volunteer3"
 									}
@@ -4082,7 +4082,7 @@
 								],
 								"textSlots": [
 									{
-										"textSourceFile": "theme_luminant_aLightintheDark",
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 										"textKey": "~09~player_chose_four~panel_001~1_healer",
 										"pointerOwner": "healer"
 									}
