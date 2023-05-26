@@ -3906,16 +3906,6 @@
 					"replaceInjuredLimbs": true
 				},
 				{
-					"class": "Mission",
-					"goal": "liberate",
-					"combatants": [
-						{ "role": "party", "side": "player" },
-						{ "role": "foes", "side": "enemy" }
-					],
-					"missionPlanOverride": "theme_luminant_light_shrine",
-					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantA" ]
-				},
-				{
 					"class": "AddHistory",
 					"target": "bookish",
 					"inlineHistory": {
@@ -3924,6 +3914,16 @@
 						"persistOverLegacy": "never",
 						"showInSummary": false
 					}
+				},
+				{
+					"class": "Mission",
+					"goal": "liberate",
+					"combatants": [
+						{ "role": "party", "side": "player" },
+						{ "role": "foes", "side": "enemy" }
+					],
+					"missionPlanOverride": "theme_luminant_light_shrine",
+					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantA" ]
 				}
 			]
 		}
@@ -3991,15 +3991,6 @@
 					"replaceInjuredLimbs": true
 				},
 				{
-					"class": "Mission",
-					"goal": "liberate",
-					"combatants": [
-						{ "role": "party", "side": "player" },
-						{ "role": "foes", "side": "enemy" }
-					],
-					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantB" ]
-				},
-				{
 					"class": "AddHistory",
 					"target": "bookish",
 					"inlineHistory": {
@@ -4008,6 +3999,16 @@
 						"persistOverLegacy": "never",
 						"showInSummary": false
 					}
+				},
+				{
+					"class": "Mission",
+					"goal": "liberate",
+					"combatants": [
+						{ "role": "party", "side": "player" },
+						{ "role": "foes", "side": "enemy" }
+					],
+					"missionPlanOverride": "theme_luminant_light_shrine",
+					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantB" ]
 				}
 			]
 		}
@@ -4075,15 +4076,6 @@
 					"replaceInjuredLimbs": true
 				},
 				{
-					"class": "Mission",
-					"goal": "liberate",
-					"combatants": [
-						{ "role": "party", "side": "player" },
-						{ "role": "foes", "side": "enemy" }
-					],
-					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantB" ]
-				},
-				{
 					"class": "AddHistory",
 					"target": "bookish",
 					"inlineHistory": {
@@ -4092,6 +4084,16 @@
 						"persistOverLegacy": "never",
 						"showInSummary": false
 					}
+				},
+				{
+					"class": "Mission",
+					"goal": "liberate",
+					"combatants": [
+						{ "role": "party", "side": "player" },
+						{ "role": "foes", "side": "enemy" }
+					],
+					"missionPlanOverride": "theme_luminant_light_shrine",
+					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantB" ]
 				}
 			]
 		}
@@ -4130,12 +4132,23 @@
 					"value": "5"
 				},
 				{
+					"class": "AddHistory",
+					"target": "bookish",
+					"inlineHistory": {
+						"id": "aLightintheDark_bookish",
+						"associatedAspectsThisCampaign": [ "aLightintheDark_bookish" ],
+						"persistOverLegacy": "never",
+						"showInSummary": false
+					}
+				},
+				{
 					"class": "Mission",
 					"goal": "liberate",
 					"combatants": [
 						{ "role": "party", "side": "player" },
 						{ "role": "foes", "side": "enemy" }
-					]
+					],
+					"missionPlanOverride": "theme_luminant_light_shrine"
 				}
 			]
 		}
