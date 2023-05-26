@@ -37,7 +37,7 @@
 	{
 		"template": "PICK_BY_SCORE",
 		"choose": "BY_SCORE_OPTIONAL",
-		"scoreFunction": "(FAMILY_WITH.target*10)+(SHIP_WITH.target*10)",
+		"scoreFunction": "((LOVER_WITH.target*10)+(RIVAL_WITH.target*10))+SHIP_WITH.target",
 		"fromRoles": [ "party", "maimedHero" ],
 		"notAlreadyMatchedAs": [ "target" ]
 	},
