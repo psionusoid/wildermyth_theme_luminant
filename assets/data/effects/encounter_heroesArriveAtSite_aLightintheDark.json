@@ -3914,6 +3914,16 @@
 					],
 					"missionPlanOverride": "theme_luminant_light_shrine",
 					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantA" ]
+				},
+				{
+					"class": "AddHistory",
+					"target": "bookish",
+					"inlineHistory": {
+						"id": "aLightintheDark_bookish",
+						"associatedAspectsThisCampaign": [ "aLightintheDark_bookish" ],
+						"persistOverLegacy": "never",
+						"showInSummary": false
+					}
 				}
 			]
 		}
@@ -3988,6 +3998,16 @@
 						{ "role": "foes", "side": "enemy" }
 					],
 					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantB" ]
+				},
+				{
+					"class": "AddHistory",
+					"target": "bookish",
+					"inlineHistory": {
+						"id": "aLightintheDark_bookish",
+						"associatedAspectsThisCampaign": [ "aLightintheDark_bookish" ],
+						"persistOverLegacy": "never",
+						"showInSummary": false
+					}
 				}
 			]
 		}
@@ -4062,6 +4082,16 @@
 						{ "role": "foes", "side": "enemy" }
 					],
 					"victoryEventIds": [ "missionVictory_aLightintheDark_luminantB" ]
+				},
+				{
+					"class": "AddHistory",
+					"target": "bookish",
+					"inlineHistory": {
+						"id": "aLightintheDark_bookish",
+						"associatedAspectsThisCampaign": [ "aLightintheDark_bookish" ],
+						"persistOverLegacy": "never",
+						"showInSummary": false
+					}
 				}
 			]
 		}
