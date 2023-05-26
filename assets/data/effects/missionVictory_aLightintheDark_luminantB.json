@@ -35,33 +35,34 @@
 		"aspects": [ "theme_light" ]
 	},
 	{
+		"role": "bookish",
 		"template": "PICK_BY_SCORE",
 		"choose": "BY_SCORE_OPTIONAL",
-		"scoreFunction": "((LOVER_WITH.target*10)+(RIVAL_WITH.target*10))+SHIP_WITH.target",
+		"scoreFunction": "aLightintheDark_bookish",
 		"fromRoles": [ "party", "maimedHero" ],
 		"notAlreadyMatchedAs": [ "target" ]
 	},
 	{
-		"role": "hero",
+		"role": "ship",
 		"template": "PICK_BY_SCORE",
 		"choose": "BY_SCORE_OPTIONAL",
-		"scoreFunction": "SHIP_WITH.target*10",
+		"scoreFunction": "SHIP_WITH.target",
 		"fromRoles": [ "party", "maimedHero" ],
-		"notAlreadyMatchedAs": [ "target", "volunteer" ]
+		"notAlreadyMatchedAs": [ "target", "bookish" ]
 	},
 	{
 		"role": "volunteer2",
 		"template": "PICK_BY_SCORE",
 		"choose": "BY_SCORE_OPTIONAL",
 		"scoreFunction": "0",
-		"notAlreadyMatchedAs": [ "target", "hero", "volunteer" ]
+		"notAlreadyMatchedAs": [ "target", "bookish", "ship" ]
 	},
 	{
 		"role": "volunteer3",
 		"template": "PICK_BY_SCORE",
 		"choose": "BY_SCORE_OPTIONAL",
 		"scoreFunction": "0",
-		"notAlreadyMatchedAs": [ "target", "hero", "volunteer" ]
+		"notAlreadyMatchedAs": [ "target", "bookish", "ship", "volunteer2" ]
 	}
 ],
 "outcomes": [
