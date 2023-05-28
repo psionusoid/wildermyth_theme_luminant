@@ -45,7 +45,7 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|self.ASPECT_PARAM2.humanSkin_colorSelections|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|ffffff|1.0"
 		}
 	]
 }
