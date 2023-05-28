@@ -125,7 +125,7 @@
 				"rigMode": "twoHanded"
 			},
 			{
-				"name": "ArmL_R",
+				"name": "armL_R",
 				"depth": 1201,
 				"ifNoOwnerAspect": "themeSkin_light*",
 				"rigMode": "oneHanded"
@@ -400,14 +400,14 @@
 				"rigMode": "twoHanded"
 			},
 			{
-				"name": "ArmL_L",
+				"name": "armL_L",
 				"depth": 1201,
 				"ifNoOwnerAspect": "themeSkin_light*",
 				"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
 				"rigMode": "oneHanded"
 			},
 			{
-				"name": "ArmL_R",
+				"name": "armL_R",
 				"depth": 1201,
 				"ifOwnerAspect": "theme_luminant_radiantFormUsed",
 				"ifNoOwnerAspect": "themeSkin_light*",
