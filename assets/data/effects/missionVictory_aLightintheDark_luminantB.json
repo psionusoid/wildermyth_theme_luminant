@@ -39,6 +39,7 @@
 		"template": "PICK_BY_SCORE",
 		"choose": "BY_SCORE_OPTIONAL",
 		"scoreFunction": "aLightintheDark_bookish",
+		"scoreThreshold": "1",
 		"fromRoles": [ "party", "maimedHero" ],
 		"notAlreadyMatchedAs": [ "target" ]
 	},
