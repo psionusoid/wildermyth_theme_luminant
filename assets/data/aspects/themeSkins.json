@@ -6,17 +6,28 @@
 	"invalidatesSkin": true,
 	"skinLayers": [
 		{
-			"name": "head_tattooFireM",
+			"name": "head_auraLightM_tint",
+			"tint": "hair",
 			"depth": 4052,
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_aura",
 			"rigMode": "maleHead"
 		},
 		{
-			"name": "head_tattooFireF",
+			"name": "head_auraRadiantM_tint",
+			"tint": "hair",
 			"depth": 4052,
 			"headOffset": true,
-			"ifOwnerAspect": "themePiece_fire_tattoo",
+			"ifOwnerAspect": "theme_luminant_radiantFormUsed",
+			"ifOwnerAspects": [ "themePiece_light_aura" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraLightF_tint",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
 			"rigMode": "femaleHead"
 		},
 		{

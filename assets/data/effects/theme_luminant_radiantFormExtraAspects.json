@@ -25,11 +25,6 @@
 				"merge": "replace"
 			},
 			{ "id": "humanSkin_overrideStreakValue|1.0", "value": "1", "merge": "replace" },
-			{
-				"id": "humanSkin_overrideHairColor|fcfe2f|1",
-				"value": "1",
-				"merge": "replace"
-			},
 			{ "id": "themeAbility_ranged", "value": "1" },
 			{ "id": "themeAbility_rangedNoLOS", "value": "1" },
 			{ "id": "attackRange|0|6.6|rangedNonWeapon", "value": "1" },
@@ -44,6 +39,21 @@
 			"humanSkin_overrideStreakColor|fcfe2f|1",
 			"humanSkin_overrideStreakValue|0.8"
 		]
+	},
+	{
+		"class": "Test",
+		"value": "1-self.themeSkin_lightTint",
+		"threshold": "1",
+		"onPass": {
+			"class": "Aspects",
+			"addAspects": [
+				{
+					"id": "humanSkin_overrideHairColor|fcfe2f|1",
+					"value": "1",
+					"merge": "replace"
+				}
+			]
+		}
 	}
 ]
 }

@@ -19,7 +19,6 @@
 			{ "id": "humanSkin_drawRightArmEquipmentAnyway", "value": "1" },
 			{ "id": "humanSkin_drawLeftLegEquipmentAnyway", "value": "1" },
 			{ "id": "humanSkin_drawRightLegEquipmentAnyway", "value": "1" },
-			{ "id": "humanSkin_overrideStreakColor|fcfe2f|1", "value": "1" },
 			{ "id": "humanSkin_overrideStreakValue|0.8", "value": "1" }
 		],
 		"removeAspects": [
@@ -33,6 +32,17 @@
 			"themeAbility_rangedNoLOS",
 			"themeAbility_ranged"
 		]
+	},
+	{
+		"class": "Test",
+		"value": "1-self.themeSkin_lightTint",
+		"threshold": "1",
+		"onPass": {
+			"class": "Aspects",
+			"addAspects": [
+				{ "id": "humanSkin_overrideStreakColor|fcfe2f|1", "value": "1" }
+			]
+		}
 	}
 ]
 }
