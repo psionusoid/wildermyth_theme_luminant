@@ -6,11 +6,137 @@
 	"invalidatesSkin": true,
 	"skinLayers": [
 		{
+			"name": "face_eyeLightML_tint",
+			"tint": "hair",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_tint",
+			"tint": "hair",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_tint",
+			"tint": "hair",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_tint",
+			"tint": "hair",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantM_tint",
+			"tint": "hair",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantF_tint",
+			"tint": "hair",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_R_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_tint",
+			"tint": "hair",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_R_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_tint",
+			"tint": "hair",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_tint",
+			"tint": "hair",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_R_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_tint",
+			"tint": "hair",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_R_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_tint",
+			"tint": "hair",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_R_tint",
+			"tint": "hair",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLeg"
+		},
+		{
+			"name": "legR_R_tint",
+			"tint": "hair",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLeg"
+		},
+		{
 			"name": "head_auraLightM_tint",
 			"tint": "hair",
 			"depth": 4052,
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
 			"rigMode": "maleHead"
 		},
 		{
@@ -18,12 +144,13 @@
 			"tint": "hair",
 			"depth": 4052,
 			"headOffset": true,
-			"ifOwnerAspect": "theme_luminant_radiantFormUsed",
-			"ifOwnerAspects": [ "themePiece_light_aura" ],
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
 			"rigMode": "maleHead"
 		},
 		{
 			"name": "head_auraLightF_tint",
+			"tint": "hair",
 			"depth": 4052,
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_aura",
@@ -31,24 +158,49 @@
 			"rigMode": "femaleHead"
 		},
 		{
-			"name": "replaceLegL_lava",
-			"depth": 1101,
-			"ifOwnerAspect": "themePiece_fire_leftLeg"
+			"name": "head_auraRadiantF_tint",
+			"tint": "hair",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
 		},
 		{
-			"name": "replaceLegR_lava",
-			"depth": 1101,
-			"ifOwnerAspect": "themePiece_fire_rightLeg"
+			"name": "face_eyeLightML_tint",
+			"tint": "hair",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
 		},
 		{
-			"name": "replaceArmL_lava",
-			"depth": 1201,
-			"ifOwnerAspect": "themePiece_fire_leftArm"
+			"name": "face_eyeLightFL_tint",
+			"tint": "hair",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
 		},
 		{
-			"name": "replaceArmR_lava",
-			"depth": 1201,
-			"ifOwnerAspect": "themePiece_fire_rightArm"
+			"name": "face_eyeLightMR_tint",
+			"tint": "hair",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_tint",
+			"tint": "hair",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
 		}
 	],
 	"lifespan": "all",
