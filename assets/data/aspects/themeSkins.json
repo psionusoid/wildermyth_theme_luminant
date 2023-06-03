@@ -201,6 +201,182 @@
 			"ifOwnerAspect": "themePiece_light_aura",
 			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
 			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_L_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL_R_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_L_tint",
+			"tint": "hair",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_tint",
+			"tint": "hair",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_L_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2upper_R_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_L_tint",
+			"tint": "hair",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_tint",
+			"tint": "hair",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_L_tint",
+			"tint": "hair",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_tint",
+			"tint": "hair",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_L_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR_R_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_L_tint",
+			"tint": "hair",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_tint",
+			"tint": "hair",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_L_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR2_R_tint",
+			"tint": "hair",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_L_tint",
+			"tint": "hair",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_tint",
+			"tint": "hair",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_L_tint",
+			"tint": "hair",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legL_R_tint",
+			"tint": "hair",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_L_tint",
+			"tint": "hair",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_R_tint",
+			"tint": "hair",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
 		}
 	],
 	"lifespan": "all",
