@@ -2,10 +2,6 @@
 {
 	"modId": "theme_luminant",
 	"id": "themeSkin_lightTint",
-	"effects": [
-		"theme_luminant_radiantRemoveHairOverride",
-		"theme_luminant_radiantReAddHairOverride"
-	],
 	"importance": -1,
 	"invalidatesSkin": true,
 	"skinLayers": [
@@ -389,6 +385,10 @@
 		{
 			"themePiece": "aura",
 			"applyAspect": "humanSkin_overrideStreakColor|ffffff|1.0"
+		},
+		{
+			"themePiece": "auraRadiant",
+			"applyAspect": "humanSkin_overrideHairColor|fcfe2f|0"
 		}
 	]
 }

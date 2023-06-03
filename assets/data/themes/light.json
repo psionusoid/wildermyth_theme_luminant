@@ -72,9 +72,11 @@
 				"rigMode": "femaleHead"
 			}
 		],
-		"effects": [ "theme_luminant_radiantAddHairOverride" ],
 		"extraAspects": [ "humanSkin_overrideStreakValue|1.0" ],
-		"baseThemeSkinExtraAspects": [ "humanSkin_overrideStreakColor|ffffff|1.0" ],
+		"baseThemeSkinExtraAspects": [
+			"humanSkin_overrideStreakColor|ffffff|1.0",
+			"humanSkin_overrideHairColor|fcfe2f|1"
+		],
 		"canBeAwardedRandomly": false,
 		"applyOnHeal": false
 	},
