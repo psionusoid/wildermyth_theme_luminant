@@ -2,6 +2,10 @@
 {
 	"modId": "theme_luminant",
 	"id": "themeSkin_lightTint",
+	"effects": [
+		"theme_luminant_radiantRemoveHairOverride",
+		"theme_luminant_radiantReAddHairOverride"
+	],
 	"importance": -1,
 	"invalidatesSkin": true,
 	"skinLayers": [

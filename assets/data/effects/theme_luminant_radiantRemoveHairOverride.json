@@ -1,0 +1,24 @@
+{
+"id": "theme_luminant_radiantRemoveHairOverride",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_radiantRemoveHairOverride",
+	"modId": "theme_luminant",
+	"author": "psionusoid"
+},
+"type": "ASPECT_ADDED_IMMEDIATE",
+"targets": [
+	{ "template": "SELF" }
+],
+"outcomes": [
+	{
+		"class": "Test",
+		"value": "self.themePiece_light_auraRadiant",
+		"threshold": "1",
+		"onPass": {
+			"class": "Aspects",
+			"removeAspects": [ "humanSkin_overrideHairColor|fcfe2f|1" ]
+		}
+	}
+]
+}
