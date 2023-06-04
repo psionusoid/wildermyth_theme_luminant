@@ -42,7 +42,7 @@
 	},
 	{
 		"class": "Test",
-		"value": "1-self.themeSkin_lightTint",
+		"value": "(1-self.themeSkin_lightTint)-self.themeSkin_lightCyan",
 		"threshold": "1",
 		"onPass": {
 			"class": "Aspects",
@@ -53,6 +53,21 @@
 					"merge": "replace"
 				}
 			]
+		},
+		"onFail": {
+			"class": "Test",
+			"value": "self.themeSkin_lightCyan",
+			"threshold": "1",
+			"onPass": {
+				"class": "Aspects",
+				"addAspects": [
+					{
+						"id": "humanSkin_overrideHairColor|00ffff|1",
+						"value": "1",
+						"merge": "replace"
+					}
+				]
+			}
 		}
 	}
 ]

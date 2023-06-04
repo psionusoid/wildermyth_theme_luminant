@@ -4,7 +4,7 @@ library(png)
 solid <- TRUE
 
 #the color to use for the solid color method (example: "#FFFF00")
-solid_color <- "#FFFF00"
+solid_color <- "#00FFFF"
 
 #what to add to the filename for this set of images
 file_name_modifier <- paste0("_", paste0(strsplit(solid_color, split = "")[[1]][-1], collapse = ""))

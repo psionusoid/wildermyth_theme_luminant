@@ -26,6 +26,7 @@
 			"humanSkin_overrideStreakColor|ffffff|1.0",
 			"humanSkin_overrideStreakValue|1.0",
 			"humanSkin_overrideHairColor|fcfe2f|1",
+			"humanSkin_overrideHairColor|00ffff|1",
 			"themeAbility_melee",
 			"hasRangedNoLOS",
 			"attackRange|0|6.6|rangedNonWeapon",
@@ -35,13 +36,28 @@
 	},
 	{
 		"class": "Test",
-		"value": "1-self.themeSkin_lightTint",
+		"value": "(1-self.themeSkin_lightTint)-self.themeSkin_lightCyan",
 		"threshold": "1",
 		"onPass": {
 			"class": "Aspects",
 			"addAspects": [
 				{ "id": "humanSkin_overrideStreakColor|fcfe2f|1", "value": "1" }
 			]
+		},
+		"onFail": {
+			"class": "Test",
+			"value": "self.themeSkin_lightCyan",
+			"threshold": "1",
+			"onPass": {
+				"class": "Aspects",
+				"addAspects": [
+					{
+						"id": "humanSkin_overrideStreakColor|00ffff|1",
+						"value": "1",
+						"merge": "replace"
+					}
+				]
+			}
 		}
 	}
 ]
