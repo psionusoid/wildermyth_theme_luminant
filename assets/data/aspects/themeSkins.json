@@ -10,6 +10,7 @@
 			"depth": 4250,
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
 			"rigMode": "maleHead"
 		},
 		{
@@ -17,6 +18,7 @@
 			"depth": 4250,
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
 			"rigMode": "femaleHead"
 		},
 		{
@@ -151,6 +153,7 @@
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_aura",
 			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
 			"rigMode": "maleHead"
 		},
 		{
@@ -159,6 +162,7 @@
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_aura",
 			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
 			"rigMode": "femaleHead"
 		},
 		{
@@ -357,6 +361,7 @@
 			"depth": 4250,
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
 			"rigMode": "maleHead"
 		},
 		{
@@ -365,6 +370,7 @@
 			"depth": 4250,
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
 			"rigMode": "femaleHead"
 		},
 		{
@@ -519,6 +525,7 @@
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_aura",
 			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
 			"rigMode": "maleHead"
 		},
 		{
@@ -528,6 +535,7 @@
 			"headOffset": true,
 			"ifOwnerAspect": "themePiece_light_aura",
 			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
 			"rigMode": "femaleHead"
 		},
 		{

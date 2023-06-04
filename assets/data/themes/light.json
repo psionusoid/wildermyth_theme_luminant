@@ -15,6 +15,7 @@
 				"depth": 4250,
 				"headOffset": true,
 				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "human_eyepatch" ],
 				"rigMode": "maleHead"
 			},
 			{
@@ -22,6 +23,7 @@
 				"depth": 4250,
 				"headOffset": true,
 				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "human_eyepatch" ],
 				"rigMode": "femaleHead"
 			}
 		],
@@ -323,6 +325,7 @@
 				"headOffset": true,
 				"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
 				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "human_eyepatch" ],
 				"rigMode": "maleHead"
 			},
 			{
@@ -331,6 +334,7 @@
 				"headOffset": true,
 				"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
 				"ifNoOwnerAspect": "themeSkin_light*",
+				"ifNoOwnerAspects": [ "human_eyepatch" ],
 				"rigMode": "femaleHead"
 			},
 			{
