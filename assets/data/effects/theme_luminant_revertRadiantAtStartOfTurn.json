@@ -19,20 +19,46 @@
 			{ "id": "humanSkin_drawRightArmEquipmentAnyway", "value": "1" },
 			{ "id": "humanSkin_drawLeftLegEquipmentAnyway", "value": "1" },
 			{ "id": "humanSkin_drawRightLegEquipmentAnyway", "value": "1" },
-			{ "id": "humanSkin_overrideStreakColor|fcfe2f|1", "value": "1" },
 			{ "id": "humanSkin_overrideStreakValue|0.8", "value": "1" }
 		],
 		"removeAspects": [
 			"theme_luminant_radiantFormUsed",
 			"humanSkin_overrideStreakColor|ffffff|1.0",
 			"humanSkin_overrideStreakValue|1.0",
-			"humanSkin_overrideHairColor|fcfe2f|1",
+			"humanSkin_overrideHairColor|fcf10a|1",
+			"humanSkin_overrideHairColor|00ffff|1",
 			"themeAbility_melee",
 			"hasRangedNoLOS",
 			"attackRange|0|6.6|rangedNonWeapon",
 			"themeAbility_rangedNoLOS",
 			"themeAbility_ranged"
 		]
+	},
+	{
+		"class": "Test",
+		"value": "(1-self.themeSkin_lightTint)-self.themeSkin_lightCyan",
+		"threshold": "1",
+		"onPass": {
+			"class": "Aspects",
+			"addAspects": [
+				{ "id": "humanSkin_overrideStreakColor|fcf10a|1", "value": "1" }
+			]
+		},
+		"onFail": {
+			"class": "Test",
+			"value": "self.themeSkin_lightCyan",
+			"threshold": "1",
+			"onPass": {
+				"class": "Aspects",
+				"addAspects": [
+					{
+						"id": "humanSkin_overrideStreakColor|00ffff|1",
+						"value": "1",
+						"merge": "replace"
+					}
+				]
+			}
+		}
 	}
 ]
 }
