@@ -36,7 +36,7 @@
 			"humanSkin_drawRightArmEquipmentAnyway",
 			"humanSkin_drawLeftLegEquipmentAnyway",
 			"humanSkin_drawRightLegEquipmentAnyway",
-			"humanSkin_overrideStreakColor|fcfe2f|1",
+			"humanSkin_overrideStreakColor|fcf10a|1",
 			"humanSkin_overrideStreakValue|0.8"
 		]
 	},
@@ -48,7 +48,7 @@
 			"class": "Aspects",
 			"addAspects": [
 				{
-					"id": "humanSkin_overrideHairColor|fcfe2f|1",
+					"id": "humanSkin_overrideHairColor|fcf10a|1",
 					"value": "1",
 					"merge": "replace"
 				}
