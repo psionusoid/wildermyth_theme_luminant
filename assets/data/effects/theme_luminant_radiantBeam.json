@@ -12,7 +12,7 @@
 "ability": {
 	"icon": "fireleash",
 	"category": "attackAbility",
-	"priority": "3",
+	"priority": "101",
 	"showDescriptionInTooltip": true,
 	"branchableAbilityType": "standardRanged"
 },

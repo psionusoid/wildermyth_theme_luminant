@@ -29,6 +29,7 @@
 			"humanSkin_overrideHairColor|00ffff|1",
 			"themeAbility_melee",
 			"hasRangedNoLOS",
+			"attackRange|0|2.1|melee",
 			"attackRange|0|6.6|rangedNonWeapon",
 			"themeAbility_rangedNoLOS",
 			"themeAbility_ranged"
