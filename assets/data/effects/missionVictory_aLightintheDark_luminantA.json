@@ -77,9 +77,9 @@
 					"actorSlots": [
 						{
 							"role": "target",
-							"form": "frame-grim",
+							"form": "frame-joy",
 							"equipment": {},
-							"anchor": { "x": 0.25, "y": 0.471 },
+							"anchor": { "x": 0.232, "y": 0.469 },
 							"size": 0.64171296,
 							"drawDepth": 2.5
 						},
