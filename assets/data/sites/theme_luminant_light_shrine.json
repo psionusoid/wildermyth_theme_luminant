@@ -66,25 +66,25 @@
 		"class": "MapDetail_PlaceScenery",
 		"entries": [
 			{
-				"sceneryId": "standingStone5",
+				"sceneryId": "standingStone5_theme_luminant",
 				"a": [ 25, 8 ],
 				"b": [ 24, 8 ],
 				"adjustLength": -0.3
 			},
 			{
-				"sceneryId": "standingStone7",
+				"sceneryId": "standingStone7_theme_luminant",
 				"a": [ 22, 8 ],
 				"b": [ 21, 8 ],
 				"adjustLength": -0.3
 			},
 			{
-				"sceneryId": "standingStone4",
+				"sceneryId": "standingStone4_theme_luminant",
 				"a": [ 22, 5 ],
 				"b": [ 21, 5 ],
 				"adjustLength": -0.3
 			},
 			{
-				"sceneryId": "standingStone6",
+				"sceneryId": "standingStone6_theme_luminant",
 				"a": [ 25, 5 ],
 				"b": [ 24, 5 ],
 				"adjustLength": -0.3
