@@ -69,25 +69,29 @@
 				"sceneryId": "standingStone5_theme_luminant",
 				"a": [ 27, 10 ],
 				"b": [ 26, 10 ],
-				"adjustLength": -0.3
+				"adjustLength": -0.3,
+				"flipX": "no"
 			},
 			{
 				"sceneryId": "standingStone7_theme_luminant",
 				"a": [ 24, 10 ],
 				"b": [ 23, 10 ],
-				"adjustLength": -0.3
+				"adjustLength": -0.3,
+				"flipX": "yes"
 			},
 			{
 				"sceneryId": "standingStone4_theme_luminant",
 				"a": [ 24, 7 ],
 				"b": [ 23, 7 ],
-				"adjustLength": -0.3
+				"adjustLength": -0.3,
+				"flipX": "yes"
 			},
 			{
 				"sceneryId": "standingStone6_theme_luminant",
 				"a": [ 27, 7 ],
 				"b": [ 26, 7 ],
-				"adjustLength": -0.3
+				"adjustLength": -0.3,
+				"flipX": "yes"
 			}
 		],
 		"offsetX": 29,
