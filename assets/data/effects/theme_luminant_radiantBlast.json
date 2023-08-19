@@ -98,14 +98,18 @@
 	{
 		"class": "AttackRoll",
 		"defender": "target2",
-		"attackAnimationType": "ranged",
+		"attackAnimationType": "magic",
 		"showAbilityName": "ifEnemy",
 		"particles": [
 			{
 				"script": "projectileTrailLightBeam",
 				"setPosition": "self",
-				"setPosition2": "targetTile",
-				"delay": -0.5
+				"setPosition2": "targetTile"
+			},
+			{
+				"script": "projectileTrailLightBeam",
+				"setPosition": "self",
+				"setPosition2": "target2"
 			}
 		],
 		"audioOverride": {

@@ -119,8 +119,12 @@
 			{
 				"script": "projectileTrailLightBeam",
 				"setPosition": "self",
-				"setPosition2": "targetTile",
-				"delay": -0.3
+				"setPosition2": "targetTile"
+			},
+			{
+				"script": "projectileTrailLightBeam",
+				"setPosition": "self",
+				"setPosition2": "target2"
 			}
 		],
 		"audioOverride": {
