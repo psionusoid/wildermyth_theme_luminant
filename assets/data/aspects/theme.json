@@ -9,7 +9,11 @@
 	"boostType": "ABILITY_MISC",
 	"legacyAbilityChoice": true,
 	"importance": 5,
-	"abilityRequiresOneAspectOf": [ "themePiece_light_aura" ],
+	"abilityRequiresOneAspectOf": [
+		"themePiece_light_aura",
+		"themePiece_light_leftArm",
+		"themePiece_light_rightArm"
+	],
 	"info": { "abilityDeckUsage": "upgrade", "abilityDeckIcon": "phantomflare" }
 }
 ]
