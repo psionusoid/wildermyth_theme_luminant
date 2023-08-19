@@ -9,19 +9,10 @@
 },
 "type": "ABILITY",
 "verb": "MANEUVER",
-"ability": {
-	"icon": "zealousLeap",
-	"priority": "1",
-	"showInCharacterSheet": false,
-	"extraUI": {}
-},
+"ability": { "icon": "zealousLeap", "priority": "1" },
 "targets": [
 	{
 		"template": "SELF",
-		"STUB": "Can't be pinned for the base ability, can be for the upgrade",
-		"choose": "BY_SCORE",
-		"scoreFunction": "(1-min(1,pinned))+warriorDeck_zealousLeap_upgrade",
-		"scoreThreshold": "1",
 		"cost": { "class": "ActionPoints", "actionPoints": "free" },
 		"missionFeedback": { "orientTo": "targetTile" }
 	},
