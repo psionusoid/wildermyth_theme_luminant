@@ -228,13 +228,13 @@
 							"textSlots": [
 								{
 									"textSourceFile": "deathChoice_luminantTheme",
-									"textKey": "~02~choice_flee~panel_001~1_hero",
+									"textKey": "~02~choice_flee~panel_001~1_npc",
 									"style": "thought",
-									"pointerOwner": "hero",
+									"pointerOwner": "npc",
 									"location": "topRight",
-									"padXFraction": 0.05,
-									"padYFraction": 0.037,
-									"widthFraction": 0.71555555,
+									"padXFraction": 0.047,
+									"padYFraction": 0.04,
+									"widthFraction": 0.36061028,
 									"shrinkToFitText": true
 								},
 								{
@@ -414,7 +414,7 @@
 						{
 							"class": "comicNode_Panel",
 							"panel": {
-								"size": "threeFifths",
+								"size": "threeFourths",
 								"showNameTags": false,
 								"bgAuto": "atSite",
 								"actorSlots": [
@@ -422,18 +422,60 @@
 										"role": "npc",
 										"form": "frame-hit",
 										"facing": "left",
-										"anchor": { "x": 0.46602857, "y": 0.439 },
+										"anchor": { "x": 0.508, "y": 0.435 },
 										"size": 0.8509,
-										"head": { "rotate": -10.325, "scaleY": 1 }
+										"head": { "rotate": 1.261, "scaleY": 1 }
 									},
 									{
 										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
 										"role": null,
 										"focus": "foot",
-										"anchor": { "x": 0.36825714, "y": 0.792 },
+										"anchor": { "x": 0.39532974, "y": 0.792 },
 										"size": 0.5,
 										"nameTag": "none",
 										"color": { "r": "0.09429824", "g": "0.09429824", "b": "0.09429824", "a": "0.75657892" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.128, "y": 0.459 },
+										"size": 0.6304,
+										"drawDepth": 0,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "0.81578946" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.876, "y": 0.296 },
+										"size": 0.7208,
+										"drawDepth": 0,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "0.72149122" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.905, "y": 0.342 },
+										"size": 1.7482,
+										"drawDepth": -1,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.46271929" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.106, "y": 0.467 },
+										"size": 1.7482,
+										"drawDepth": -1,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.46271929" }
 									}
 								],
 								"textSlots": [
@@ -507,86 +549,6 @@
 									}
 								]
 							}
-						},
-						{
-							"class": "comicNode_Panel",
-							"panel": {
-								"size": "twoThirds",
-								"showNameTags": false,
-								"bgAuto": "atSite",
-								"actorSlots": [
-									{
-										"role": "hero",
-										"form": "frame-hit",
-										"anchor": { "x": 0.162, "y": 0.462 },
-										"size": 0.5962,
-										"head": { "rotate": -17.926, "scaleY": 1 },
-										"color": { "r": "0.70877153", "g": "0.70877153", "b": "0.70877153", "a": "1" }
-									},
-									{
-										"assetSpec": "comic:smokeFogLayer.png",
-										"role": null,
-										"focus": "foot",
-										"anchor": { "x": 0.62243074, "y": 0.05 },
-										"size": 0.3981,
-										"drawDepth": 0,
-										"nameTag": "none",
-										"color": { "r": "1", "g": "1", "b": "1", "a": "0.61052591" }
-									},
-									{
-										"role": "attacker",
-										"facing": "left",
-										"equipment": {},
-										"focus": "foot",
-										"anchor": { "x": 0.961, "y": -0.019 },
-										"size": 0.2791,
-										"drawDepth": 1.5,
-										"color": { "r": "0.70877153", "g": "0.70877153", "b": "0.70877153", "a": "1" }
-									},
-									{
-										"role": "hero2",
-										"form": "frame-surprised",
-										"equipment": {},
-										"anchor": { "x": 0.53, "y": 0.257 },
-										"size": 0.1701,
-										"drawDepth": 1.75,
-										"nameTag": "none",
-										"head": { "rotate": -15.025, "scaleY": -1 },
-										"color": { "r": "0.70877153", "g": "0.70877153", "b": "0.70877153", "a": "1" }
-									},
-									{
-										"assetSpec": "comic:smokeRising.png",
-										"role": null,
-										"focus": "foot",
-										"anchor": { "x": 0.737, "y": 0.359 },
-										"drawDepth": 1.625,
-										"nameTag": "none",
-										"color": { "r": "0.70175439", "g": "0.70175439", "b": "0.70175439", "a": "0.61052591" }
-									}
-								],
-								"textSlots": [
-									{
-										"textSourceFile": "deathChoice_luminantTheme",
-										"textKey": "~05~player_chose_flee~panel_003~1_hero",
-										"style": "narration",
-										"pointerOwner": "hero",
-										"padXFraction": 0.077,
-										"padYFraction": 0.078,
-										"widthFraction": 0.60554373,
-										"shrinkToFitText": true
-									},
-									{
-										"textSourceFile": "deathChoice_luminantTheme",
-										"textKey": "~05~player_chose_flee~panel_003~2_hero2",
-										"pointerOwner": "hero2",
-										"padXFraction": 0.313,
-										"padYFraction": 0.396,
-										"widthFraction": 0.47741932,
-										"shrinkToFitText": true,
-										"pointerAdjust": { "pointerOrientH": "onLeft" }
-									}
-								]
-							}
 						}
 					]
 				},
@@ -602,7 +564,7 @@
 					"class": "AddHistory",
 					"inlineHistory": {
 						"id": "deathChoice_luminantTheme",
-						"associatedAspects": [ "human_dissipated_debuff" ],
+						"associatedAspects": [ "human_luminant_vitality_debuff" ],
 						"persistOverLegacy": "never"
 					}
 				},
@@ -888,7 +850,7 @@
 								"actorSlots": [
 									{
 										"role": "npc",
-										"form": "frame-happy",
+										"form": "frame-interested",
 										"anchor": { "x": 0.541, "y": 0.431 },
 										"size": 0.6,
 										"drawDepth": 1,
