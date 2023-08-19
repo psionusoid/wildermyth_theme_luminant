@@ -34,7 +34,23 @@
 	}
 ],
 "outcomes": [
-	{ "class": "MoveEntity", "directlyToTile": "targetTile" },
+	{
+		"class": "AttackRoll",
+		"defender": null,
+		"attackAnimationType": "none",
+		"stopBlockingTime": "noBlocking",
+		"minimumBlockTime": "600",
+		"particles": [
+			{ "script": "flashcone2", "setPosition": "self" },
+			{ "script": "flashcone2", "setPosition": "targetTile" }
+		],
+		"audioOverride": { "attackStartCue": "Characters/DefaultHuman/Ability_Protector" },
+		"always": {
+			"class": "MoveEntity",
+			"directlyToTile": "targetTile",
+			"animationType": "none"
+		}
+	},
 	{
 		"class": "Test",
 		"value": "self.warriorDeck_zealousLeap_upgrade",
