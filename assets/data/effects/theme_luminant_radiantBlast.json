@@ -120,7 +120,7 @@
 			"outcomes": [
 				{
 					"class": "Damage",
-					"amount": "(3+1d2)+floor((attacker.PHYSICAL_DAMAGE_BONUS+attacker.POTENCY))",
+					"amount": "(3+1d3)+floor((attacker.PHYSICAL_DAMAGE_BONUS+attacker.POTENCY))",
 					"type": "MAGIC",
 					"pierce": "0",
 					"overrideStuntDamage": "4",
