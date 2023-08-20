@@ -4,5 +4,17 @@
 	"id": "aLightintheDark_bookish",
 	"importance": -1,
 	"lifespan": "all"
+},
+{
+	"modId": "theme_luminant",
+	"id": "theme_luminant_previouslyMissingArm",
+	"importance": -1,
+	"lifespan": "all"
+},
+{
+	"modId": "theme_luminant",
+	"id": "theme_luminant_previouslyMissingLeg",
+	"importance": -1,
+	"lifespan": "all"
 }
 ]

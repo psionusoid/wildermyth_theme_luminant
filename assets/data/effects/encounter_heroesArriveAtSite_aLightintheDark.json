@@ -3354,7 +3354,7 @@
 										"role": "volunteer",
 										"form": "frame-talk",
 										"equipment": {},
-										"anchor": { "x": 0.846, "y": 0.462 },
+										"anchor": { "x": 0.85, "y": 0.424 },
 										"size": 0.3282881,
 										"drawDepth": 6,
 										"nameTag": "none",
@@ -3528,7 +3528,7 @@
 										"pointerOwner": "volunteer",
 										"padXFraction": 0.887,
 										"padYFraction": 0.348,
-										"widthFraction": 0.068574645,
+										"widthFraction": 0.100668095,
 										"shrinkToFitText": true
 									}
 								]
@@ -3545,7 +3545,7 @@
 										"role": "volunteer",
 										"facing": "left",
 										"equipment": {},
-										"anchor": { "x": 0.877, "y": 0.462 },
+										"anchor": { "x": 0.876, "y": 0.416 },
 										"size": 0.3282881,
 										"drawDepth": 6,
 										"nameTag": "none",
@@ -3870,37 +3870,64 @@
 					]
 				},
 				{
+					"class": "Test",
+					"value": "2-(humanSkin_naturalRightHand+humanSkin_naturalLeftHand)",
+					"threshold": "1",
+					"onPass": {
+						"class": "AddHistory",
+						"inlineHistory": {
+							"id": "theme_luminant_previouslyMissingArm",
+							"associatedAspectsThisCampaign": [ "theme_luminant_previouslyMissingArm" ],
+							"persistOverLegacy": "never",
+							"showInSummary": false
+						}
+					}
+				},
+				{
+					"class": "Test",
+					"value": "2-(humanSkin_naturalRightLeg+humanSkin_naturalLeftLeg)",
+					"threshold": "1",
+					"onPass": {
+						"class": "AddHistory",
+						"inlineHistory": {
+							"id": "theme_luminant_previouslyMissingLeg",
+							"associatedAspectsThisCampaign": [ "theme_luminant_previouslyMissingLeg" ],
+							"persistOverLegacy": "never",
+							"showInSummary": false
+						}
+					}
+				},
+				{
 					"class": "ApplyTheme",
-					"target": "volunteer",
 					"theme": "light",
 					"piece": "aura",
 					"historyTextKey": "encounter_heroesArriveAtSite_aLightintheDark.0.playerChose_one.1addTheme.light.aura.replaceInjuries",
 					"replaceInjuredLimbs": true
 				},
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "leftArm" },
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "rightArm" },
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "leftLeg" },
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "rightLeg" },
 				{
 					"class": "ApplyTheme",
-					"target": "volunteer",
 					"theme": "light",
 					"piece": "leftArmLatent",
 					"replaceInjuredLimbs": true
 				},
 				{
 					"class": "ApplyTheme",
-					"target": "volunteer",
 					"theme": "light",
 					"piece": "rightArmLatent",
 					"replaceInjuredLimbs": true
 				},
 				{
 					"class": "ApplyTheme",
-					"target": "volunteer",
 					"theme": "light",
 					"piece": "leftLegLatent",
 					"replaceInjuredLimbs": true
 				},
 				{
 					"class": "ApplyTheme",
-					"target": "volunteer",
 					"theme": "light",
 					"piece": "rightLegLatent",
 					"replaceInjuredLimbs": true
@@ -3956,12 +3983,44 @@
 					]
 				},
 				{
+					"class": "Test",
+					"value": "2-(humanSkin_naturalRightHand+humanSkin_naturalLeftHand)",
+					"threshold": "1",
+					"onPass": {
+						"class": "AddHistory",
+						"inlineHistory": {
+							"id": "theme_luminant_previouslyMissingArm",
+							"associatedAspectsThisCampaign": [ "theme_luminant_previouslyMissingArm" ],
+							"persistOverLegacy": "never",
+							"showInSummary": false
+						}
+					}
+				},
+				{
+					"class": "Test",
+					"value": "2-(humanSkin_naturalRightLeg+humanSkin_naturalLeftLeg)",
+					"threshold": "1",
+					"onPass": {
+						"class": "AddHistory",
+						"inlineHistory": {
+							"id": "theme_luminant_previouslyMissingLeg",
+							"associatedAspectsThisCampaign": [ "theme_luminant_previouslyMissingLeg" ],
+							"persistOverLegacy": "never",
+							"showInSummary": false
+						}
+					}
+				},
+				{
 					"class": "ApplyTheme",
 					"target": "volunteer2",
 					"theme": "light",
 					"piece": "aura",
 					"replaceInjuredLimbs": true
 				},
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "leftArm" },
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "rightArm" },
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "leftLeg" },
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "rightLeg" },
 				{
 					"class": "ApplyTheme",
 					"target": "volunteer2",
@@ -4041,12 +4100,44 @@
 					]
 				},
 				{
+					"class": "Test",
+					"value": "2-(humanSkin_naturalRightHand+humanSkin_naturalLeftHand)",
+					"threshold": "1",
+					"onPass": {
+						"class": "AddHistory",
+						"inlineHistory": {
+							"id": "theme_luminant_previouslyMissingArm",
+							"associatedAspectsThisCampaign": [ "theme_luminant_previouslyMissingArm" ],
+							"persistOverLegacy": "never",
+							"showInSummary": false
+						}
+					}
+				},
+				{
+					"class": "Test",
+					"value": "2-(humanSkin_naturalRightLeg+humanSkin_naturalLeftLeg)",
+					"threshold": "1",
+					"onPass": {
+						"class": "AddHistory",
+						"inlineHistory": {
+							"id": "theme_luminant_previouslyMissingLeg",
+							"associatedAspectsThisCampaign": [ "theme_luminant_previouslyMissingLeg" ],
+							"persistOverLegacy": "never",
+							"showInSummary": false
+						}
+					}
+				},
+				{
 					"class": "ApplyTheme",
 					"target": "volunteer3",
 					"theme": "light",
 					"piece": "aura",
 					"replaceInjuredLimbs": true
 				},
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "leftArm" },
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "rightArm" },
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "leftLeg" },
+				{ "class": "RemoveTheme", "specificTheme": "light", "specificPiece": "rightLeg" },
 				{
 					"class": "ApplyTheme",
 					"target": "volunteer3",
@@ -4162,56 +4253,69 @@
 					"baseTag": "human",
 					"inRelationTo": "volunteer",
 					"cloneRelatedEntity": true,
-					"aspectValues": { "theme_luminant_radiantFormUsed": "1" }
+					"aspectValues": null
 				},
 				"additionalOutcome": {
 					"class": "DoAll",
 					"outcomes": [
 						{
 							"class": "ApplyTheme",
-							"target": "npc",
 							"theme": "light",
 							"piece": "auraRadiant",
 							"replaceInjuredLimbs": true
 						},
 						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "leftArmLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "rightArmLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "leftLegLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "rightLegLatent"
+						},
+						{
 							"class": "ApplyTheme",
-							"target": "npc",
 							"theme": "light",
 							"piece": "leftEye",
 							"replaceInjuredLimbs": true
 						},
 						{
 							"class": "ApplyTheme",
-							"target": "npc",
 							"theme": "light",
 							"piece": "rightEye",
 							"replaceInjuredLimbs": true
 						},
 						{
 							"class": "ApplyTheme",
-							"target": "npc",
 							"theme": "light",
 							"piece": "leftArm",
 							"replaceInjuredLimbs": true
 						},
 						{
 							"class": "ApplyTheme",
-							"target": "npc",
 							"theme": "light",
 							"piece": "rightArm",
 							"replaceInjuredLimbs": true
 						},
 						{
 							"class": "ApplyTheme",
-							"target": "npc",
 							"theme": "light",
 							"piece": "leftLeg",
 							"replaceInjuredLimbs": true
 						},
 						{
 							"class": "ApplyTheme",
-							"target": "npc",
 							"theme": "light",
 							"piece": "rightLeg",
 							"replaceInjuredLimbs": true
@@ -4223,15 +4327,149 @@
 		{
 			"role": "npc2",
 			"createEntity": {
-				"query": { "baseTag": "human" },
-				"control": "none"
+				"query": { "baseTag": "human", "inRelationTo": "volunteer2", "cloneRelatedEntity": true },
+				"control": "none",
+				"additionalOutcome": {
+					"class": "DoAll",
+					"outcomes": [
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "auraRadiant",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "leftArmLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "rightArmLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "leftLegLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "rightLegLatent"
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "leftEye",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "rightEye",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "leftArm",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "rightArm",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "leftLeg",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "rightLeg",
+							"replaceInjuredLimbs": true
+						}
+					]
+				}
 			}
 		},
 		{
 			"role": "npc3",
 			"createEntity": {
-				"query": { "baseTag": "human" },
-				"control": "none"
+				"query": { "baseTag": "human", "inRelationTo": "volunteer3", "cloneRelatedEntity": true },
+				"control": "none",
+				"additionalOutcome": {
+					"class": "DoAll",
+					"outcomes": [
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "auraRadiant",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "leftArmLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "rightArmLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "leftLegLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"specificTheme": "light",
+							"specificPiece": "rightLegLatent"
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "leftEye",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "rightEye",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "leftArm",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "rightArm",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "leftLeg",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"theme": "light",
+							"piece": "rightLeg",
+							"replaceInjuredLimbs": true
+						}
+					]
+				}
 			}
 		},
 		{
