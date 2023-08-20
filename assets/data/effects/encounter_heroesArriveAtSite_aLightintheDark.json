@@ -3968,14 +3968,999 @@
 						{
 							"class": "comicNode_Panel",
 							"panel": {
+								"size": "full",
+								"showNameTags": false,
 								"actorSlots": [
-									{ "role": "volunteer2" }
+									{
+										"preTransformation": true,
+										"role": "volunteer2",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.527, "y": 0.45 },
+										"size": 0.39860573,
+										"drawDepth": 6,
+										"head": { "rotate": 5.19 },
+										"color": { "r": "0.96039975", "g": "0.97063851", "b": "0.64299786", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-happy",
+										"equipment": {},
+										"anchor": { "x": 0.21, "y": 0.452 },
+										"size": 0.41932583,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": 1 },
+										"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.06, "y": 0.488 },
+										"size": 0.4137643,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.541, "y": 0.545 },
+										"size": 0.43295392,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.646, "y": 0.526 },
+										"size": 0.43242982,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.821, "y": 0.476 },
+										"size": 0.45863765,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.954, "y": 0.448 },
+										"size": 0.45863765,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.87, "y": 0.862 },
+										"size": 0.786236,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.43181819" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.509, "y": 0.65 },
+										"size": 0.72779244,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.644, "y": 0.533 },
+										"size": 0.72779244,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.832, "y": 0.721 },
+										"size": 0.72779244,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.969, "y": 0.614 },
+										"size": 0.72779244,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFourths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.242, "y": 0.536 },
+										"size": 0.5007927,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.18, "y": 0.542 },
+										"size": 0.5001865,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.66, "y": 0.453 },
+										"size": 0.53050077,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.822, "y": 0.494 },
+										"size": 0.53050077,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.646, "y": 0.869 },
+										"size": 0.9094299,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.265625" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.2, "y": 0.658 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.162, "y": 0.672 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.695, "y": 0.74 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.844, "y": 0.697 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"preTransformation": true,
+										"role": "volunteer2",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.562, "y": 0.385 },
+										"size": 0.46106255,
+										"drawDepth": 6,
+										"head": { "rotate": 13.325 },
+										"foot": { "rotate": 2.831 },
+										"color": { "r": "0.98872507", "g": "1", "b": "0.6392045", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFifths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.252, "y": 0.504 },
+										"size": 0.3848279,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.19050929, "y": 0.53227437 },
+										"size": 0.3843621,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.65474534, "y": 0.46388343 },
+										"size": 0.40765676,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.8114251, "y": 0.49538937 },
+										"size": 0.40765676,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.64120513, "y": 0.7835535 },
+										"size": 0.69884014,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.265625" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.20985243, "y": 0.6214131 },
+										"size": 0.646893,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.17310044, "y": 0.6321712 },
+										"size": 0.646893,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.6885959, "y": 0.68442506 },
+										"size": 0.646893,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.8327025, "y": 0.6513822 },
+										"size": 0.646893,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"role": "npc2",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.532, "y": 0.463 },
+										"size": 0.35424975,
+										"head": { "rotate": 9.588 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFourths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.223, "y": 0.649 },
+										"size": 0.5007927,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.174, "y": 0.69 },
+										"size": 0.5001865,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.636, "y": 0.603 },
+										"size": 0.53050077,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.816, "y": 0.642 },
+										"size": 0.53050077,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.64, "y": 1.017 },
+										"size": 0.9094299,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.265625" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.194, "y": 0.806 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.156, "y": 0.82 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.679, "y": 0.885 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.838, "y": 0.845 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"role": "volunteer2",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.488, "y": 0.57 },
+										"size": 0.46106255,
+										"drawDepth": 6,
+										"head": { "rotate": -24.97 },
+										"foot": {},
+										"color": { "r": "0.97104007", "g": "0.97498065", "b": "0.84888297", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"animation": { "overridePanelOrder": 1 },
+								"actorSlots": [
+									{
+										"role": "volunteer2",
+										"form": "frame-talk",
+										"equipment": {},
+										"anchor": { "x": 0.85, "y": 0.424 },
+										"size": 0.3282881,
+										"drawDepth": 6,
+										"nameTag": "none",
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.85871738", "g": "0.8635031", "b": "0.71036053", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.397, "y": 0.387 },
+										"size": 0.33824578,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.307, "y": 0.371 },
+										"size": 0.3337596,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "hero3",
+										"equipment": {},
+										"anchor": { "x": 0.213, "y": 0.401 },
+										"size": 0.3282881,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "hero4",
+										"equipment": {},
+										"anchor": { "x": 0.055, "y": 0.429 },
+										"size": 0.31710544,
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "hero5",
+										"equipment": {},
+										"anchor": { "x": 0.13, "y": 0.426 },
+										"size": 0.31710544,
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.65, "y": 0.447 },
+										"size": 0.34923875,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.733, "y": 0.445 },
+										"size": 0.348816,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.876, "y": 0.39 },
+										"size": 0.36995634,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.976, "y": 0.431 },
+										"size": 0.36995634,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.914, "y": 0.703 },
+										"size": 0.6342109,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.16477273" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.624, "y": 0.531 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.736, "y": 0.389 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.884, "y": 0.589 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.995, "y": 0.505 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.163, "y": -0.133 },
+										"size": 2.4206,
+										"drawDepth": 0.95,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.41903409" }
+									}
 								],
 								"textSlots": [
 									{
 										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
-										"textKey": "~07~player_chose_two~panel_001~1_volunteer2",
-										"pointerOwner": "volunteer2"
+										"textKey": "~07~player_chose_two~panel_005~1_ship2",
+										"pointerOwner": "ship2",
+										"padXFraction": 0.202,
+										"padYFraction": 0.114,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
+										"textKey": "~07~player_chose_two~panel_005~2_volunteer2",
+										"pointerOwner": "volunteer2",
+										"padXFraction": 0.887,
+										"padYFraction": 0.348,
+										"widthFraction": 0.100668095,
+										"shrinkToFitText": true
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"animation": { "overridePanelOrder": 1 },
+								"actorSlots": [
+									{
+										"role": "volunteer2",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.876, "y": 0.416 },
+										"size": 0.3282881,
+										"drawDepth": 6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.74923652", "g": "0.75117427", "b": "0.68916661", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-grim",
+										"equipment": {},
+										"anchor": { "x": 0.43, "y": 0.382 },
+										"size": 0.33824578,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.342, "y": 0.377 },
+										"size": 0.3337596,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "hero3",
+										"form": "frame-angry",
+										"equipment": {},
+										"anchor": { "x": 0.25, "y": 0.404 },
+										"size": 0.3282881,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "hero4",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.09, "y": 0.424 },
+										"size": 0.31710544,
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "hero5",
+										"form": "frame-angry",
+										"equipment": {},
+										"anchor": { "x": 0.169, "y": 0.412 },
+										"size": 0.31710544,
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.683, "y": 0.442 },
+										"size": 0.34923875,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.766, "y": 0.44 },
+										"size": 0.348816,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.909, "y": 0.385 },
+										"size": 0.36995634,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 1.009, "y": 0.426 },
+										"size": 0.36995634,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.947, "y": 0.698 },
+										"size": 0.6342109,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.16477273" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.657, "y": 0.526 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.769, "y": 0.384 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.917, "y": 0.584 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 1.028, "y": 0.5 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.202, "y": -0.093 },
+										"size": 2.3634,
+										"drawDepth": 0.95,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.41193181" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
+										"textKey": "~07~player_chose_two~panel_006~1_action",
+										"style": "action",
+										"padXFraction": 0.026,
+										"padYFraction": 0.072,
+										"shrinkToFitText": true
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"role": "volunteer2",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.573, "y": 0.382 },
+										"size": 0.29586983,
+										"drawDepth": 6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-grim",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.42, "y": 0.319 },
+										"size": 0.30484417,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.312, "y": 0.343 },
+										"size": 0.300801,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "hero3",
+										"form": "frame-rage",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.206, "y": 0.343 },
+										"size": 0.29586983,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "hero4",
+										"form": "frame-angry",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.043, "y": 0.33 },
+										"size": 0.28579143,
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "hero5",
+										"form": "frame-rage",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.13, "y": 0.368 },
+										"size": 0.28579143,
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.66, "y": 0.386 },
+										"size": 0.3147516,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "0.70028406", "g": "0.70028406", "b": "0.70028406", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.735, "y": 0.385 },
+										"size": 0.3143706,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "0.75852275", "g": "0.75852275", "b": "0.75852275", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.864, "y": 0.336 },
+										"size": 0.33342335,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "0.57386363", "g": "0.57386363", "b": "0.57386363", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.954, "y": 0.373 },
+										"size": 0.33342335,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "0.71022725", "g": "0.71022725", "b": "0.71022725", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.899, "y": 0.617 },
+										"size": 0.57158285,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.07102273" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.213, "y": -0.025 },
+										"size": 2.5926,
+										"drawDepth": 0.95,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
+										"textKey": "~07~player_chose_two~panel_007~1_hero3",
+										"pointerOwner": "hero3",
+										"padXFraction": 0.086,
+										"padYFraction": 0.143,
+										"shrinkToFitText": true
 									}
 								]
 							}
@@ -4085,14 +5070,999 @@
 						{
 							"class": "comicNode_Panel",
 							"panel": {
+								"size": "full",
+								"showNameTags": false,
 								"actorSlots": [
-									{ "role": "volunteer3" }
+									{
+										"preTransformation": true,
+										"role": "volunteer3",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.527, "y": 0.45 },
+										"size": 0.39860573,
+										"drawDepth": 6,
+										"head": { "rotate": 5.19 },
+										"color": { "r": "0.96039975", "g": "0.97063851", "b": "0.64299786", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-happy",
+										"equipment": {},
+										"anchor": { "x": 0.21, "y": 0.452 },
+										"size": 0.41932583,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": 1 },
+										"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.06, "y": 0.488 },
+										"size": 0.4137643,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.541, "y": 0.545 },
+										"size": 0.43295392,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.646, "y": 0.526 },
+										"size": 0.43242982,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.821, "y": 0.476 },
+										"size": 0.45863765,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.954, "y": 0.448 },
+										"size": 0.45863765,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.87, "y": 0.862 },
+										"size": 0.786236,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.43181819" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.509, "y": 0.65 },
+										"size": 0.72779244,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.644, "y": 0.533 },
+										"size": 0.72779244,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.832, "y": 0.721 },
+										"size": 0.72779244,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.969, "y": 0.614 },
+										"size": 0.72779244,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFourths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.242, "y": 0.536 },
+										"size": 0.5007927,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.18, "y": 0.542 },
+										"size": 0.5001865,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.66, "y": 0.453 },
+										"size": 0.53050077,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.822, "y": 0.494 },
+										"size": 0.53050077,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.646, "y": 0.869 },
+										"size": 0.9094299,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.265625" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.2, "y": 0.658 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.162, "y": 0.672 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.695, "y": 0.74 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.844, "y": 0.697 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"preTransformation": true,
+										"role": "volunteer3",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.562, "y": 0.385 },
+										"size": 0.46106255,
+										"drawDepth": 6,
+										"head": { "rotate": 13.325 },
+										"foot": { "rotate": 2.831 },
+										"color": { "r": "0.98872507", "g": "1", "b": "0.6392045", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFifths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.252, "y": 0.504 },
+										"size": 0.3848279,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.19050929, "y": 0.53227437 },
+										"size": 0.3843621,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.65474534, "y": 0.46388343 },
+										"size": 0.40765676,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.8114251, "y": 0.49538937 },
+										"size": 0.40765676,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.64120513, "y": 0.7835535 },
+										"size": 0.69884014,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.265625" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.20985243, "y": 0.6214131 },
+										"size": 0.646893,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.17310044, "y": 0.6321712 },
+										"size": 0.646893,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.6885959, "y": 0.68442506 },
+										"size": 0.646893,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.8327025, "y": 0.6513822 },
+										"size": 0.646893,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+									},
+									{
+										"role": "npc3",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.532, "y": 0.463 },
+										"size": 0.35424975,
+										"head": { "rotate": 9.588 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFourths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.223, "y": 0.649 },
+										"size": 0.5007927,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"foot": { "rotate": 0 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.174, "y": 0.69 },
+										"size": 0.5001865,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.636, "y": 0.603 },
+										"size": 0.53050077,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.816, "y": 0.642 },
+										"size": 0.53050077,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.64, "y": 1.017 },
+										"size": 0.9094299,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.265625" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.194, "y": 0.806 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.156, "y": 0.82 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.679, "y": 0.885 },
+										"size": 0.84182894,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.838, "y": 0.845 },
+										"size": 0.84182894,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									},
+									{
+										"role": "volunteer3",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.488, "y": 0.57 },
+										"size": 0.46106255,
+										"drawDepth": 6,
+										"head": { "rotate": -24.97 },
+										"foot": {},
+										"color": { "r": "0.97104007", "g": "0.97498065", "b": "0.84888297", "a": "1" }
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"animation": { "overridePanelOrder": 1 },
+								"actorSlots": [
+									{
+										"role": "volunteer3",
+										"form": "frame-talk",
+										"equipment": {},
+										"anchor": { "x": 0.85, "y": 0.424 },
+										"size": 0.3282881,
+										"drawDepth": 6,
+										"nameTag": "none",
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.85871738", "g": "0.8635031", "b": "0.71036053", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.397, "y": 0.387 },
+										"size": 0.33824578,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.307, "y": 0.371 },
+										"size": 0.3337596,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "hero3",
+										"equipment": {},
+										"anchor": { "x": 0.213, "y": 0.401 },
+										"size": 0.3282881,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "hero4",
+										"equipment": {},
+										"anchor": { "x": 0.055, "y": 0.429 },
+										"size": 0.31710544,
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"role": "hero5",
+										"equipment": {},
+										"anchor": { "x": 0.13, "y": 0.426 },
+										"size": 0.31710544,
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.81582397", "g": "0.82068574", "b": "0.66510975", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.65, "y": 0.447 },
+										"size": 0.34923875,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.733, "y": 0.445 },
+										"size": 0.348816,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.876, "y": 0.39 },
+										"size": 0.36995634,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.976, "y": 0.431 },
+										"size": 0.36995634,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.914, "y": 0.703 },
+										"size": 0.6342109,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.16477273" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.624, "y": 0.531 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.736, "y": 0.389 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.884, "y": 0.589 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.995, "y": 0.505 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.20738636" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.163, "y": -0.133 },
+										"size": 2.4206,
+										"drawDepth": 0.95,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.41903409" }
+									}
 								],
 								"textSlots": [
 									{
 										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
-										"textKey": "~08~player_chose_three~panel_001~1_volunteer3",
-										"pointerOwner": "volunteer3"
+										"textKey": "~08~player_chose_three~panel_005~1_friend",
+										"pointerOwner": "friend",
+										"padXFraction": 0.202,
+										"padYFraction": 0.114,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
+										"textKey": "~08~player_chose_three~panel_005~2_volunteer3",
+										"pointerOwner": "volunteer3",
+										"padXFraction": 0.887,
+										"padYFraction": 0.348,
+										"widthFraction": 0.100668095,
+										"shrinkToFitText": true
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"animation": { "overridePanelOrder": 1 },
+								"actorSlots": [
+									{
+										"role": "volunteer3",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.876, "y": 0.416 },
+										"size": 0.3282881,
+										"drawDepth": 6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.74923652", "g": "0.75117427", "b": "0.68916661", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-grim",
+										"equipment": {},
+										"anchor": { "x": 0.43, "y": 0.382 },
+										"size": 0.33824578,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"equipment": {},
+										"anchor": { "x": 0.342, "y": 0.377 },
+										"size": 0.3337596,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "hero3",
+										"form": "frame-angry",
+										"equipment": {},
+										"anchor": { "x": 0.25, "y": 0.404 },
+										"size": 0.3282881,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "hero4",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.09, "y": 0.424 },
+										"size": 0.31710544,
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"role": "hero5",
+										"form": "frame-angry",
+										"equipment": {},
+										"anchor": { "x": 0.169, "y": 0.412 },
+										"size": 0.31710544,
+										"head": { "scaleY": -1 },
+										"color": { "r": "0.74118316", "g": "0.74476206", "b": "0.63023794", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.683, "y": 0.442 },
+										"size": 0.34923875,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.766, "y": 0.44 },
+										"size": 0.348816,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.909, "y": 0.385 },
+										"size": 0.36995634,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 1.009, "y": 0.426 },
+										"size": 0.36995634,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.947, "y": 0.698 },
+										"size": 0.6342109,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.16477273" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.657, "y": 0.526 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.769, "y": 0.384 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.917, "y": 0.584 },
+										"size": 0.5870679,
+										"drawDepth": 11,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 1.028, "y": 0.5 },
+										"size": 0.5870679,
+										"drawDepth": 4,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.12215909" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.202, "y": -0.093 },
+										"size": 2.3634,
+										"drawDepth": 0.95,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.41193181" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
+										"textKey": "~08~player_chose_three~panel_006~1_action",
+										"style": "action",
+										"padXFraction": 0.026,
+										"padYFraction": 0.072,
+										"shrinkToFitText": true
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"role": "volunteer3",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.573, "y": 0.382 },
+										"size": 0.29586983,
+										"drawDepth": 6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "bookish",
+										"form": "frame-grim",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.42, "y": 0.319 },
+										"size": 0.30484417,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"head": { "rotate": 0.756, "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "snark",
+										"form": "frame-interested",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.312, "y": 0.343 },
+										"size": 0.300801,
+										"drawDepth": 2.6,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "hero3",
+										"form": "frame-rage",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.206, "y": 0.343 },
+										"size": 0.29586983,
+										"drawDepth": 3,
+										"nameTag": "none",
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "hero4",
+										"form": "frame-angry",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.043, "y": 0.33 },
+										"size": 0.28579143,
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"role": "hero5",
+										"form": "frame-rage",
+										"facing": "left",
+										"equipment": { "mode": "leaveEquipment" },
+										"anchor": { "x": 0.13, "y": 0.368 },
+										"size": 0.28579143,
+										"head": { "scaleY": 1 },
+										"color": { "r": "0.68323863", "g": "0.68323863", "b": "0.68323863", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone5.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.66, "y": 0.386 },
+										"size": 0.3147516,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "0.70028406", "g": "0.70028406", "b": "0.70028406", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.735, "y": 0.385 },
+										"size": 0.3143706,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "0.75852275", "g": "0.75852275", "b": "0.75852275", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone7.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.864, "y": 0.336 },
+										"size": 0.33342335,
+										"drawDepth": 10,
+										"nameTag": "none",
+										"color": { "r": "0.57386363", "g": "0.57386363", "b": "0.57386363", "a": "1" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.954, "y": 0.373 },
+										"size": 0.33342335,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "0.71022725", "g": "0.71022725", "b": "0.71022725", "a": "1" }
+									},
+									{
+										"assetSpec": "comic:lightBeam1.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.899, "y": 0.617 },
+										"size": 0.57158285,
+										"drawDepth": 5.5,
+										"nameTag": "none",
+										"color": { "r": "0.99559343", "g": "1", "b": "0.8892045", "a": "0.07102273" }
+									},
+									{
+										"assetSpec": "asset:ui/scale/unpacked/particle_glowLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.213, "y": -0.025 },
+										"size": 2.5926,
+										"drawDepth": 0.95,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.53125" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
+										"textKey": "~08~player_chose_three~panel_007~1_hero3",
+										"pointerOwner": "hero3",
+										"padXFraction": 0.086,
+										"padYFraction": 0.143,
+										"shrinkToFitText": true
 									}
 								]
 							}
@@ -4249,12 +6219,7 @@
 	"generatedTargets": [
 		{
 			"createEntity": {
-				"query": {
-					"baseTag": "human",
-					"inRelationTo": "volunteer",
-					"cloneRelatedEntity": true,
-					"aspectValues": null
-				},
+				"query": { "baseTag": "human", "inRelationTo": "volunteer", "cloneRelatedEntity": true },
 				"additionalOutcome": {
 					"class": "DoAll",
 					"outcomes": [
