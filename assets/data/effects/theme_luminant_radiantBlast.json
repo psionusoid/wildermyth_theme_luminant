@@ -13,6 +13,7 @@
 "ability": {
 	"icon": "flashcone",
 	"priority": "102",
+	"extraUI": { "overrideDamageType": "MAGIC", "overrideRangeShown": "2.1+self.BONUS_RANGE" },
 	"branchableAbilityType": "standardMelee"
 },
 "targets": [
@@ -25,7 +26,7 @@
 		"template": "TILE",
 		"missionFeedback": {
 			"rangeFeedback": "FRIENDLY_EFFECT_RANGE",
-			"suggestionFeedback": "FRIENDLY_EFFECT_SUGGESTION",
+			"suggestionFeedback": "FRIENDLY_EFFECT_RANGE_BORDER",
 			"hoverFeedback": "ATTACK_HOVER"
 		},
 		"minRange": "0.9",
@@ -76,7 +77,7 @@
 		"choose": "ANY",
 		"missionFeedback": {
 			"hoverScript": "figures.attackHovered",
-			"rangeFeedback": "ATTACK_SUGGESTION",
+			"rangeFeedback": "ATTACK_SUGGESTION_FILL",
 			"suggestionFeedback": "ATTACK_SUGGESTION",
 			"hoverFeedback": "ATTACK_HOVER"
 		},
@@ -97,14 +98,18 @@
 	{
 		"class": "AttackRoll",
 		"defender": "target2",
-		"attackAnimationType": "ranged",
+		"attackAnimationType": "magic",
 		"showAbilityName": "ifEnemy",
 		"particles": [
 			{
 				"script": "projectileTrailLightBeam",
 				"setPosition": "self",
-				"setPosition2": "targetTile",
-				"delay": -0.5
+				"setPosition2": "targetTile"
+			},
+			{
+				"script": "projectileTrailLightBeam",
+				"setPosition": "self",
+				"setPosition2": "target2"
 			}
 		],
 		"audioOverride": {
@@ -118,7 +123,7 @@
 			"outcomes": [
 				{
 					"class": "Damage",
-					"amount": "(3+1d2)+floor((attacker.PHYSICAL_DAMAGE_BONUS+attacker.POTENCY))",
+					"amount": "(3+1d3)+floor((attacker.PHYSICAL_DAMAGE_BONUS+attacker.POTENCY))",
 					"type": "MAGIC",
 					"pierce": "0",
 					"overrideStuntDamage": "4",

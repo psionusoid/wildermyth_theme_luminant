@@ -1,0 +1,1065 @@
+{
+"id": "deathChoice_luminantTheme",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "deathChoice_luminantTheme",
+	"modId": "theme_luminant",
+	"author": "psionusoid"
+},
+"type": "ENCOUNTER_DEATH_CHOICE",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "utility",
+	"category": "attack",
+	"priority": "1",
+	"specialTreatment": "mortalChoice",
+	"cooldown": "oncePerGame",
+	"encounterScore": 6,
+	"encounterWeight": "4",
+	"encounterEnabled": true,
+	"musicOverride": ""
+},
+"targets": [
+	{ "template": "EVENT" },
+	{ "template": "COMPANY", "choose": "ANY" },
+	{ "template": "INJECTED_SITE" },
+	{ "template": "INJECTED_PARTY", "choose": "ANY" },
+	{
+		"template": "INJECTED_HERO",
+		"aspects": [ "alive", "eligibleForDeathChoice" ],
+		"themes": { "hasTheme": "light" }
+	},
+	{
+		"role": "volunteer",
+		"template": "ANY",
+		"type": "HERO",
+		"choose": "ANY",
+		"fromRoles": [ "party" ],
+		"aspects": [ "alive" ],
+		"aspectValues": [
+			{ "id": "maimedMustHeal", "forbidden": true },
+			{ "id": "escaped", "forbidden": true }
+		],
+		"notAlreadyMatchedAs": [ "hero" ],
+		"test": "LESS_THAN",
+		"a": "hero.forbidHeroicDeath",
+		"b": "1"
+	},
+	{
+		"template": "ATTACKER",
+		"aspects": [ "ENEMY" ],
+		"relativeTo": "hero"
+	},
+	{
+		"role": "target2",
+		"template": "ADJACENT_ENEMY",
+		"STUB": "Radiant beam targets",
+		"choose": "ANY",
+		"chooseAnyMaximum": 3,
+		"aspects": [ "HOSTILE_TARGET", "alive" ],
+		"relativeTo": "hero",
+		"range": "4.6",
+		"lineOfSight": "TERRAIN_ONLY"
+	},
+	{
+		"role": "target",
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": null,
+		"fromRoles": [ "target2" ],
+		"notAlreadyMatchedAs": [ "attacker" ]
+	},
+	{
+		"role": "hero2",
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": "SHIP_WITH.hero",
+		"notAlreadyMatchedAs": [ "hero" ]
+	},
+	{
+		"role": "hero3",
+		"template": "PICK_BY_SCORE",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": null,
+		"notAlreadyMatchedAs": [ "hero", "hero2" ]
+	},
+	{
+		"template": "CHOICE",
+		"promptScript": [
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "threeFifths",
+					"showNameTags": false,
+					"bgAuto": "atSite",
+					"actorSlots": [
+						{
+							"role": "hero",
+							"form": "frame-grim",
+							"anchor": { "x": 0.536, "y": 0.465 },
+							"size": 0.8488948,
+							"head": { "rotate": -17.97 },
+							"color": { "r": "0.55482459", "g": "0.55482459", "b": "0.55482459", "a": "1" }
+						},
+						{
+							"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.341, "y": 0.792 },
+							"size": 0.5,
+							"nameTag": "none",
+							"color": { "r": "0.16228071", "g": "0.16228071", "b": "0.16228071", "a": "0.79166669" }
+						},
+						{
+							"assetSpec": "comic:gradientRoundWhite.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.557, "y": 0.493 },
+							"size": 1.2,
+							"drawDepth": 0,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "0.37938598" }
+						},
+						{
+							"assetSpec": "comic:gradientRoundWhite.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.48, "y": 0.111 },
+							"size": 2,
+							"drawDepth": 0,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "0.37938598" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "deathChoice_luminantTheme",
+							"textKey": "~01~prompt~panel_001~1_hero",
+							"style": "darken",
+							"pointerOwner": "hero",
+							"padXFraction": 0.025,
+							"padYFraction": 0.022,
+							"widthFraction": 0.952642
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "half",
+					"showNameTags": false,
+					"bgAuto": "atSite",
+					"actorSlots": [
+						{
+							"role": "npc",
+							"form": "frame-interested",
+							"anchor": { "x": 0.541, "y": 0.576 },
+							"size": 0.8509,
+							"head": { "rotate": 19.224 }
+						},
+						{
+							"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.341, "y": 0.792 },
+							"size": 0.5,
+							"nameTag": "none",
+							"color": { "r": "0.09429824", "g": "0.09429824", "b": "0.09429824", "a": "0.75657892" }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "deathChoice_luminantTheme",
+							"textKey": "~01~prompt~panel_002~1_hero",
+							"style": "darken",
+							"pointerOwner": "hero",
+							"location": "bottomRight",
+							"padXFraction": 0.023,
+							"padYFraction": 0.865,
+							"widthFraction": 0.95012015
+						}
+					]
+				}
+			}
+		],
+		"options": [
+			{
+				"id": "flee",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "npc",
+									"form": "frame-grim",
+									"anchor": { "x": 0.348, "y": 0.463 },
+									"drawDepth": 2,
+									"nameTag": "none",
+									"head": { "rotate": -25.016, "scaleY": -1 }
+								},
+								{
+									"facing": "left",
+									"anchor": { "x": 0.861, "y": 0.449 },
+									"drawDepth": 1,
+									"nameTag": "none"
+								},
+								{
+									"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.341, "y": 0.792 },
+									"size": 0.5,
+									"nameTag": "none",
+									"color": { "r": "0.09429824", "g": "0.09429824", "b": "0.09429824", "a": "0.75657892" }
+								},
+								{
+									"assetSpec": "comic:gradientRoundWhite.png",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.376, "y": 0.445 },
+									"size": 1.5368,
+									"drawDepth": 0,
+									"nameTag": "none",
+									"color": { "r": "1", "g": "1", "b": "1", "a": "0.37938598" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "deathChoice_luminantTheme",
+									"textKey": "~02~choice_flee~panel_001~1_npc",
+									"style": "thought",
+									"pointerOwner": "npc",
+									"location": "topRight",
+									"padXFraction": 0.047,
+									"padYFraction": 0.04,
+									"widthFraction": 0.36061028,
+									"shrinkToFitText": true
+								},
+								{
+									"textSourceFile": "deathChoice_luminantTheme",
+									"textKey": "~02~choice_flee~panel_001~2_self",
+									"style": "darken",
+									"pointerOwner": "self",
+									"location": "bottomLeft",
+									"padXFraction": 0.03
+								},
+								{
+									"textSourceFile": "deathChoice_luminantTheme",
+									"textKey": "~02~choice_flee~panel_001~3_darken",
+									"style": "darken",
+									"padXFraction": 0.045,
+									"padYFraction": 0.025,
+									"widthFraction": 0.39112344,
+									"shrinkToFitText": true
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "attack",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "npc",
+									"form": "frame-rage",
+									"anchor": { "x": 0.525, "y": 0.467 },
+									"nameTag": "none",
+									"head": { "rotate": 25.677 }
+								},
+								{
+									"facing": "left",
+									"anchor": { "x": 0.832, "y": 0.429 },
+									"nameTag": "none"
+								},
+								{
+									"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.341, "y": 0.792 },
+									"size": 0.5,
+									"nameTag": "none",
+									"color": { "r": "0.09429824", "g": "0.09429824", "b": "0.09429824", "a": "0.75657892" }
+								},
+								{
+									"assetSpec": "comic:light_starburstLarge.png",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.449, "y": 0.343 },
+									"size": 0.2,
+									"drawDepth": 2.5,
+									"nameTag": "none",
+									"color": { "r": "1", "g": "1", "b": "1", "a": "0.69736844" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "deathChoice_luminantTheme",
+									"textKey": "~03~choice_attack~panel_001~1_hero",
+									"style": "thought",
+									"pointerOwner": "hero"
+								},
+								{
+									"textSourceFile": "deathChoice_luminantTheme",
+									"textKey": "~03~choice_attack~panel_001~2_self",
+									"style": "darken",
+									"pointerOwner": "self",
+									"location": "bottomLeft",
+									"padXFraction": 0.03
+								},
+								{
+									"textSourceFile": "deathChoice_luminantTheme",
+									"textKey": "~03~choice_attack~panel_001~3_darken",
+									"style": "darken",
+									"padXFraction": 0.047,
+									"padYFraction": 0.025,
+									"shrinkToFitText": true
+								}
+							]
+						}
+					}
+				],
+				"ifTargetIsPresent": "volunteer"
+			},
+			{
+				"id": "defend",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "npc",
+									"anchor": { "x": 0.494, "y": 0.514 },
+									"nameTag": "none",
+									"head": { "rotate": 11.965, "scaleY": 1 }
+								},
+								{
+									"facing": "left",
+									"anchor": { "x": 0.879, "y": 0.462 },
+									"drawDepth": 0,
+									"nameTag": "none",
+									"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+								},
+								{
+									"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.341, "y": 0.792 },
+									"size": 0.5,
+									"nameTag": "none",
+									"color": { "r": "0.09429824", "g": "0.09429824", "b": "0.09429824", "a": "0.75657892" }
+								},
+								{
+									"assetSpec": "comic:lightBeam.png",
+									"role": null,
+									"focus": "foot",
+									"anchor": { "x": 0.471, "y": 0.462 },
+									"size": 1.7482,
+									"drawDepth": 2,
+									"nameTag": "none",
+									"color": { "r": "1", "g": "0.87593627", "b": "0.28409088", "a": "1" }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "deathChoice_luminantTheme",
+									"textKey": "~04~choice_defend~panel_001~1_hero",
+									"style": "thought",
+									"pointerOwner": "hero"
+								},
+								{
+									"textSourceFile": "deathChoice_luminantTheme",
+									"textKey": "~04~choice_defend~panel_001~2_self",
+									"style": "darken",
+									"pointerOwner": "self",
+									"location": "bottomLeft",
+									"padXFraction": 0.03
+								},
+								{
+									"textSourceFile": "deathChoice_luminantTheme",
+									"textKey": "~04~choice_defend~panel_001~3_darken",
+									"style": "darken",
+									"padXFraction": 0.036,
+									"padYFraction": 0.014,
+									"shrinkToFitText": true
+								}
+							]
+						}
+					}
+				],
+				"ifTargetIsPresent": "volunteer"
+			}
+		]
+	}
+],
+"outcomes": [
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "flee",
+		"then": {
+			"class": "DoAll",
+			"target": "hero",
+			"outcomes": [
+				{
+					"class": "Description",
+					"STUB": "maim, remove from combat",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "threeFourths",
+								"showNameTags": false,
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "npc",
+										"form": "frame-hit",
+										"facing": "left",
+										"anchor": { "x": 0.508, "y": 0.435 },
+										"size": 0.8509,
+										"head": { "rotate": 1.261, "scaleY": 1 }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.39532974, "y": 0.792 },
+										"size": 0.5,
+										"nameTag": "none",
+										"color": { "r": "0.09429824", "g": "0.09429824", "b": "0.09429824", "a": "0.75657892" }
+									},
+									{
+										"assetSpec": "scenery:standingStone6.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.128, "y": 0.459 },
+										"size": 0.6304,
+										"drawDepth": 0,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "0.81578946" }
+									},
+									{
+										"assetSpec": "scenery:standingStone4.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.876, "y": 0.296 },
+										"size": 0.7208,
+										"drawDepth": 0,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "0.72149122" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.905, "y": 0.342 },
+										"size": 1.7482,
+										"drawDepth": -1,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.46271929" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.106, "y": 0.467 },
+										"size": 1.7482,
+										"drawDepth": -1,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.46271929" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "deathChoice_luminantTheme",
+										"textKey": "~05~player_chose_flee~panel_001~1_hero",
+										"style": "darken",
+										"pointerOwner": "hero",
+										"padXFraction": 0.034,
+										"padYFraction": 0.023,
+										"widthFraction": 0.9153777,
+										"shrinkToFitText": true
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "half",
+								"showNameTags": false,
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "hero",
+										"form": "frame-grim",
+										"facing": "left",
+										"anchor": { "x": 0.513, "y": 0.477 },
+										"size": 0.5962,
+										"head": { "rotate": -22.004, "scaleY": 1 },
+										"color": { "r": "0.51929784", "g": "0.51929784", "b": "0.51929784", "a": "1" }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.36825714, "y": 0.792 },
+										"size": 0.5,
+										"nameTag": "none",
+										"color": { "r": "0.09429824", "g": "0.09429824", "b": "0.09429824", "a": "0.75657892" }
+									},
+									{
+										"assetSpec": "comic:smokeFogLayer.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.6650001, "y": 0.05 },
+										"size": 0.3981,
+										"drawDepth": 0,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "0.61052591" }
+									},
+									{
+										"assetSpec": "comic:smokeRising.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 1.2547126, "y": 0.359 },
+										"drawDepth": 1.625,
+										"nameTag": "none",
+										"color": { "r": "0.70175439", "g": "0.70175439", "b": "0.70175439", "a": "0.61052591" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "deathChoice_luminantTheme",
+										"textKey": "~05~player_chose_flee~panel_002~1_hero",
+										"style": "darken",
+										"pointerOwner": "hero",
+										"padXFraction": 0.035,
+										"padYFraction": 0.031,
+										"widthFraction": 0.9281165
+									}
+								]
+							}
+						}
+					]
+				},
+				{ "class": "Animate", "script": "ui.mortalChoiceMaimed" },
+				{ "class": "Animate", "script": "figures.maimedRetreat" },
+				{ "class": "Special", "specialAction": "WITHDRAW_UNIT" },
+				{
+					"class": "NewPlot",
+					"plot": "maimHero",
+					"injectRoles": [ "site", "attacker" ]
+				},
+				{
+					"class": "AddHistory",
+					"inlineHistory": {
+						"id": "deathChoice_luminantTheme",
+						"associatedAspects": [ "human_luminant_vitality_debuff" ],
+						"persistOverLegacy": "never"
+					}
+				},
+				{ "class": "Trigger", "entityTrigger": "ENTITY_REMOVED" }
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "attack",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "BranchAbility",
+					"target": "hero",
+					"branchAbility": "theme_luminant_radiantForm"
+				},
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "fourFifth",
+								"showNameTags": false,
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "npc",
+										"form": "frame-angry",
+										"anchor": { "x": 0.244, "y": 0.451 },
+										"size": 0.8509,
+										"head": { "rotate": 12.264 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.16, "y": 0.439 },
+										"size": 0.4,
+										"nameTag": "none",
+										"color": { "r": "0.17763157", "g": "0.17763157", "b": "0.17763157", "a": "0.55921054" }
+									},
+									{
+										"role": "attacker",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.826, "y": 0.359 },
+										"size": 0.3509
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "deathChoice_luminantTheme",
+										"textKey": "~06~player_chose_attack~panel_001~1_hero",
+										"style": "darken",
+										"pointerOwner": "hero",
+										"location": "bottomRight",
+										"padXFraction": 0.34,
+										"padYFraction": 0.813,
+										"widthFraction": 0.6408964
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "twoThirds",
+								"showNameTags": false,
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "npc",
+										"form": "frame-rage",
+										"anchor": { "x": 0.5072291, "y": 0.488 },
+										"size": 0.5,
+										"head": { "rotate": 12.264 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"role": "attacker",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.952, "y": 0.303 },
+										"size": 0.33,
+										"drawDepth": 3.25
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.441, "y": 0.375 },
+										"size": 0.5,
+										"nameTag": "none",
+										"color": { "r": "0.17763157", "g": "0.17763157", "b": "0.17763157", "a": "0.49561402" }
+									},
+									{
+										"role": "target",
+										"equipment": {},
+										"anchor": { "x": 0.087, "y": 0.332 },
+										"size": 0.33,
+										"nameTag": "none"
+									},
+									{
+										"assetSpec": "comic:light_spikyStarburst.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.476, "y": 0.387 },
+										"size": 0.35,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "0.71710527" }
+									},
+									{
+										"assetSpec": "comic:light_starburstLarge.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.456, "y": 0.305 },
+										"size": 0.3,
+										"drawDepth": 2,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "1", "b": "1", "a": "0.55043858" }
+									},
+									{
+										"assetSpec": "comic:sparkleBig.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.939, "y": 0.755 },
+										"size": 0.2652,
+										"drawDepth": 1.5,
+										"nameTag": "none",
+										"foot": { "rotate": -30.589 }
+									},
+									{
+										"assetSpec": "comic:sparkleBig.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.07, "y": 0.746 },
+										"size": 0.2652,
+										"drawDepth": 1.5,
+										"nameTag": "none",
+										"foot": { "rotate": 37.948 }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "deathChoice_luminantTheme",
+										"textKey": "~06~player_chose_attack~panel_002~1_hero",
+										"style": "darken",
+										"pointerOwner": "hero",
+										"location": "bottomRight",
+										"padXFraction": 0.097,
+										"padYFraction": 0.844,
+										"widthFraction": 0.89540607,
+										"shrinkToFitText": true
+									}
+								]
+							}
+						}
+					]
+				},
+				{ "class": "Animate", "target": "hero", "script": "ui.deathChoiceTimeSlow" },
+				{
+					"class": "AttackRoll",
+					"target": "hero",
+					"defender": "target2",
+					"attackAnimationType": "ranged",
+					"particles": [
+						{
+							"script": "projectileTrailLightBeam",
+							"setPosition": "hero",
+							"setPosition2": "target2",
+							"delay": -0.3
+						}
+					],
+					"audioOverride": {
+						"attackStartCue": "Characters/DefaultHuman/Magic_FireMiss",
+						"attackHitCue": "Characters/DefaultHuman/Magic_FireHit",
+						"attackDodgedCue": "Characters/DefaultHuman/Magic_FireMiss",
+						"attackBlockedCue": "Characters/DefaultHuman/Magic_FireMiss"
+					},
+					"attackerAnimationOverride": "figures.swapWeapon",
+					"onHit": {
+						"class": "DoAll",
+						"outcomes": [
+							{
+								"class": "Damage",
+								"originator": "hero",
+								"amount": "(5+hero.POTENCY)+hero.PHYSICAL_DAMAGE_BONUS",
+								"type": "TRUE"
+							}
+						]
+					}
+				},
+				{ "class": "Animate", "target": "hero", "script": "ui.mortalChoiceDeath" },
+				{
+					"class": "DoAll",
+					"target": "hero",
+					"outcomes": [
+						{ "class": "Animate", "script": "figures.fallDead" },
+						{
+							"class": "AddHistory",
+							"addHistory": [
+								[ "slain.generic" ]
+							]
+						},
+						{ "class": "Trigger", "entityTrigger": "ENTITY_REMOVED" }
+					]
+				}
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"ifPlayerChose": "defend",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "BranchAbility",
+					"target": "hero",
+					"branchAbility": "theme_luminant_radiantForm"
+				},
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "twoThirds",
+								"showNameTags": false,
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "npc",
+										"form": "frame-grim",
+										"anchor": { "x": 0.248, "y": 0.477 },
+										"size": 0.7,
+										"head": { "rotate": 12.264 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.26, "y": 0.369 },
+										"size": 0.4,
+										"nameTag": "none",
+										"color": { "r": "0.17763157", "g": "0.17763157", "b": "0.17763157", "a": "0.55921054" }
+									},
+									{
+										"role": "hero2",
+										"form": "frame-grim",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.732, "y": 0.476 },
+										"size": 0.6
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "deathChoice_luminantTheme",
+										"textKey": "~07~player_chose_defend~panel_001~1_hero",
+										"style": "darken",
+										"pointerOwner": "hero",
+										"location": "bottomRight",
+										"padXFraction": 0.028,
+										"padYFraction": 0.816,
+										"widthFraction": 0.9565919
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "fourFifth",
+								"showNameTags": false,
+								"bgAuto": "atSite",
+								"actorSlots": [
+									{
+										"role": "npc",
+										"form": "frame-interested",
+										"anchor": { "x": 0.541, "y": 0.431 },
+										"size": 0.6,
+										"drawDepth": 1,
+										"head": { "rotate": 12.264 },
+										"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+									},
+									{
+										"assetSpec": "comicBg:comicBG_abstractGray1.jpg",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.52, "y": 0.326 },
+										"size": 0.4,
+										"drawDepth": 5,
+										"nameTag": "none",
+										"color": { "r": "0.17763157", "g": "0.17763157", "b": "0.17763157", "a": "0.55921054" }
+									},
+									{
+										"role": "hero2",
+										"form": "frame-surprised",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.879, "y": 0.4 },
+										"size": 0.5,
+										"drawDepth": 1.5,
+										"head": { "scaleY": 1 }
+									},
+									{
+										"role": "hero3",
+										"form": "frame-surprised",
+										"equipment": {},
+										"anchor": { "x": 0.154, "y": 0.389 },
+										"size": 0.5
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.525, "y": 0.431 },
+										"size": 1.5866,
+										"drawDepth": 1,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87593609", "b": "0.28409088", "a": "0.57894737" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.868, "y": 0.388 },
+										"size": 1.039,
+										"drawDepth": 1,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87058824", "b": "0.27843139", "a": "0.66274512" }
+									},
+									{
+										"assetSpec": "comic:lightBeam.png",
+										"role": null,
+										"facing": "left",
+										"focus": "foot",
+										"anchor": { "x": 0.135, "y": 0.366 },
+										"size": 1.0558,
+										"drawDepth": 1,
+										"nameTag": "none",
+										"color": { "r": "1", "g": "0.87450963", "b": "0.28235292", "a": "0.66447371" }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "deathChoice_luminantTheme",
+										"textKey": "~07~player_chose_defend~panel_002~1_hero",
+										"style": "darken",
+										"pointerOwner": "hero",
+										"location": "bottomRight",
+										"padXFraction": 0.016,
+										"padYFraction": 0.808,
+										"widthFraction": 0.962465
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"class": "Animate",
+					"target": "hero",
+					"particles": { "script": "heal", "setPosition": "volunteer" },
+					"audio": "Characters/DefaultHuman/Ability_GrayplaneIn"
+				},
+				{ "class": "Animate", "target": "hero", "script": "ui.mortalChoiceDeath" },
+				{ "class": "Animate", "target": "hero", "script": "ui.deathChoiceTimeSlow" },
+				{
+					"class": "TempHP",
+					"target": "volunteer",
+					"grantTempHp": "3+((hero.PHYSICAL_DAMAGE_BONUS+hero.POTENCY)/2)"
+				},
+				{
+					"class": "DoAll",
+					"target": "hero",
+					"outcomes": [
+						{ "class": "Animate", "script": "figures.fallDead" },
+						{
+							"class": "AddHistory",
+							"addHistory": [
+								[ "slain.generic" ]
+							]
+						},
+						{ "class": "Trigger", "entityTrigger": "ENTITY_REMOVED" }
+					]
+				}
+			]
+		}
+	}
+],
+"implications": {
+	"generatedTargets": [
+		{
+			"createEntity": {
+				"query": {
+					"baseTag": "human",
+					"inRelationTo": "hero",
+					"cloneRelatedEntity": true,
+					"aspectValues": { "theme_luminant_radiantFormUsed": "1" }
+				},
+				"additionalOutcome": {
+					"class": "DoAll",
+					"outcomes": [
+						{
+							"class": "RemoveTheme",
+							"target": "npc",
+							"specificTheme": "light",
+							"specificPiece": "aura"
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "auraRadiant",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "RemoveTheme",
+							"target": "npc",
+							"specificTheme": "light",
+							"specificPiece": "leftArmLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"target": "npc",
+							"specificTheme": "light",
+							"specificPiece": "rightArmLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"target": "npc",
+							"specificTheme": "light",
+							"specificPiece": "leftLegLatent"
+						},
+						{
+							"class": "RemoveTheme",
+							"target": "npc",
+							"specificTheme": "light",
+							"specificPiece": "rightLegLatent"
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "leftEye",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "rightEye",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "leftArm",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "rightArm",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "leftLeg",
+							"replaceInjuredLimbs": true
+						},
+						{
+							"class": "ApplyTheme",
+							"target": "npc",
+							"theme": "light",
+							"piece": "rightLeg",
+							"replaceInjuredLimbs": true
+						}
+					]
+				}
+			}
+		}
+	]
+}
+}

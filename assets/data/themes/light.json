@@ -79,6 +79,7 @@
 			"humanSkin_overrideStreakColor|ffffff|1.0",
 			"humanSkin_overrideHairColor|fcf10a|1"
 		],
+		"stats": { "RECOVERY_RATE": 4 },
 		"canBeAwardedRandomly": false,
 		"applyOnHeal": false
 	},
@@ -356,7 +357,8 @@
 		],
 		"effects": [ "theme_luminant_radiantForm" ],
 		"extraAspects": [ "humanSkin_overrideStreakValue|0.8" ],
-		"baseThemeSkinExtraAspects": [ "humanSkin_overrideStreakColor|fcf10a|1" ]
+		"baseThemeSkinExtraAspects": [ "humanSkin_overrideStreakColor|fcf10a|1" ],
+		"stats": { "RECOVERY_RATE": 4 }
 	},
 	{
 		"id": "leftArmLatent",

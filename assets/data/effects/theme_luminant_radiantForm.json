@@ -25,7 +25,7 @@
 	{
 		"class": "Animate",
 		"script": "figures.swapWeapon",
-		"audio": "Characters/Default/Ability_Heroism"
+		"audio": "Characters/Default/Ability_BloodRage"
 	},
 	{
 		"class": "Aspects",

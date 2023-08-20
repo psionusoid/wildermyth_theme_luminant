@@ -1,0 +1,8 @@
+[
+{
+	"modId": "theme_luminant",
+	"id": "human_luminant_vitality_debuff",
+	"stats": { "HEALTH": -1, "RECOVERY_RATE": -20 },
+	"lifespan": "all"
+}
+]
