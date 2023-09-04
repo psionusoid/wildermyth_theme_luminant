@@ -614,7 +614,7 @@
 										"role": "attacker",
 										"facing": "left",
 										"equipment": {},
-										"anchor": { "x": 0.826, "y": 0.359 },
+										"anchor": { "x": 0.826, "y": 0.292 },
 										"size": 0.3509
 									}
 								],

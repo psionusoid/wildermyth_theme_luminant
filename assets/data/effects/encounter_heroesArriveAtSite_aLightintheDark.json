@@ -1856,8 +1856,8 @@
 							"textSourceFile": "encounter_heroesArriveAtSite_aLightintheDark",
 							"textKey": "~01~prompt~panel_020~1_bookish",
 							"pointerOwner": "bookish",
-							"padXFraction": 0.356,
-							"padYFraction": 0.028,
+							"padXFraction": 0.333,
+							"padYFraction": 0.047,
 							"shrinkToFitText": true
 						},
 						{
