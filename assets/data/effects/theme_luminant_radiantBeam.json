@@ -138,7 +138,7 @@
 			"outcomes": [
 				{
 					"class": "Damage",
-					"amount": "(1d3+1)+(self.PHYSICAL_DAMAGE_BONUS+self.POTENCY)",
+					"amount": "(1d2+1)+floor((((self.PHYSICAL_DAMAGE_BONUS+self.POTENCY)*3)/4))",
 					"type": "MAGIC",
 					"overrideStuntDamage": "4",
 					"onStunt": {
