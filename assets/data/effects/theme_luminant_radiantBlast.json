@@ -42,7 +42,7 @@
 		"manifold": {
 			"from": "self",
 			"to": "focus",
-			"thickness": [ "1.6", "3" ],
+			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+self.BONUS_RANGE/2" ],
 			"excludeSource": true,
 			"distanceInDirection": "1.6+self.BONUS_RANGE"
 		},
@@ -59,7 +59,7 @@
 		"manifold": {
 			"from": "self",
 			"to": "focus",
-			"thickness": [ "1.6", "3" ],
+			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+self.BONUS_RANGE/2" ],
 			"excludeSource": true,
 			"distanceInDirection": "1.6+self.BONUS_RANGE"
 		},
@@ -84,7 +84,7 @@
 		"manifold": {
 			"from": "self",
 			"to": "focus",
-			"thickness": [ "1.6", "3" ],
+			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+self.BONUS_RANGE/2" ],
 			"excludeSource": true,
 			"distanceInDirection": "1.6+self.BONUS_RANGE"
 		},
