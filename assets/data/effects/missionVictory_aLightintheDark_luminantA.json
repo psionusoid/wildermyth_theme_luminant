@@ -125,6 +125,69 @@
 						}
 					]
 				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "fiveSixths",
+					"showNameTags": false,
+					"actorSlots": [
+						{
+							"role": "target",
+							"form": "frame-joy",
+							"equipment": {},
+							"anchor": { "x": 0.197, "y": 0.351 },
+							"size": 0.83508795,
+							"drawDepth": 2.5
+						},
+						{
+							"role": "ship",
+							"form": "frame-skeptical",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.59, "y": 0.307 },
+							"size": 0.83508795
+						},
+						{
+							"role": "volunteer",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.895, "y": 0.35 },
+							"size": 0.83508795,
+							"head": { "scaleY": 1 }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+							"textKey": "~01~~panel_002~1_narration",
+							"style": "narration"
+						},
+						{
+							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+							"textKey": "~01~~panel_002~2_target",
+							"pointerOwner": "target",
+							"padXFraction": 0.013,
+							"padYFraction": 0.135,
+							"widthFraction": 0.6077348,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+							"textKey": "~01~~panel_002~3_ship",
+							"pointerOwner": "ship",
+							"padXFraction": 0.602,
+							"padYFraction": 0.028,
+							"shrinkToFitText": true,
+							"pointerAdjust": { "pointerOrientH": "onRight", "forcePointerImage": "speechMedium" }
+						},
+						{
+							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+							"textKey": "~01~~panel_002~4_volunteer",
+							"pointerOwner": "volunteer"
+						}
+					]
+				}
 			}
 		]
 	}

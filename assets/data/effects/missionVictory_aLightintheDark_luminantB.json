@@ -171,7 +171,8 @@
 						{
 							"textSourceFile": "missionVictory_aLightintheDark_luminantB",
 							"textKey": "~01~~panel_002~2_target",
-							"pointerOwner": "target"
+							"pointerOwner": "target",
+							"pointerAdjust": {}
 						},
 						{
 							"textSourceFile": "missionVictory_aLightintheDark_luminantB",
