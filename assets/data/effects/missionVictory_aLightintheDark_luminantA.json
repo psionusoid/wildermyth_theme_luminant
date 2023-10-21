@@ -70,124 +70,451 @@
 		"lightweight": false,
 		"script": [
 			{
-				"class": "comicNode_Panel",
-				"panel": {
-					"size": "full",
-					"showNameTags": false,
-					"actorSlots": [
+				"class": "comicNode_Split",
+				"splitSpec": "deadHero.exists",
+				"splitBranches": [
+					[
 						{
-							"role": "target",
-							"form": "frame-joy",
-							"equipment": {},
-							"anchor": { "x": 0.232, "y": 0.469 },
-							"size": 0.64171296,
-							"drawDepth": 2.5
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "full",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"role": "target",
+										"form": "frame-grim",
+										"equipment": {},
+										"anchor": { "x": 0.176, "y": 0.463 },
+										"size": 0.64171296,
+										"drawDepth": 2.5,
+										"head": { "rotate": -25.123 },
+										"foot": { "rotate": -3.209 }
+									},
+									{
+										"role": "ship",
+										"form": "frame-sad",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.516, "y": 0.444 },
+										"size": 0.64171296
+									},
+									{
+										"role": "volunteer",
+										"form": "frame-grim",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.807, "y": 0.479 },
+										"size": 0.64171296,
+										"head": { "scaleY": 1 }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+										"textKey": "~01~~panel_001.(deadHero_exists)~1_narration",
+										"style": "narration"
+									},
+									{
+										"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+										"textKey": "~01~~panel_001.(deadHero_exists)~2_target",
+										"pointerOwner": "target",
+										"padXFraction": 0.186,
+										"padYFraction": 0.133,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+										"textKey": "~01~~panel_001.(deadHero_exists)~3_ship",
+										"pointerOwner": "ship"
+									},
+									{
+										"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+										"textKey": "~01~~panel_001.(deadHero_exists)~4_volunteer",
+										"pointerOwner": "volunteer"
+									}
+								]
+							}
 						},
 						{
-							"role": "ship",
-							"facing": "left",
-							"equipment": {},
-							"anchor": { "x": 0.516, "y": 0.444 },
-							"size": 0.64171296
-						},
-						{
-							"role": "volunteer",
-							"facing": "left",
-							"equipment": {},
-							"anchor": { "x": 0.807, "y": 0.479 },
-							"size": 0.64171296,
-							"head": { "scaleY": 1 }
+							"class": "comicNode_Panel",
+							"panel": {
+								"size": "fiveSixths",
+								"showNameTags": false,
+								"actorSlots": [
+									{
+										"role": "target",
+										"form": "frame-sad",
+										"equipment": {},
+										"anchor": { "x": 0.197, "y": 0.351 },
+										"size": 0.83508795,
+										"drawDepth": 2.5
+									},
+									{
+										"role": "ship",
+										"form": "frame-skeptical",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.58, "y": 0.266 },
+										"size": 0.83508795
+									},
+									{
+										"role": "volunteer",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.883, "y": 0.496 },
+										"size": 0.83508795,
+										"head": { "scaleY": 1 }
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+										"textKey": "~01~~panel_002.(deadHero_exists)~1_narration",
+										"style": "narration"
+									},
+									{
+										"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+										"textKey": "~01~~panel_002.(deadHero_exists)~2_target",
+										"pointerOwner": "target",
+										"padXFraction": 0.258,
+										"padYFraction": 0.164,
+										"widthFraction": 0.6077348,
+										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+										"textKey": "~01~~panel_002.(deadHero_exists)~3_ship",
+										"pointerOwner": "ship",
+										"padXFraction": 0.602,
+										"padYFraction": 0.028,
+										"shrinkToFitText": true,
+										"pointerAdjust": { "pointerOrientH": "onRight", "forcePointerImage": "speechMedium" }
+									},
+									{
+										"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+										"textKey": "~01~~panel_002.(deadHero_exists)~4_volunteer",
+										"pointerOwner": "volunteer"
+									}
+								]
+							}
 						}
 					],
-					"textSlots": [
+					[
 						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
-							"textKey": "~01~~panel_001~1_narration",
-							"style": "narration"
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
-							"textKey": "~01~~panel_001~2_target",
-							"pointerOwner": "target",
-							"padXFraction": 0.186,
-							"padYFraction": 0.133,
-							"shrinkToFitText": true
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
-							"textKey": "~01~~panel_001~3_ship",
-							"pointerOwner": "ship"
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
-							"textKey": "~01~~panel_001~4_volunteer",
-							"pointerOwner": "volunteer"
+							"class": "comicNode_Split",
+							"splitSpec": "maimedHero.exists",
+							"splitBranches": [
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "full",
+											"showNameTags": false,
+											"actorSlots": [
+												{
+													"role": "target",
+													"form": "frame-joy",
+													"equipment": {},
+													"anchor": { "x": 0.232, "y": 0.469 },
+													"size": 0.64171296,
+													"drawDepth": 2.5
+												},
+												{
+													"role": "ship",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.516, "y": 0.444 },
+													"size": 0.64171296
+												},
+												{
+													"role": "volunteer",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.807, "y": 0.479 },
+													"size": 0.64171296,
+													"head": { "scaleY": 1 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_003.(deadHero_is_missing).(maimedHero_exists)~1_narration",
+													"style": "narration"
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_003.(deadHero_is_missing).(maimedHero_exists)~2_target",
+													"pointerOwner": "target",
+													"padXFraction": 0.186,
+													"padYFraction": 0.133,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_003.(deadHero_is_missing).(maimedHero_exists)~3_ship",
+													"pointerOwner": "ship"
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_003.(deadHero_is_missing).(maimedHero_exists)~4_volunteer",
+													"pointerOwner": "volunteer"
+												}
+											]
+										}
+									},
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "fiveSixths",
+											"showNameTags": false,
+											"actorSlots": [
+												{
+													"role": "target",
+													"form": "frame-joy",
+													"equipment": {},
+													"anchor": { "x": 0.197, "y": 0.351 },
+													"size": 0.83508795,
+													"drawDepth": 2.5
+												},
+												{
+													"role": "ship",
+													"form": "frame-skeptical",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.59, "y": 0.307 },
+													"size": 0.83508795
+												},
+												{
+													"role": "volunteer",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.895, "y": 0.35 },
+													"size": 0.83508795,
+													"head": { "scaleY": 1 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_004.(deadHero_is_missing).(maimedHero_exists)~1_narration",
+													"style": "narration"
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_004.(deadHero_is_missing).(maimedHero_exists)~2_target",
+													"pointerOwner": "target",
+													"padXFraction": 0.013,
+													"padYFraction": 0.135,
+													"widthFraction": 0.6077348,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_004.(deadHero_is_missing).(maimedHero_exists)~3_ship",
+													"pointerOwner": "ship",
+													"padXFraction": 0.602,
+													"padYFraction": 0.028,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "pointerOrientH": "onRight", "forcePointerImage": "speechMedium" }
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_004.(deadHero_is_missing).(maimedHero_exists)~4_volunteer",
+													"pointerOwner": "volunteer"
+												}
+											]
+										}
+									}
+								],
+								[
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "full",
+											"showNameTags": false,
+											"actorSlots": [
+												{
+													"role": "target",
+													"form": "frame-joy",
+													"equipment": {},
+													"anchor": { "x": 0.232, "y": 0.469 },
+													"size": 0.64171296,
+													"drawDepth": 2.5
+												},
+												{
+													"role": "ship",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.516, "y": 0.444 },
+													"size": 0.64171296
+												},
+												{
+													"role": "volunteer",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.807, "y": 0.479 },
+													"size": 0.64171296,
+													"head": { "scaleY": 1 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_is_missing)~1_narration",
+													"style": "narration"
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_is_missing)~2_target",
+													"pointerOwner": "target",
+													"padXFraction": 0.186,
+													"padYFraction": 0.133,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_is_missing)~3_ship",
+													"pointerOwner": "ship"
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_is_missing)~4_volunteer",
+													"pointerOwner": "volunteer"
+												}
+											]
+										}
+									},
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "fiveSixths",
+											"showNameTags": false,
+											"actorSlots": [
+												{
+													"role": "target",
+													"form": "frame-talk",
+													"equipment": {},
+													"anchor": { "x": 0.197, "y": 0.351 },
+													"size": 0.83508795,
+													"drawDepth": 2.5
+												},
+												{
+													"role": "ship",
+													"form": "frame-skeptical",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.59, "y": 0.307 },
+													"size": 0.83508795
+												},
+												{
+													"role": "volunteer",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.895, "y": 0.35 },
+													"size": 0.83508795,
+													"head": { "scaleY": 1 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_is_missing)~1_narration",
+													"style": "narration"
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_is_missing)~2_target",
+													"pointerOwner": "target",
+													"padXFraction": 0.013,
+													"padYFraction": 0.135,
+													"widthFraction": 0.6077348,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_is_missing)~3_ship",
+													"pointerOwner": "ship",
+													"padXFraction": 0.602,
+													"padYFraction": 0.028,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "pointerOrientH": "onRight", "forcePointerImage": "speechMedium" }
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_is_missing)~4_volunteer",
+													"pointerOwner": "volunteer"
+												}
+											]
+										}
+									},
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "full",
+											"showNameTags": false,
+											"actorSlots": [
+												{
+													"role": "target",
+													"form": "frame-talk",
+													"equipment": {},
+													"anchor": { "x": 0.586, "y": 0.447 },
+													"size": 0.47302884,
+													"drawDepth": 2.5
+												},
+												{
+													"role": "ship",
+													"form": "frame-interested",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.771, "y": 0.422 },
+													"size": 0.47302884
+												},
+												{
+													"role": "volunteer",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.114, "y": 0.361 },
+													"size": 0.47302884,
+													"head": { "rotate": -14.969, "scaleY": -1 }
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~1_narration",
+													"style": "narration"
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~2_target",
+													"pointerOwner": "target",
+													"padXFraction": 0.529,
+													"padYFraction": 0.068,
+													"widthFraction": 0.6077348,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~3_ship",
+													"pointerOwner": "ship",
+													"padXFraction": 0.602,
+													"padYFraction": 0.028,
+													"shrinkToFitText": true,
+													"pointerAdjust": { "pointerOrientH": "onRight", "forcePointerImage": "speechMedium" }
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
+													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~4_volunteer",
+													"pointerOwner": "volunteer"
+												}
+											]
+										}
+									}
+								]
+							]
 						}
 					]
-				}
-			},
-			{
-				"class": "comicNode_Panel",
-				"panel": {
-					"size": "fiveSixths",
-					"showNameTags": false,
-					"actorSlots": [
-						{
-							"role": "target",
-							"form": "frame-joy",
-							"equipment": {},
-							"anchor": { "x": 0.197, "y": 0.351 },
-							"size": 0.83508795,
-							"drawDepth": 2.5
-						},
-						{
-							"role": "ship",
-							"form": "frame-skeptical",
-							"facing": "left",
-							"equipment": {},
-							"anchor": { "x": 0.59, "y": 0.307 },
-							"size": 0.83508795
-						},
-						{
-							"role": "volunteer",
-							"facing": "left",
-							"equipment": {},
-							"anchor": { "x": 0.895, "y": 0.35 },
-							"size": 0.83508795,
-							"head": { "scaleY": 1 }
-						}
-					],
-					"textSlots": [
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
-							"textKey": "~01~~panel_002~1_narration",
-							"style": "narration"
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
-							"textKey": "~01~~panel_002~2_target",
-							"pointerOwner": "target",
-							"padXFraction": 0.013,
-							"padYFraction": 0.135,
-							"widthFraction": 0.6077348,
-							"shrinkToFitText": true
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
-							"textKey": "~01~~panel_002~3_ship",
-							"pointerOwner": "ship",
-							"padXFraction": 0.602,
-							"padYFraction": 0.028,
-							"shrinkToFitText": true,
-							"pointerAdjust": { "pointerOrientH": "onRight", "forcePointerImage": "speechMedium" }
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantA",
-							"textKey": "~01~~panel_002~4_volunteer",
-							"pointerOwner": "volunteer"
-						}
-					]
-				}
+				]
 			}
 		]
 	}
