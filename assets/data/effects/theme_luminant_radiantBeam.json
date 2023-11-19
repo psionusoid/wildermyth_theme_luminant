@@ -20,7 +20,10 @@
 	{
 		"template": "SELF",
 		"cost": { "class": "ActionPoints", "actionPoints": "attack" },
-		"missionFeedback": { "orientTo": "focus" }
+		"missionFeedback": { "orientTo": "focus" },
+		"test": "GREATER_THAN_OR_EQUAL_TO",
+		"a": "(themePiece_light_leftArmLatent+theme_luminant_radiantFormUsed)+(2*themePiece_light_leftArm)",
+		"b": "2"
 	},
 	{
 		"template": "TILE",
