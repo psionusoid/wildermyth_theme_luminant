@@ -1,0 +1,39 @@
+{
+"id": "defaultMoveFeedbackMeleeAspect|_RANGE_|ABILITY|ASPECT",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "defaultMoveFeedbackMeleeAspect",
+	"modId": "theme_luminant",
+	"author": "psionusoid (based on Patrick Belanger)",
+	"STUB": "Default melee move feedback, for things like theme melee attacks (overrides defaultMoveFeedback so we don't get things like fire theme showing the same feedback for both cone of fire and flame strike)"
+},
+"type": "FEEDBACK_MOVEMENT_PREDICTION",
+"ability": {
+	"strictlyBetterThan": [ "defaultMoveFeedback" ],
+	"priority": "1"
+},
+"targets": [
+	{
+		"template": "SELF",
+		"aspects": [ "MY_TURN", "alive", "SELF", "ASPECT" ],
+		"aspectValues": [
+			{ "id": "cooldown|ABILITY", "forbidden": true }
+		]
+	},
+	{
+		"role": "target2",
+		"template": "ADJACENT_ENEMY",
+		"choose": "ANY",
+		"missionFeedback": {
+			"hoverScript": "figures.attackSuggestion",
+			"suggestionFeedback": "ATTACK_SUGGESTION",
+			"suggestionFeedback2": "ATTACK_SUGGESTION_NOT_ENOUGH_TIME"
+		},
+		"aspects": [ "HOSTILE_TARGET", "alive" ],
+		"range": "_RANGE_+self.BONUS_RANGE",
+		"lineOfSight": "LIVE_ENEMIES",
+		"relativeToLocation": "pathMotion"
+	}
+],
+"outcomes": []
+}
