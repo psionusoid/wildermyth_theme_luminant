@@ -3,6 +3,7 @@
 "name": "Luminant",
 "blurb": "A soft glow emanates from <self>, waiting to be released.",
 "modId": "theme_luminant",
+"extraAspects": [ "theme_luminant_radiantForm" ],
 "forbidCombineWith": [ "tree" ],
 "pieces": [
 	{
@@ -355,7 +356,6 @@
 				"rigMode": "femaleHead"
 			}
 		],
-		"effects": [ "theme_luminant_radiantForm" ],
 		"extraAspects": [ "humanSkin_overrideStreakValue|0.8" ],
 		"baseThemeSkinExtraAspects": [ "humanSkin_overrideStreakColor|fcf10a|1" ],
 		"stats": { "RECOVERY_RATE": 4 }

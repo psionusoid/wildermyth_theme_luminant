@@ -1,6 +1,13 @@
 [
 {
 	"modId": "theme_luminant",
+	"id": "theme_luminant_radiantForm",
+	"STUB": "",
+	"effects": [ "theme_luminant_radiantForm" ],
+	"importance": -1
+},
+{
+	"modId": "theme_luminant",
 	"id": "theme_luminant_radiantFormUsed",
 	"effects": [
 		"theme_luminant_radiantFormExtraAspects",
