@@ -30,7 +30,7 @@
 			"showMovementFeedback": true
 		},
 		"minRange": "0.9",
-		"range": "3+(self.POTENCY/2)",
+		"range": "(2+(self.POTENCY/3))+((1+(self.POTENCY/6))*greaterThan((((self.themePiece_light_leftLegLatent+self.themePiece_light_rightLegLatent)+self.themePiece_light_leftLeg)+self.themePiece_light_rightLeg),1))",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "validMoveEnd",
 		"roleMustFit": "self"
