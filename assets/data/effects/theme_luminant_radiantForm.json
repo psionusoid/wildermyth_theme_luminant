@@ -15,7 +15,7 @@
 	"priority": "1",
 	"extraUI": {
 		"overrideDamageType": "MAGIC",
-		"overrideCooldownShown": "6-(theme_light_upgrade*2)"
+		"overrideCooldownShown": "8-((2*theme_light_upgrade)+(2*themePiece_light_aura))"
 	}
 },
 "targets": [
