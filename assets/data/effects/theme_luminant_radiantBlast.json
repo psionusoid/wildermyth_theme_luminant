@@ -20,7 +20,10 @@
 	{
 		"template": "SELF",
 		"cost": { "class": "ActionPoints", "actionPoints": "attack" },
-		"missionFeedback": { "orientTo": "focus" }
+		"missionFeedback": { "orientTo": "focus" },
+		"test": "GREATER_THAN_OR_EQUAL_TO",
+		"a": "(themePiece_light_rightArmLatent+theme_luminant_radiantFormUsed)+(2*themePiece_light_rightArm)",
+		"b": "2"
 	},
 	{
 		"template": "TILE",
@@ -42,7 +45,7 @@
 		"manifold": {
 			"from": "self",
 			"to": "focus",
-			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+self.BONUS_RANGE/2" ],
+			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+(self.BONUS_RANGE/2)" ],
 			"excludeSource": true,
 			"distanceInDirection": "1.6+self.BONUS_RANGE"
 		},
@@ -59,7 +62,7 @@
 		"manifold": {
 			"from": "self",
 			"to": "focus",
-			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+self.BONUS_RANGE/2" ],
+			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+(self.BONUS_RANGE/2)" ],
 			"excludeSource": true,
 			"distanceInDirection": "1.6+self.BONUS_RANGE"
 		},
@@ -84,7 +87,7 @@
 		"manifold": {
 			"from": "self",
 			"to": "focus",
-			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+self.BONUS_RANGE/2" ],
+			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+(self.BONUS_RANGE/2)" ],
 			"excludeSource": true,
 			"distanceInDirection": "1.6+self.BONUS_RANGE"
 		},

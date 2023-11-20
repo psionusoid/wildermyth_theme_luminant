@@ -14,7 +14,10 @@
 	{
 		"template": "SELF",
 		"cost": { "class": "ActionPoints", "actionPoints": "free" },
-		"missionFeedback": { "orientTo": "targetTile" }
+		"missionFeedback": { "orientTo": "targetTile" },
+		"test": "GREATER_THAN_OR_EQUAL_TO",
+		"a": "((themePiece_light_leftLegLatent+themePiece_light_rightLegLatent)*theme_luminant_radiantFormUsed)+(themePiece_light_leftLeg+themePiece_light_rightLeg)",
+		"b": "1"
 	},
 	{
 		"role": "targetTile",

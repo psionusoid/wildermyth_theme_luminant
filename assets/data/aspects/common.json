@@ -5,9 +5,6 @@
 	"effects": [
 		"theme_luminant_radiantFormExtraAspects",
 		"theme_luminant_revertRadiantAtStartOfTurn",
-		"theme_luminant_radiantBlast",
-		"theme_luminant_radiantBeam",
-		"theme_luminant_flashStep",
 		"defaultMoveFeedbackMelee|1.6|theme_luminant_radiantBlast",
 		"defaultSecondaryMoveFeedbackNoLOS|6.6+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam"
 	],
