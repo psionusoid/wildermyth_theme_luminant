@@ -53,15 +53,6 @@
 			"directlyToTile": "targetTile",
 			"animationType": "none"
 		}
-	},
-	{
-		"class": "Test",
-		"value": "self.warriorDeck_zealousLeap_upgrade",
-		"threshold": "1",
-		"onPass": {
-			"class": "Aspects",
-			"removeAspects": [ "pinned" ]
-		}
 	}
 ]
 }
