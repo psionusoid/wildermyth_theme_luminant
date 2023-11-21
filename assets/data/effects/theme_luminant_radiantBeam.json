@@ -33,7 +33,7 @@
 			"hoverFeedback": "ATTACK_HOVER"
 		},
 		"minRange": "0.9",
-		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"range": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor"
 	},
@@ -141,7 +141,7 @@
 			"outcomes": [
 				{
 					"class": "Damage",
-					"amount": "(1d2+1)+floor((((self.PHYSICAL_DAMAGE_BONUS+self.POTENCY)*3)/4))",
+					"amount": "(1d2+1)+floor((((self.PHYSICAL_DAMAGE_BONUS+self.POTENCY)*(2+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm)))/4))",
 					"type": "MAGIC",
 					"overrideStuntDamage": "4",
 					"onStunt": {
