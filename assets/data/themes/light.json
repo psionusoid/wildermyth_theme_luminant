@@ -286,7 +286,7 @@
 	{
 		"id": "aura",
 		"name": "Luminant Aura",
-		"blurb": "<self>'s face glows softly.",
+		"blurb": "<self>'s face glows softly.\n\n[ni]Cooldown of [b]Radiant Form[] reduced by [b]two[] turns.[]",
 		"slots": [ "head" ],
 		"layers": [
 			{
