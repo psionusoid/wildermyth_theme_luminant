@@ -223,6 +223,13 @@
 				"rigMode": "twoHanded"
 			},
 			{
+				"name": "handL_2handed",
+				"tint": "skin",
+				"depth": 8000,
+				"ifNoOwnerAspects": [ "themeSlotFilled_leftArm" ],
+				"rigMode": "twoHanded"
+			},
+			{
 				"name": "armR_R",
 				"depth": 1201,
 				"ifNoOwnerAspect": "themeSkin_light*",
@@ -527,6 +534,13 @@
 				"tint": "skin",
 				"depth": 8000,
 				"grip": null,
+				"rigMode": "twoHanded"
+			},
+			{
+				"name": "handL_2handed",
+				"tint": "skin",
+				"depth": 8000,
+				"ifNoOwnerAspects": [ "themeSlotFilled_leftArm" ],
 				"rigMode": "twoHanded"
 			},
 			{
