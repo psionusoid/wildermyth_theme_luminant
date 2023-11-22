@@ -47,7 +47,7 @@
 		"addAspects": [
 			{
 				"id": "cooldown|theme_luminant_radiantForm",
-				"value": "6-(self.theme_light_upgrade*2)"
+				"value": "8-((2*theme_light_upgrade)+(2*themePiece_light_aura))"
 			}
 		]
 	}
