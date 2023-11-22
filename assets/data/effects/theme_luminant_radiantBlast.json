@@ -13,14 +13,17 @@
 "ability": {
 	"icon": "flashcone",
 	"priority": "102",
-	"extraUI": { "overrideDamageType": "MAGIC", "overrideRangeShown": "2.1+self.BONUS_RANGE" },
+	"extraUI": { "overrideDamageType": "MAGIC", "overrideRangeShown": "1.6+self.BONUS_RANGE" },
 	"branchableAbilityType": "standardMelee"
 },
 "targets": [
 	{
 		"template": "SELF",
 		"cost": { "class": "ActionPoints", "actionPoints": "attack" },
-		"missionFeedback": { "orientTo": "focus" }
+		"missionFeedback": { "orientTo": "focus" },
+		"test": "GREATER_THAN_OR_EQUAL_TO",
+		"a": "(themePiece_light_rightArmLatent+theme_luminant_radiantFormUsed)+(2*themePiece_light_rightArm)",
+		"b": "2"
 	},
 	{
 		"template": "TILE",
@@ -30,7 +33,7 @@
 			"hoverFeedback": "ATTACK_HOVER"
 		},
 		"minRange": "0.9",
-		"range": "2.1+self.BONUS_RANGE",
+		"range": "1.6+self.BONUS_RANGE",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor"
 	},
@@ -42,11 +45,11 @@
 		"manifold": {
 			"from": "self",
 			"to": "focus",
-			"thickness": [ "1.6", "3" ],
+			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+(self.BONUS_RANGE/2)" ],
 			"excludeSource": true,
-			"distanceInDirection": "2.1+self.BONUS_RANGE"
+			"distanceInDirection": "1.6+self.BONUS_RANGE"
 		},
-		"range": "2.1+self.BONUS_RANGE",
+		"range": "1.6+self.BONUS_RANGE",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor"
 	},
@@ -59,12 +62,12 @@
 		"manifold": {
 			"from": "self",
 			"to": "focus",
-			"thickness": [ "1.6", "3" ],
+			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+(self.BONUS_RANGE/2)" ],
 			"excludeSource": true,
-			"distanceInDirection": "2.1+self.BONUS_RANGE"
+			"distanceInDirection": "1.6+self.BONUS_RANGE"
 		},
 		"aspects": [ "alive", "ALLY" ],
-		"range": "2.1+self.BONUS_RANGE",
+		"range": "1.6+self.BONUS_RANGE",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor",
 		"test": "GREATER_THAN_OR_EQUAL_TO",
@@ -84,12 +87,12 @@
 		"manifold": {
 			"from": "self",
 			"to": "focus",
-			"thickness": [ "1.6", "3" ],
+			"thickness": [ "1+(self.BONUS_RANGE/4)", "1+(self.BONUS_RANGE/2)" ],
 			"excludeSource": true,
-			"distanceInDirection": "2.1+self.BONUS_RANGE"
+			"distanceInDirection": "1.6+self.BONUS_RANGE"
 		},
 		"notAlreadyMatchedAs": [ "hero2" ],
-		"range": "2.1+self.BONUS_RANGE",
+		"range": "1.6+self.BONUS_RANGE",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor"
 	}
@@ -123,9 +126,8 @@
 			"outcomes": [
 				{
 					"class": "Damage",
-					"amount": "(3+1d3)+floor((attacker.PHYSICAL_DAMAGE_BONUS+attacker.POTENCY))",
+					"amount": "(1d2+2)+floor((((self.PHYSICAL_DAMAGE_BONUS+self.POTENCY)*(2+(self.themePiece_light_leftArmLatent+self.themePiece_light_leftArm)))/4))",
 					"type": "MAGIC",
-					"pierce": "0",
 					"overrideStuntDamage": "4",
 					"onStunt": {
 						"class": "DoAll",

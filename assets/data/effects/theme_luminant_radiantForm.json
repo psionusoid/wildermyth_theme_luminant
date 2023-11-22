@@ -15,11 +15,19 @@
 	"priority": "1",
 	"extraUI": {
 		"overrideDamageType": "MAGIC",
-		"overrideCooldownShown": "6-(theme_light_upgrade*2)"
+		"overrideCooldownShown": "8-((2*theme_light_upgrade)+(2*themePiece_light_aura))"
 	}
 },
 "targets": [
-	{ "template": "SELF" }
+	{
+		"template": "SELF",
+		"aspectsOneOf": [
+			"themePiece_light_leftArmLatent",
+			"themePiece_light_rightArmLatent",
+			"themePiece_light_leftLegLatent",
+			"themePiece_light_rightLegLatent"
+		]
+	}
 ],
 "outcomes": [
 	{
@@ -39,7 +47,7 @@
 		"addAspects": [
 			{
 				"id": "cooldown|theme_luminant_radiantForm",
-				"value": "6-(self.theme_light_upgrade*2)"
+				"value": "8-((2*theme_light_upgrade)+(2*themePiece_light_aura))"
 			}
 		]
 	}

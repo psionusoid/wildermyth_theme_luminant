@@ -6,7 +6,7 @@
 	"modId": "theme_luminant",
 	"author": "psionusoid"
 },
-"type": "TURN_END",
+"type": "TURN_START",
 "targets": [
 	{ "template": "SELF" }
 ],

@@ -13,14 +13,16 @@
 	"icon": "fireleash",
 	"category": "attackAbility",
 	"priority": "101",
-	"showDescriptionInTooltip": true,
 	"branchableAbilityType": "standardRanged"
 },
 "targets": [
 	{
 		"template": "SELF",
 		"cost": { "class": "ActionPoints", "actionPoints": "attack" },
-		"missionFeedback": { "orientTo": "focus" }
+		"missionFeedback": { "orientTo": "focus" },
+		"test": "GREATER_THAN_OR_EQUAL_TO",
+		"a": "(themePiece_light_leftArmLatent+theme_luminant_radiantFormUsed)+(2*themePiece_light_leftArm)",
+		"b": "2"
 	},
 	{
 		"template": "TILE",
@@ -30,7 +32,7 @@
 			"hoverFeedback": "ATTACK_HOVER"
 		},
 		"minRange": "0.9",
-		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"range": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor"
 	},
@@ -43,9 +45,9 @@
 			"to": "focus",
 			"thickness": [ "1", "2" ],
 			"excludeSource": true,
-			"distanceInDirection": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
+			"distanceInDirection": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
 		},
-		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"range": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor"
 	},
@@ -59,9 +61,9 @@
 			"to": "focus",
 			"thickness": [ "1", "2" ],
 			"excludeSource": true,
-			"distanceInDirection": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
+			"distanceInDirection": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
 		},
-		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"range": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor"
 	},
@@ -76,10 +78,10 @@
 			"to": "focus",
 			"thickness": [ "1", "2" ],
 			"excludeSource": true,
-			"distanceInDirection": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
+			"distanceInDirection": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
 		},
 		"aspects": [ "alive", "ALLY" ],
-		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"range": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor",
 		"test": "GREATER_THAN_OR_EQUAL_TO",
@@ -101,10 +103,10 @@
 			"to": "focus",
 			"thickness": [ "1", "2" ],
 			"excludeSource": true,
-			"distanceInDirection": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
+			"distanceInDirection": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade"
 		},
 		"notAlreadyMatchedAs": [ "hero2" ],
-		"range": "((6.6+self.BONUS_RANGE)+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
+		"range": "(((5.6+self.BONUS_RANGE)+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm))+self.commonDeck_bowmaster)+self.commonDeck_bowmaster_upgrade",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "floor"
 	}
@@ -138,7 +140,7 @@
 			"outcomes": [
 				{
 					"class": "Damage",
-					"amount": "(1d3+1)+(self.PHYSICAL_DAMAGE_BONUS+self.POTENCY)",
+					"amount": "(1d2+1)+floor((((self.PHYSICAL_DAMAGE_BONUS+self.POTENCY)*(2+(self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm)))/4))",
 					"type": "MAGIC",
 					"overrideStuntDamage": "4",
 					"onStunt": {

@@ -14,7 +14,10 @@
 	{
 		"template": "SELF",
 		"cost": { "class": "ActionPoints", "actionPoints": "free" },
-		"missionFeedback": { "orientTo": "targetTile" }
+		"missionFeedback": { "orientTo": "targetTile" },
+		"test": "GREATER_THAN_OR_EQUAL_TO",
+		"a": "((themePiece_light_leftLegLatent+themePiece_light_rightLegLatent)*theme_luminant_radiantFormUsed)+(themePiece_light_leftLeg+themePiece_light_rightLeg)",
+		"b": "1"
 	},
 	{
 		"role": "targetTile",
@@ -27,7 +30,7 @@
 			"showMovementFeedback": true
 		},
 		"minRange": "0.9",
-		"range": "3+(self.POTENCY/2)",
+		"range": "(2+(self.POTENCY/3))+((1+(self.POTENCY/6))*greaterThan((((self.themePiece_light_leftLegLatent+self.themePiece_light_rightLegLatent)+self.themePiece_light_leftLeg)+self.themePiece_light_rightLeg),1))",
 		"lineOfSight": "TERRAIN_ONLY",
 		"tileFilter": "validMoveEnd",
 		"roleMustFit": "self"
@@ -49,15 +52,6 @@
 			"class": "MoveEntity",
 			"directlyToTile": "targetTile",
 			"animationType": "none"
-		}
-	},
-	{
-		"class": "Test",
-		"value": "self.warriorDeck_zealousLeap_upgrade",
-		"threshold": "1",
-		"onPass": {
-			"class": "Aspects",
-			"removeAspects": [ "pinned" ]
 		}
 	}
 ]

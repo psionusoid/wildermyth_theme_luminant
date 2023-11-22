@@ -3,6 +3,7 @@
 "name": "Luminant",
 "blurb": "A soft glow emanates from <self>, waiting to be released.",
 "modId": "theme_luminant",
+"extraAspects": [ "theme_luminant_radiantForm" ],
 "forbidCombineWith": [ "tree" ],
 "pieces": [
 	{
@@ -160,12 +161,12 @@
 		],
 		"effects": [
 			"theme_luminant_radiantBeam",
-			"defaultSecondaryMoveFeedbackNoLOS|6.6+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam"
+			"defaultSecondaryMoveFeedbackNoLOS|5.6+self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam"
 		],
 		"extraAspects": [
 			"themeAbility_ranged",
 			"themeAbility_rangedNoLOS",
-			"attackRange|0|6.6|rangedNonWeapon",
+			"attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
 			"hasRangedNoLOS"
 		],
 		"canBeAwardedRandomly": false,
@@ -285,7 +286,7 @@
 	{
 		"id": "aura",
 		"name": "Luminant Aura",
-		"blurb": "<self>'s face glows softly.",
+		"blurb": "<self>'s face glows softly.\n\n[ni]Cooldown of [b]Radiant Form[] reduced by [b]two[] turns.[]",
 		"slots": [ "head" ],
 		"layers": [
 			{
@@ -355,7 +356,6 @@
 				"rigMode": "femaleHead"
 			}
 		],
-		"effects": [ "theme_luminant_radiantForm" ],
 		"extraAspects": [ "humanSkin_overrideStreakValue|0.8" ],
 		"baseThemeSkinExtraAspects": [ "humanSkin_overrideStreakColor|fcf10a|1" ],
 		"stats": { "RECOVERY_RATE": 4 }
@@ -475,7 +475,8 @@
 				"ifNoOwnerAspect": "themeSkin_light*",
 				"rigMode": "twoHanded"
 			}
-		]
+		],
+		"effects": [ "theme_luminant_radiantBeam" ]
 	},
 	{
 		"id": "rightArmLatent",
@@ -588,7 +589,8 @@
 				"ifNoOwnerAspect": "themeSkin_light*",
 				"rigMode": "twoHanded"
 			}
-		]
+		],
+		"effects": [ "theme_luminant_radiantBlast" ]
 	},
 	{
 		"id": "leftLegLatent",
@@ -612,6 +614,7 @@
 				"ifNoOwnerAspect": "themeSkin_light*"
 			}
 		],
+		"effects": [ "theme_luminant_flashStep" ],
 		"stats": { "SPEED": 1.7 }
 	},
 	{
@@ -636,6 +639,7 @@
 				"ifNoOwnerAspect": "themeSkin_light*"
 			}
 		],
+		"effects": [ "theme_luminant_flashStep" ],
 		"stats": { "SPEED": 1.7 }
 	}
 ]
