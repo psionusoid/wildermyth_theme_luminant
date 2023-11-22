@@ -28,7 +28,10 @@
 			{ "id": "themeAbility_ranged", "value": "1" },
 			{ "id": "themeAbility_rangedNoLOS", "value": "1" },
 			{ "id": "attackRange|0|2.1|melee", "value": "1" },
-			{ "id": "attackRange|0|6.6|rangedNonWeapon", "value": "1" },
+			{
+				"id": "attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
+				"value": "1"
+			},
 			{ "id": "hasRangedNoLOS", "value": "1" },
 			{ "id": "themeAbility_melee", "value": "1" }
 		],

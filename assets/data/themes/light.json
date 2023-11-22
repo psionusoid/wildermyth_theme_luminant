@@ -161,12 +161,12 @@
 		],
 		"effects": [
 			"theme_luminant_radiantBeam",
-			"defaultSecondaryMoveFeedbackNoLOS|6.6+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam"
+			"defaultSecondaryMoveFeedbackNoLOS|5.6+self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam"
 		],
 		"extraAspects": [
 			"themeAbility_ranged",
 			"themeAbility_rangedNoLOS",
-			"attackRange|0|6.6|rangedNonWeapon",
+			"attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
 			"hasRangedNoLOS"
 		],
 		"canBeAwardedRandomly": false,
