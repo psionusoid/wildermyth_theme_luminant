@@ -128,7 +128,6 @@
 					"class": "Damage",
 					"amount": "(1d2+2)+floor((((self.PHYSICAL_DAMAGE_BONUS+self.POTENCY)*(2+(self.themePiece_light_leftArmLatent+self.themePiece_light_leftArm)))/4))",
 					"type": "MAGIC",
-					"pierce": "0",
 					"overrideStuntDamage": "4",
 					"onStunt": {
 						"class": "DoAll",
