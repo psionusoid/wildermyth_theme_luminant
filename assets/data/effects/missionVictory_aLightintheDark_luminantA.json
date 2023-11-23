@@ -151,7 +151,7 @@
 									},
 									{
 										"role": "ship",
-										"form": "frame-skeptical",
+										"form": "frame-grim",
 										"facing": "left",
 										"equipment": {},
 										"anchor": { "x": 0.58, "y": 0.266 },
@@ -159,6 +159,7 @@
 									},
 									{
 										"role": "volunteer",
+										"form": "frame-sad",
 										"facing": "left",
 										"equipment": {},
 										"anchor": { "x": 0.883, "y": 0.496 },
@@ -213,7 +214,7 @@
 											"actorSlots": [
 												{
 													"role": "target",
-													"form": "frame-joy",
+													"form": "frame-grim",
 													"equipment": {},
 													"anchor": { "x": 0.232, "y": 0.469 },
 													"size": 0.64171296,
@@ -221,6 +222,7 @@
 												},
 												{
 													"role": "ship",
+													"form": "frame-sad",
 													"facing": "left",
 													"equipment": {},
 													"anchor": { "x": 0.516, "y": 0.444 },
@@ -228,6 +230,7 @@
 												},
 												{
 													"role": "volunteer",
+													"form": "frame-grim",
 													"facing": "left",
 													"equipment": {},
 													"anchor": { "x": 0.807, "y": 0.479 },
@@ -270,7 +273,7 @@
 											"actorSlots": [
 												{
 													"role": "target",
-													"form": "frame-joy",
+													"form": "frame-sad",
 													"equipment": {},
 													"anchor": { "x": 0.197, "y": 0.351 },
 													"size": 0.83508795,
@@ -278,17 +281,18 @@
 												},
 												{
 													"role": "ship",
-													"form": "frame-skeptical",
+													"form": "frame-grim",
 													"facing": "left",
 													"equipment": {},
-													"anchor": { "x": 0.59, "y": 0.307 },
+													"anchor": { "x": 0.58, "y": 0.266 },
 													"size": 0.83508795
 												},
 												{
 													"role": "volunteer",
+													"form": "frame-sad",
 													"facing": "left",
 													"equipment": {},
-													"anchor": { "x": 0.895, "y": 0.35 },
+													"anchor": { "x": 0.883, "y": 0.496 },
 													"size": 0.83508795,
 													"head": { "scaleY": 1 }
 												}
@@ -303,8 +307,8 @@
 													"textSourceFile": "missionVictory_aLightintheDark_luminantA",
 													"textKey": "~01~~panel_004.(deadHero_is_missing).(maimedHero_exists)~2_target",
 													"pointerOwner": "target",
-													"padXFraction": 0.013,
-													"padYFraction": 0.135,
+													"padXFraction": 0.258,
+													"padYFraction": 0.164,
 													"widthFraction": 0.6077348,
 													"shrinkToFitText": true
 												},

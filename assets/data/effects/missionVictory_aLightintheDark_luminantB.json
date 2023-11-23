@@ -72,117 +72,6 @@
 		"lightweight": false,
 		"script": [
 			{
-				"class": "comicNode_Panel",
-				"panel": {
-					"size": "full",
-					"showNameTags": false,
-					"actorSlots": [
-						{
-							"role": "target",
-							"form": "frame-happy",
-							"facing": "left",
-							"equipment": {},
-							"anchor": { "x": 0.545, "y": 0.509 },
-							"size": 0.642,
-							"head": { "scaleY": 1 }
-						},
-						{
-							"role": "bookish",
-							"equipment": {},
-							"anchor": { "x": 0.202, "y": 0.504 },
-							"size": 0.642,
-							"head": { "rotate": 2.563 }
-						},
-						{
-							"role": "ship",
-							"form": "frame-interested",
-							"facing": "left",
-							"equipment": {},
-							"anchor": { "x": 0.812, "y": 0.473 },
-							"size": 0.642
-						}
-					],
-					"textSlots": [
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-							"textKey": "~01~~panel_001~1_narration",
-							"style": "narration"
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-							"textKey": "~01~~panel_001~2_bookish",
-							"pointerOwner": "bookish",
-							"padXFraction": 0.126,
-							"padYFraction": 0.135,
-							"shrinkToFitText": true
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-							"textKey": "~01~~panel_001~3_target",
-							"pointerOwner": "target"
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-							"textKey": "~01~~panel_001~4_ship",
-							"pointerOwner": "ship"
-						}
-					]
-				}
-			},
-			{
-				"class": "comicNode_Panel",
-				"panel": {
-					"size": "fiveSixths",
-					"showNameTags": false,
-					"actorSlots": [
-						{
-							"role": "target",
-							"facing": "left",
-							"equipment": {},
-							"anchor": { "x": 0.519, "y": 0.456 },
-							"size": 0.642,
-							"head": { "scaleY": 1 }
-						},
-						{
-							"role": "bookish",
-							"equipment": {},
-							"anchor": { "x": 0.202, "y": 0.504 },
-							"size": 0.642,
-							"head": { "rotate": -7.044 }
-						},
-						{
-							"role": "ship",
-							"form": "frame-interested",
-							"facing": "left",
-							"equipment": {},
-							"anchor": { "x": 0.83, "y": 0.536 },
-							"size": 0.642
-						}
-					],
-					"textSlots": [
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-							"textKey": "~01~~panel_002~1_bookish",
-							"pointerOwner": "bookish",
-							"padXFraction": 0.126,
-							"padYFraction": 0.135,
-							"shrinkToFitText": true
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-							"textKey": "~01~~panel_002~2_target",
-							"pointerOwner": "target",
-							"pointerAdjust": {}
-						},
-						{
-							"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-							"textKey": "~01~~panel_002~3_ship",
-							"pointerOwner": "ship"
-						}
-					]
-				}
-			},
-			{
 				"class": "comicNode_Split",
 				"splitSpec": "deadHero.exists",
 				"splitBranches": [
@@ -195,7 +84,7 @@
 								"actorSlots": [
 									{
 										"role": "target",
-										"form": "frame-happy",
+										"form": "frame-grim",
 										"facing": "left",
 										"equipment": {},
 										"anchor": { "x": 0.545, "y": 0.509 },
@@ -204,6 +93,7 @@
 									},
 									{
 										"role": "bookish",
+										"form": "frame-sad",
 										"equipment": {},
 										"anchor": { "x": 0.202, "y": 0.504 },
 										"size": 0.642,
@@ -211,7 +101,7 @@
 									},
 									{
 										"role": "ship",
-										"form": "frame-interested",
+										"form": "frame-grim",
 										"facing": "left",
 										"equipment": {},
 										"anchor": { "x": 0.812, "y": 0.473 },
@@ -221,12 +111,12 @@
 								"textSlots": [
 									{
 										"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-										"textKey": "~01~~panel_003.(deadHero_exists)~1_narration",
+										"textKey": "~01~~panel_001.(deadHero_exists)~1_narration",
 										"style": "narration"
 									},
 									{
 										"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-										"textKey": "~01~~panel_003.(deadHero_exists)~2_bookish",
+										"textKey": "~01~~panel_001.(deadHero_exists)~2_bookish",
 										"pointerOwner": "bookish",
 										"padXFraction": 0.126,
 										"padYFraction": 0.135,
@@ -234,12 +124,12 @@
 									},
 									{
 										"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-										"textKey": "~01~~panel_003.(deadHero_exists)~3_target",
+										"textKey": "~01~~panel_001.(deadHero_exists)~3_target",
 										"pointerOwner": "target"
 									},
 									{
 										"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-										"textKey": "~01~~panel_003.(deadHero_exists)~4_ship",
+										"textKey": "~01~~panel_001.(deadHero_exists)~4_ship",
 										"pointerOwner": "ship"
 									}
 								]
@@ -253,6 +143,7 @@
 								"actorSlots": [
 									{
 										"role": "target",
+										"form": "frame-sad",
 										"facing": "left",
 										"equipment": {},
 										"anchor": { "x": 0.519, "y": 0.456 },
@@ -261,6 +152,7 @@
 									},
 									{
 										"role": "bookish",
+										"form": "frame-grim",
 										"equipment": {},
 										"anchor": { "x": 0.202, "y": 0.504 },
 										"size": 0.642,
@@ -268,7 +160,7 @@
 									},
 									{
 										"role": "ship",
-										"form": "frame-interested",
+										"form": "frame-sad",
 										"facing": "left",
 										"equipment": {},
 										"anchor": { "x": 0.83, "y": 0.536 },
@@ -278,7 +170,7 @@
 								"textSlots": [
 									{
 										"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-										"textKey": "~01~~panel_004.(deadHero_exists)~1_bookish",
+										"textKey": "~01~~panel_002.(deadHero_exists)~1_bookish",
 										"pointerOwner": "bookish",
 										"padXFraction": 0.126,
 										"padYFraction": 0.135,
@@ -286,13 +178,13 @@
 									},
 									{
 										"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-										"textKey": "~01~~panel_004.(deadHero_exists)~2_target",
+										"textKey": "~01~~panel_002.(deadHero_exists)~2_target",
 										"pointerOwner": "target",
 										"pointerAdjust": {}
 									},
 									{
 										"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-										"textKey": "~01~~panel_004.(deadHero_exists)~3_ship",
+										"textKey": "~01~~panel_002.(deadHero_exists)~3_ship",
 										"pointerOwner": "ship"
 									}
 								]
@@ -313,7 +205,7 @@
 											"actorSlots": [
 												{
 													"role": "target",
-													"form": "frame-happy",
+													"form": "frame-grim",
 													"facing": "left",
 													"equipment": {},
 													"anchor": { "x": 0.545, "y": 0.509 },
@@ -322,6 +214,7 @@
 												},
 												{
 													"role": "bookish",
+													"form": "frame-sad",
 													"equipment": {},
 													"anchor": { "x": 0.202, "y": 0.504 },
 													"size": 0.642,
@@ -329,7 +222,7 @@
 												},
 												{
 													"role": "ship",
-													"form": "frame-interested",
+													"form": "frame-grim",
 													"facing": "left",
 													"equipment": {},
 													"anchor": { "x": 0.812, "y": 0.473 },
@@ -339,12 +232,12 @@
 											"textSlots": [
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_exists)~1_narration",
+													"textKey": "~01~~panel_003.(deadHero_is_missing).(maimedHero_exists)~1_narration",
 													"style": "narration"
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_exists)~2_bookish",
+													"textKey": "~01~~panel_003.(deadHero_is_missing).(maimedHero_exists)~2_bookish",
 													"pointerOwner": "bookish",
 													"padXFraction": 0.126,
 													"padYFraction": 0.135,
@@ -352,12 +245,12 @@
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_exists)~3_target",
+													"textKey": "~01~~panel_003.(deadHero_is_missing).(maimedHero_exists)~3_target",
 													"pointerOwner": "target"
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_exists)~4_ship",
+													"textKey": "~01~~panel_003.(deadHero_is_missing).(maimedHero_exists)~4_ship",
 													"pointerOwner": "ship"
 												}
 											]
@@ -371,6 +264,7 @@
 											"actorSlots": [
 												{
 													"role": "target",
+													"form": "frame-sad",
 													"facing": "left",
 													"equipment": {},
 													"anchor": { "x": 0.519, "y": 0.456 },
@@ -379,6 +273,7 @@
 												},
 												{
 													"role": "bookish",
+													"form": "frame-grim",
 													"equipment": {},
 													"anchor": { "x": 0.202, "y": 0.504 },
 													"size": 0.642,
@@ -386,7 +281,7 @@
 												},
 												{
 													"role": "ship",
-													"form": "frame-interested",
+													"form": "frame-sad",
 													"facing": "left",
 													"equipment": {},
 													"anchor": { "x": 0.83, "y": 0.536 },
@@ -396,7 +291,7 @@
 											"textSlots": [
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_exists)~1_bookish",
+													"textKey": "~01~~panel_004.(deadHero_is_missing).(maimedHero_exists)~1_bookish",
 													"pointerOwner": "bookish",
 													"padXFraction": 0.126,
 													"padYFraction": 0.135,
@@ -404,13 +299,13 @@
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_exists)~2_target",
+													"textKey": "~01~~panel_004.(deadHero_is_missing).(maimedHero_exists)~2_target",
 													"pointerOwner": "target",
 													"pointerAdjust": {}
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_exists)~3_ship",
+													"textKey": "~01~~panel_004.(deadHero_is_missing).(maimedHero_exists)~3_ship",
 													"pointerOwner": "ship"
 												}
 											]
@@ -453,12 +348,12 @@
 											"textSlots": [
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~1_narration",
+													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_is_missing)~1_narration",
 													"style": "narration"
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~2_bookish",
+													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_is_missing)~2_bookish",
 													"pointerOwner": "bookish",
 													"padXFraction": 0.126,
 													"padYFraction": 0.135,
@@ -466,12 +361,12 @@
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~3_target",
+													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_is_missing)~3_target",
 													"pointerOwner": "target"
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~4_ship",
+													"textKey": "~01~~panel_005.(deadHero_is_missing).(maimedHero_is_missing)~4_ship",
 													"pointerOwner": "ship"
 												}
 											]
@@ -512,7 +407,7 @@
 											"textSlots": [
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_008.(deadHero_is_missing).(maimedHero_is_missing)~1_bookish",
+													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_is_missing)~1_bookish",
 													"pointerOwner": "bookish",
 													"padXFraction": 0.126,
 													"padYFraction": 0.135,
@@ -520,13 +415,66 @@
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_008.(deadHero_is_missing).(maimedHero_is_missing)~2_target",
+													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_is_missing)~2_target",
 													"pointerOwner": "target",
 													"pointerAdjust": {}
 												},
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
-													"textKey": "~01~~panel_008.(deadHero_is_missing).(maimedHero_is_missing)~3_ship",
+													"textKey": "~01~~panel_006.(deadHero_is_missing).(maimedHero_is_missing)~3_ship",
+													"pointerOwner": "ship"
+												}
+											]
+										}
+									},
+									{
+										"class": "comicNode_Panel",
+										"panel": {
+											"size": "full",
+											"showNameTags": false,
+											"actorSlots": [
+												{
+													"role": "target",
+													"form": "frame-happy",
+													"equipment": {},
+													"anchor": { "x": 0.532, "y": 0.43 },
+													"size": 0.8769978,
+													"head": { "scaleY": 1 }
+												},
+												{
+													"role": "bookish",
+													"equipment": {},
+													"anchor": { "x": 0.133, "y": 0.504 },
+													"size": 0.8769978,
+													"head": { "rotate": -7.044 }
+												},
+												{
+													"role": "ship",
+													"form": "frame-talk",
+													"facing": "left",
+													"equipment": {},
+													"anchor": { "x": 0.8741741, "y": 0.54917747 },
+													"size": 0.8769978
+												}
+											],
+											"textSlots": [
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
+													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~1_bookish",
+													"pointerOwner": "bookish",
+													"padXFraction": 0.126,
+													"padYFraction": 0.135,
+													"shrinkToFitText": true
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
+													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~2_target",
+													"pointerOwner": "target",
+													"pointerAdjust": {}
+												},
+												{
+													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
+													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~3_ship",
 													"pointerOwner": "ship"
 												}
 											]
