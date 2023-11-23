@@ -318,6 +318,7 @@
 										"panel": {
 											"size": "full",
 											"showNameTags": false,
+											"bg": "comicBG_forestFoothill_green.jpg",
 											"actorSlots": [
 												{
 													"role": "target",
