@@ -476,7 +476,10 @@
 												{
 													"textSourceFile": "missionVictory_aLightintheDark_luminantB",
 													"textKey": "~01~~panel_007.(deadHero_is_missing).(maimedHero_is_missing)~3_ship",
-													"pointerOwner": "ship"
+													"pointerOwner": "ship",
+													"padXFraction": 0.504,
+													"padYFraction": 0.04,
+													"shrinkToFitText": true
 												}
 											]
 										}

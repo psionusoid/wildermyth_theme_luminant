@@ -37,7 +37,6 @@
 	{
 		"role": "ship",
 		"template": "PICK_BY_SCORE",
-		"choose": "BY_SCORE_OPTIONAL",
 		"scoreFunction": "((LOVER_WITH.target*100)+(RIVAL_WITH.target*10))+SHIP_WITH.target",
 		"fromRoles": [ "party", "maimedHero" ],
 		"notAlreadyMatchedAs": [ "target" ]
@@ -460,7 +459,6 @@
 											"actorSlots": [
 												{
 													"role": "target",
-													"form": "frame-talk",
 													"equipment": {},
 													"anchor": { "x": 0.586, "y": 0.447 },
 													"size": 0.47302884,
@@ -468,7 +466,7 @@
 												},
 												{
 													"role": "ship",
-													"form": "frame-interested",
+													"form": "frame-talk",
 													"facing": "left",
 													"equipment": {},
 													"anchor": { "x": 0.771, "y": 0.422 },
