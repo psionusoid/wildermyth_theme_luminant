@@ -46,7 +46,7 @@
 		"role": "hero3",
 		"template": "PICK_BY_SCORE",
 		"type": "HERO",
-		"scoreFunction": "LEADER",
+		"scoreFunction": "LEADER+(100*(((((1-themeSlotFilled_head)*(1-themeSlotFilled_leftArm))*(1-themeSlotFilled_rightArm))*(1-themeSlotFilled_leftLeg))*(1-themeSlotFilled_rightLeg)))",
 		"notAlreadyMatchedAs": [ "bookish", "snark" ]
 	},
 	{
@@ -2718,7 +2718,7 @@
 							"actorSlots": [
 								{
 									"role": "volunteer",
-									"form": "frame-scheming",
+									"form": "frame-surprised",
 									"anchor": { "x": 0.46, "y": 0.442 },
 									"size": 1.05569,
 									"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
@@ -2755,6 +2755,7 @@
 							"actorSlots": [
 								{
 									"role": "volunteer2",
+									"form": "frame-interested",
 									"anchor": { "x": 0.488, "y": 0.418 },
 									"size": 1.05569,
 									"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
@@ -2792,6 +2793,7 @@
 							"actorSlots": [
 								{
 									"role": "volunteer3",
+									"form": "frame-interested",
 									"anchor": { "x": 0.5, "y": 0.418 },
 									"size": 1.05569,
 									"color": { "r": "0.94815236", "g": "0.95520723", "b": "0.72945189", "a": "1" }
