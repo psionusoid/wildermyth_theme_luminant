@@ -20,7 +20,7 @@
 	{
 		"template": "COMPANY",
 		"aspectValues": [
-			{ "id": "chapterNumber", "minValue": "1" }
+			{ "id": "chapterNumber", "minValue": "3" }
 		]
 	},
 	{ "template": "INJECTED_TILE" },
@@ -76,7 +76,6 @@
 			{ "id": "themeSlotFilled_leftLeg", "forbidden": true },
 			{ "id": "themeSlotFilled_rightLeg", "forbidden": true }
 		],
-		"notAlreadyMatchedAs": [],
 		"themes": { "eligibleForTheme": "light", "eligibleForPiece": "aura" }
 	},
 	{
@@ -137,6 +136,16 @@
 		"template": "PICK_BY_SCORE",
 		"type": "HERO",
 		"scoreFunction": "HEALER"
+	},
+	{
+		"role": "subPlot",
+		"template": "PICK_BY_SCORE",
+		"STUB": "Role to test whether the \"volunteer\" role is the same hero as the \"bookish\" role",
+		"type": "HERO",
+		"choose": "BY_SCORE_OPTIONAL",
+		"scoreFunction": null,
+		"notAlreadyMatchedAs": [ "snark", "hero3", "hero4", "hero5" ],
+		"alreadyMatchedAs": [ "volunteer" ]
 	},
 	{
 		"template": "CHOICE",
