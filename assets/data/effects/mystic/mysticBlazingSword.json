@@ -1,0 +1,125 @@
+{
+"id": "mysticBlazingSword",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "mystic/mysticBlazingSword",
+	"modId": "theme_luminant",
+	"tags": [ "mysticBlazingSword" ]
+},
+"type": "ABILITY",
+"verb": "ATTACK",
+"ability": { "icon": "blazingSword", "priority": "1" },
+"targets": [
+	{
+		"template": "SELF",
+		"cost": { "class": "ActionPoints", "actionPoints": "attack" },
+		"missionFeedback": { "orientTo": "subject" }
+	},
+	{
+		"role": "fire",
+		"template": "ANY",
+		"type": "HAZARD",
+		"missionFeedback": {
+			"suggestionScript": "figures.abilitySelectOption",
+			"hoverScript": "figures.abilitySelectHover",
+			"selectedScript": "figures.abilitySelectSelected",
+			"rangeFeedback": "FRIENDLY_EFFECT_RANGE",
+			"suggestionFeedback": "FRIENDLY_EFFECT_SUGGESTION",
+			"hoverFeedback": "FRIENDLY_EFFECT_HOVER"
+		},
+		"relationship": "interfusedWithEntity",
+		"aspects": [ "uncontainedFire" ]
+	},
+	{
+		"role": "subject",
+		"template": "ADJACENT_ALLY",
+		"promptText": "Choose an ally to empower",
+		"promptTextKey": ".target.subject.promptText",
+		"missionFeedback": {
+			"orientTo": "target",
+			"suggestionScript": "figures.abilitySelectOption",
+			"hoverScript": "figures.abilitySelectHover",
+			"selectedScript": "figures.abilitySelectSelected",
+			"rangeFeedback": "FRIENDLY_EFFECT_RANGE",
+			"suggestionFeedback": "FRIENDLY_EFFECT_SUGGESTION",
+			"hoverFeedback": "FRIENDLY_EFFECT_HOVER"
+		},
+		"aspectValues": [
+			{ "id": "senseless", "forbidden": true },
+			{ "id": "senselessPermanent", "forbidden": true },
+			{ "id": "stasis", "forbidden": true },
+			{ "id": "crystalChrysalis", "forbidden": true }
+		],
+		"range": "5.6+self.BONUS_RANGE",
+		"test": "GREATER_THAN",
+		"a": "MAX_MELEE_ATTACK_RANGE",
+		"b": "0",
+		"relativeToLocation": "fire"
+	},
+	{
+		"template": "ADJACENT_ENEMY",
+		"promptText": "Choose a target to attack",
+		"promptTextKey": ".target.target.promptText",
+		"alwaysSelect": true,
+		"missionFeedback": {
+			"orientTo": "subject",
+			"suggestionScript": "figures.attackSuggestion",
+			"hoverScript": "figures.attackHovered",
+			"rangeFeedback": "ATTACK_RANGE",
+			"suggestionFeedback": "ATTACK_SUGGESTION",
+			"hoverFeedback": "ATTACK_HOVER"
+		},
+		"aspects": [ "HOSTILE_TARGET", "alive" ],
+		"relativeTo": "subject",
+		"minRange": "subject.MIN_MELEE_ATTACK_RANGE",
+		"range": "subject.MAX_MELEE_ATTACK_RANGE+subject.BONUS_RANGE"
+	},
+	{
+		"role": "targetTile",
+		"template": "TILE",
+		"relativeTo": "target",
+		"range": null,
+		"roleMustFit": "target"
+	}
+],
+"outcomes": [
+	{
+		"class": "AttackRoll",
+		"defender": null,
+		"attackAnimationType": "interaction",
+		"showAbilityName": "ifEnemy",
+		"stopBlockingTime": "onHit",
+		"timingOverride": { "attackTime": "500" },
+		"particles": [
+			{
+				"script": "spiritbladeFire",
+				"setPosition": "fire",
+				"setPosition2": "subject",
+				"delay": -0.2
+			}
+		],
+		"audioOverride": {
+			"attackStartCue": "Characters/DefaultHuman/Magic_FireMiss",
+			"attackHitCue": "",
+			"attackDodgedCue": "",
+			"attackBlockedCue": ""
+		},
+		"defenderAnimationOverride": "",
+		"markForFlanking": "never",
+		"always": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "BranchAbility",
+					"target": "subject",
+					"branchType": "standardMelee",
+					"targetRole": "target",
+					"tileRole": "targetTile",
+					"triggerAbilityUsedEffects": true
+				}
+			]
+		}
+	},
+	{ "class": "Spawn", "target": "target", "addFire": "2" }
+]
+}
