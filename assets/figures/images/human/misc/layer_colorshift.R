@@ -4,7 +4,13 @@ library(png)
 solid <- TRUE
 
 #the color to use for the solid color method (example: "#FFFF00")
-solid_color <- "#00FFFF"
+solid_color <- "#FF2020" #red
+solid_color <- "#FFA500" #orange
+solid_color <- "#40FF40" #green
+#solid_color <- "#00FFFF" #cyan
+solid_color <- "#6060FF" #blue
+solid_color <- "#FF40FF" #magenta
+solid_color <- "#202020" #shadowy
 
 #what to add to the filename for this set of images
 file_name_modifier <- paste0("_", paste0(strsplit(solid_color, split = "")[[1]][-1], collapse = ""))
