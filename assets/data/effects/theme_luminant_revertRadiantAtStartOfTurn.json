@@ -36,30 +36,35 @@
 		]
 	},
 	{
-		"class": "Test",
-		"value": "(1-self.themeSkin_lightTint)-self.themeSkin_lightCyan",
-		"threshold": "1",
-		"onPass": {
-			"class": "Aspects",
-			"addAspects": [
-				{ "id": "humanSkin_overrideStreakColor|fcf10a|1", "value": "1" }
-			]
-		},
-		"onFail": {
-			"class": "Test",
-			"value": "self.themeSkin_lightCyan",
-			"threshold": "1",
-			"onPass": {
-				"class": "Aspects",
-				"addAspects": [
-					{
-						"id": "humanSkin_overrideStreakColor|00ffff|1",
-						"value": "1",
-						"merge": "replace"
-					}
-				]
+		"class": "DoFirstValid",
+		"outcomes": [
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightCyan",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideStreakColor|00ffff|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "1-self.themeSkin_lightTint",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{ "id": "humanSkin_overrideStreakColor|fcf10a|1", "value": "1" }
+					]
+				}
 			}
-		}
+		]
 	}
 ]
 }
