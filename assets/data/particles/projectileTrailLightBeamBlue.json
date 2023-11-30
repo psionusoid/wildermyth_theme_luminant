@@ -1,0 +1,63 @@
+{
+"budget": "400",
+"emitterLifetime": "0.1",
+"loopLimit": "1",
+"bucketStrategy": "spatialPlanes",
+"overrideParticleScript": {
+	"override": "projectileTrailLightBeam",
+	"ifOwnerAspect": "themeSkin_lightBlue"
+},
+"rules": [
+	{
+		"class": "Rate",
+		"rate": "100",
+		"doAll": [
+			{
+				"class": "Emit",
+				"numberOfParticles": "1",
+				"image": [ "particle_lightburst2" ],
+				"light": "gain",
+				"size": "0.2",
+				"killTime": "[0.6,1]",
+				"initializeWith": [
+					{
+						"class": "SetColor",
+						"color": { "r": "1", "g": "0.89604849", "b": "0.08522725", "a": "1" }
+					},
+					{ "class": "ParticleVar", "name": "adjust", "value": "e.life-[0,0.08]" },
+					{
+						"class": "ParticleVar",
+						"name": "sz",
+						"value": "e.life~{0.5|0.30000001|0.2}+[0,0.1]"
+					},
+					{
+						"class": "SetPosition",
+						"x": "lerp(0,e.dx,adjust)",
+						"y": "lerp(0,e.dy,adjust)",
+						"z": "-0.4+((adjust-0.5)*(adjust-0.5))",
+						"theta": "[-90,90]"
+					},
+					{
+						"class": "SetVelocity",
+						"vx": "(0.1*e.dx)+[-0.1,0.1]",
+						"vy": "(0.1*e.dy)+[-0.1,0.1]"
+					}
+				]
+			}
+		]
+	},
+	{ "class": "Lifetime" },
+	{ "class": "Accelerate" },
+	{
+		"class": "SetColor",
+		"color": {
+			"r": "life~{1.20000005|0.5|0.1}",
+			"g": "life~{1.20000005|0.5|0.1}",
+			"b": "life~{1.20000005|1.20000005|0.30000001}",
+			"a": "life~{1|0.80000001|0.5|0.60000002|0.40000001|0.1|0.05|0}"
+		}
+	},
+	{ "class": "BasicPhysics" },
+	{ "class": "SetSize", "size": "0.6*life~{1|2|10}" }
+]
+}
