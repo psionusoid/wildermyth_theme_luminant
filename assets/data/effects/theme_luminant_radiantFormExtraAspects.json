@@ -49,6 +49,51 @@
 		"outcomes": [
 			{
 				"class": "Test",
+				"value": "self.themeSkin_lightRed",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|ff2020|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightOrange",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|ffa500|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightGreen",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|40ff40|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
 				"value": "self.themeSkin_lightCyan",
 				"threshold": "1",
 				"onPass": {
@@ -56,6 +101,66 @@
 					"addAspects": [
 						{
 							"id": "humanSkin_overrideHairColor|00ffff|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightBlue",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|6060ff|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightMagenta",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|ff40ff|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightWhite",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|ffffff|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightShadowy",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|202020|1",
 							"value": "1",
 							"merge": "replace"
 						}

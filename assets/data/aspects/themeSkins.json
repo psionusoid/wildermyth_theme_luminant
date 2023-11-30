@@ -1,6 +1,1056 @@
 [
 {
 	"modId": "theme_luminant",
+	"id": "themeSkin_lightRed",
+	"importance": -1,
+	"invalidatesSkin": true,
+	"skinLayers": [
+		{
+			"name": "face_eyeLightML_FF2020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_FF2020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_FF2020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_FF2020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantM_FF2020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantF_FF2020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_R_FF2020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_FF2020",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_R_FF2020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_FF2020",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_FF2020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_R_FF2020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_FF2020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_R_FF2020",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_FF2020",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_R_FF2020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLeg"
+		},
+		{
+			"name": "legR_R_FF2020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLeg"
+		},
+		{
+			"name": "head_auraLightM_FF2020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantM_FF2020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraLightF_FF2020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantF_FF2020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightML_FF2020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_FF2020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_FF2020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_FF2020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_L_FF2020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL_R_FF2020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_L_FF2020",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_FF2020",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_L_FF2020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2upper_R_FF2020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_L_FF2020",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_FF2020",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_L_FF2020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_FF2020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_L_FF2020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR_R_FF2020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_L_FF2020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_FF2020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_L_FF2020",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR2_R_FF2020",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_L_FF2020",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_FF2020",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_L_FF2020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legL_R_FF2020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_L_FF2020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_R_FF2020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		}
+	],
+	"lifespan": "all",
+	"themeSkin": "light",
+	"themeSkinSpecificAspects": [
+		{
+			"themePiece": "aura",
+			"applyAspect": "humanSkin_overrideStreakColor|ff2020|1.0"
+		},
+		{
+			"themePiece": "auraRadiant",
+			"applyAspect": "humanSkin_overrideHairColor|ff2020|1"
+		}
+	]
+},
+{
+	"modId": "theme_luminant",
+	"id": "themeSkin_lightOrange",
+	"importance": -1,
+	"invalidatesSkin": true,
+	"skinLayers": [
+		{
+			"name": "face_eyeLightML_FFA500",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_FFA500",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_FFA500",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_FFA500",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantM_FFA500",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantF_FFA500",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_R_FFA500",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_FFA500",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_R_FFA500",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_FFA500",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_FFA500",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_R_FFA500",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_FFA500",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_R_FFA500",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_FFA500",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_R_FFA500",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLeg"
+		},
+		{
+			"name": "legR_R_FFA500",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLeg"
+		},
+		{
+			"name": "head_auraLightM_FFA500",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantM_FFA500",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraLightF_FFA500",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantF_FFA500",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightML_FFA500",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_FFA500",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_FFA500",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_FFA500",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_L_FFA500",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL_R_FFA500",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_L_FFA500",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_FFA500",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_L_FFA500",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2upper_R_FFA500",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_L_FFA500",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_FFA500",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_L_FFA500",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_FFA500",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_L_FFA500",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR_R_FFA500",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_L_FFA500",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_FFA500",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_L_FFA500",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR2_R_FFA500",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_L_FFA500",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_FFA500",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_L_FFA500",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legL_R_FFA500",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_L_FFA500",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_R_FFA500",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		}
+	],
+	"lifespan": "all",
+	"themeSkin": "light",
+	"themeSkinSpecificAspects": [
+		{
+			"themePiece": "aura",
+			"applyAspect": "humanSkin_overrideStreakColor|ffa500|1.0"
+		},
+		{
+			"themePiece": "auraRadiant",
+			"applyAspect": "humanSkin_overrideHairColor|ffa500|1"
+		}
+	]
+},
+{
+	"modId": "theme_luminant",
+	"id": "themeSkin_lightGreen",
+	"importance": -1,
+	"invalidatesSkin": true,
+	"skinLayers": [
+		{
+			"name": "face_eyeLightML_40FF40",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_40FF40",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_40FF40",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_40FF40",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantM_40FF40",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantF_40FF40",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_R_40FF40",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_40FF40",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_R_40FF40",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_40FF40",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_40FF40",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_R_40FF40",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_40FF40",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_R_40FF40",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_40FF40",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_R_40FF40",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLeg"
+		},
+		{
+			"name": "legR_R_40FF40",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLeg"
+		},
+		{
+			"name": "head_auraLightM_40FF40",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantM_40FF40",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraLightF_40FF40",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantF_40FF40",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightML_40FF40",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_40FF40",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_40FF40",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_40FF40",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_L_40FF40",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL_R_40FF40",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_L_40FF40",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_40FF40",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_L_40FF40",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2upper_R_40FF40",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_L_40FF40",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_40FF40",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_L_40FF40",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_40FF40",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_L_40FF40",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR_R_40FF40",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_L_40FF40",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_40FF40",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_L_40FF40",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR2_R_40FF40",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_L_40FF40",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_40FF40",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_L_40FF40",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legL_R_40FF40",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_L_40FF40",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_R_40FF40",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		}
+	],
+	"lifespan": "all",
+	"themeSkin": "light",
+	"themeSkinSpecificAspects": [
+		{
+			"themePiece": "aura",
+			"applyAspect": "humanSkin_overrideStreakColor|40ff40|1.0"
+		},
+		{
+			"themePiece": "auraRadiant",
+			"applyAspect": "humanSkin_overrideHairColor|40ff40|1"
+		}
+	]
+},
+{
+	"modId": "theme_luminant",
 	"id": "themeSkin_lightCyan",
 	"importance": -1,
 	"invalidatesSkin": true,
@@ -346,6 +1396,1406 @@
 		{
 			"themePiece": "auraRadiant",
 			"applyAspect": "humanSkin_overrideHairColor|00ffff|1"
+		}
+	]
+},
+{
+	"modId": "theme_luminant",
+	"id": "themeSkin_lightBlue",
+	"importance": -1,
+	"invalidatesSkin": true,
+	"skinLayers": [
+		{
+			"name": "face_eyeLightML_6060FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_6060FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_6060FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_6060FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantM_6060FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantF_6060FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_R_6060FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_6060FF",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_R_6060FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_6060FF",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_6060FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_R_6060FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_6060FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_R_6060FF",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_6060FF",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_R_6060FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLeg"
+		},
+		{
+			"name": "legR_R_6060FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLeg"
+		},
+		{
+			"name": "head_auraLightM_6060FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantM_6060FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraLightF_6060FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantF_6060FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightML_6060FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_6060FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_6060FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_6060FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_L_6060FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL_R_6060FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_L_6060FF",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_6060FF",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_L_6060FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2upper_R_6060FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_L_6060FF",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_6060FF",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_L_6060FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_6060FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_L_6060FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR_R_6060FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_L_6060FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_6060FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_L_6060FF",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR2_R_6060FF",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_L_6060FF",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_6060FF",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_L_6060FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legL_R_6060FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_L_6060FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_R_6060FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		}
+	],
+	"lifespan": "all",
+	"themeSkin": "light",
+	"themeSkinSpecificAspects": [
+		{
+			"themePiece": "aura",
+			"applyAspect": "humanSkin_overrideStreakColor|6060FF|1.0"
+		},
+		{
+			"themePiece": "auraRadiant",
+			"applyAspect": "humanSkin_overrideHairColor|6060FF|1"
+		}
+	]
+},
+{
+	"modId": "theme_luminant",
+	"id": "themeSkin_lightMagenta",
+	"importance": -1,
+	"invalidatesSkin": true,
+	"skinLayers": [
+		{
+			"name": "face_eyeLightML_FF40FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_FF40FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_FF40FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_FF40FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantM_FF40FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantF_FF40FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_R_FF40FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_FF40FF",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_R_FF40FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_FF40FF",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_FF40FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_R_FF40FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_FF40FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_R_FF40FF",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_FF40FF",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_R_FF40FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLeg"
+		},
+		{
+			"name": "legR_R_FF40FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLeg"
+		},
+		{
+			"name": "head_auraLightM_FF40FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantM_FF40FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraLightF_FF40FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantF_FF40FF",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightML_FF40FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_FF40FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_FF40FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_FF40FF",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_L_FF40FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL_R_FF40FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_L_FF40FF",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_FF40FF",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_L_FF40FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2upper_R_FF40FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_L_FF40FF",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_FF40FF",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_L_FF40FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_FF40FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_L_FF40FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR_R_FF40FF",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_L_FF40FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_FF40FF",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_L_FF40FF",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR2_R_FF40FF",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_L_FF40FF",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_FF40FF",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_L_FF40FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legL_R_FF40FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_L_FF40FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_R_FF40FF",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		}
+	],
+	"lifespan": "all",
+	"themeSkin": "light",
+	"themeSkinSpecificAspects": [
+		{
+			"themePiece": "aura",
+			"applyAspect": "humanSkin_overrideStreakColor|ff40ff|1.0"
+		},
+		{
+			"themePiece": "auraRadiant",
+			"applyAspect": "humanSkin_overrideHairColor|ff40ff|1"
+		}
+	]
+},
+{
+	"modId": "theme_luminant",
+	"id": "themeSkin_lightWhite",
+	"importance": -1,
+	"invalidatesSkin": true,
+	"skinLayers": [
+		{
+			"name": "face_eyeLightML_tint",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_tint",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_tint",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_tint",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantM_tint",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantF_tint",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_R_tint",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_tint",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_R_tint",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_tint",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_tint",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_R_tint",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_tint",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_R_tint",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_tint",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_R_tint",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLeg"
+		},
+		{
+			"name": "legR_R_tint",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLeg"
+		},
+		{
+			"name": "head_auraLightM_tint",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantM_tint",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraLightF_tint",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantF_tint",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightML_tint",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_tint",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_tint",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_tint",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_L_tint",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL_R_tint",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_L_tint",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_tint",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_L_tint",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2upper_R_tint",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_L_tint",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_tint",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_L_tint",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_tint",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_L_tint",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR_R_tint",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_L_tint",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_tint",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_L_tint",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR2_R_tint",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_L_tint",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_tint",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_L_tint",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legL_R_tint",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_L_tint",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_R_tint",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		}
+	],
+	"lifespan": "all",
+	"themeSkin": "light",
+	"themeSkinSpecificAspects": [
+		{
+			"themePiece": "aura",
+			"applyAspect": "humanSkin_overrideStreakColor|ffffff|1.0"
+		},
+		{
+			"themePiece": "auraRadiant",
+			"applyAspect": "humanSkin_overrideHairColor|ffffff|1"
+		}
+	]
+},
+{
+	"modId": "theme_luminant",
+	"id": "themeSkin_lightShadowy",
+	"importance": -1,
+	"invalidatesSkin": true,
+	"skinLayers": [
+		{
+			"name": "face_eyeLightML_202020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_202020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_leftEye",
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_202020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_202020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_rightEye",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantM_202020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantF_202020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_auraRadiant",
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_R_202020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_202020",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_R_202020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_202020",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_202020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_R_202020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_202020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_R_202020",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_202020",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArm",
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_R_202020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLeg"
+		},
+		{
+			"name": "legR_R_202020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLeg"
+		},
+		{
+			"name": "head_auraLightM_202020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraRadiantM_202020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "head_auraLightF_202020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "head_auraRadiantF_202020",
+			"depth": 4052,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightML_202020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFL_202020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"ifNoOwnerAspects": [ "human_eyepatch" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "face_eyeLightMR_202020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "maleHead"
+		},
+		{
+			"name": "face_eyeLightFR_202020",
+			"depth": 4250,
+			"headOffset": true,
+			"ifOwnerAspect": "themePiece_light_aura",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "femaleHead"
+		},
+		{
+			"name": "armL_L_202020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL_R_202020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_L_202020",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handL_R_202020",
+			"depth": 6001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armL2upper_L_202020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2upper_R_202020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_L_202020",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armL2lower_R_202020",
+			"depth": 3001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_L_202020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handL_2handed_R_202020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_leftArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR_L_202020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR_R_202020",
+			"depth": 1201,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_L_202020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "handR_R_202020",
+			"depth": 8001,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "oneHanded"
+		},
+		{
+			"name": "armR2_L_202020",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "armR2_R_202020",
+			"depth": 1201,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_L_202020",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "handR_2handed_R_202020",
+			"depth": 8001,
+			"grip": null,
+			"ifOwnerAspect": "themePiece_light_rightArmLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ],
+			"rigMode": "twoHanded"
+		},
+		{
+			"name": "legL_L_202020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legL_R_202020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_leftLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_L_202020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifNoOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		},
+		{
+			"name": "legR_R_202020",
+			"depth": 1101,
+			"ifOwnerAspect": "themePiece_light_rightLegLatent",
+			"ifOwnerAspects": [ "theme_luminant_radiantFormUsed" ]
+		}
+	],
+	"lifespan": "all",
+	"themeSkin": "light",
+	"themeSkinSpecificAspects": [
+		{
+			"themePiece": "aura",
+			"applyAspect": "humanSkin_overrideStreakColor|202020|1.0"
+		},
+		{
+			"themePiece": "auraRadiant",
+			"applyAspect": "humanSkin_overrideHairColor|202020|1"
 		}
 	]
 },
