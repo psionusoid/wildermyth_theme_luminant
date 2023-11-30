@@ -341,7 +341,7 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|ff2020|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|ff2020|1"
 		},
 		{
 			"themePiece": "auraRadiant",
@@ -691,7 +691,7 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|ffa500|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|ffa500|1"
 		},
 		{
 			"themePiece": "auraRadiant",
@@ -1041,7 +1041,7 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|40ff40|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|40ff40|1"
 		},
 		{
 			"themePiece": "auraRadiant",
@@ -1391,7 +1391,7 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|00ffff|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|00ffff|1"
 		},
 		{
 			"themePiece": "auraRadiant",
@@ -1741,11 +1741,11 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|6060FF|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|6060ff|1"
 		},
 		{
 			"themePiece": "auraRadiant",
-			"applyAspect": "humanSkin_overrideHairColor|6060FF|1"
+			"applyAspect": "humanSkin_overrideHairColor|6060ff|1"
 		}
 	]
 },
@@ -2091,7 +2091,7 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|ff40ff|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|ff40ff|1"
 		},
 		{
 			"themePiece": "auraRadiant",
@@ -2441,7 +2441,7 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|ffffff|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|ffffff|1"
 		},
 		{
 			"themePiece": "auraRadiant",
@@ -2791,7 +2791,7 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|202020|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|202020|1"
 		},
 		{
 			"themePiece": "auraRadiant",
@@ -3188,7 +3188,7 @@
 	"themeSkinSpecificAspects": [
 		{
 			"themePiece": "aura",
-			"applyAspect": "humanSkin_overrideStreakColor|ffffff|1.0"
+			"applyAspect": "humanSkin_overrideStreakColor|ffffff|1"
 		},
 		{
 			"themePiece": "auraRadiant",

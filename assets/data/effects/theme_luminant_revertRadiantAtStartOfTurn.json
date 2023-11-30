@@ -113,7 +113,7 @@
 					"class": "Aspects",
 					"addAspects": [
 						{
-							"id": "humanSkin_overrideStreakColor|6060FF|1",
+							"id": "humanSkin_overrideStreakColor|6060ff|1",
 							"value": "1",
 							"merge": "replace"
 						}

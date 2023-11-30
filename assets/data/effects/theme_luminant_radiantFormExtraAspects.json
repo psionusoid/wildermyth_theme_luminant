@@ -41,6 +41,13 @@
 			"humanSkin_drawLeftLegEquipmentAnyway",
 			"humanSkin_drawRightLegEquipmentAnyway",
 			"humanSkin_overrideStreakColor|fcf10a|1",
+			"humanSkin_overrideStreakColor|ff2020|1",
+			"humanSkin_overrideStreakColor|ffa500|1",
+			"humanSkin_overrideStreakColor|40ff40|1",
+			"humanSkin_overrideStreakColor|00ffff|1",
+			"humanSkin_overrideStreakColor|6060ff|1",
+			"humanSkin_overrideStreakColor|ff40ff|1",
+			"humanSkin_overrideStreakColor|202020|1",
 			"humanSkin_overrideStreakValue|0.8"
 		]
 	},
