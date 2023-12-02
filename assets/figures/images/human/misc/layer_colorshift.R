@@ -4,17 +4,30 @@ library(png)
 solid <- TRUE
 
 #the color to use for the solid color method (example: "#FFFF00")
-solid_color <- "#00FFFF"
+#solid_color <- "#FF2020" #red
+#solid_color <- "#FFA500" #orange
+#solid_color <- "#40FF40" #green
+#solid_color <- "#00FFFF" #cyan
+#solid_color <- "#6060FF" #blue
+#solid_color <- "#FF40FF" #magenta
+#solid_color <- "#202020" #shadowy
+solid_color <- c("#FF2020", #red
+                 "#FFA500", #orange
+                 "#40FF40", #green
+                 "#00FFFF", #cyan
+                 "#6060FF", #blue
+                 "#FF40FF", #magenta
+                 "#202020") #shadowy
 
-#what to add to the filename for this set of images
-file_name_modifier <- paste0("_", paste0(strsplit(solid_color, split = "")[[1]][-1], collapse = ""))
+#what to add to the filename for these sets of images
+file_name_modifier <- sapply(solid_color, FUN = function(x) paste0("_", paste0(strsplit(x, split = "")[[1]][-1], collapse = "")))
 
 all_files <- list.files()
 
 #find original files
 files <- all_files[c(grep("L.png", all_files),
                      grep("R.png", all_files),
-                     grep("F.png", all_files),
+                     grep("tF.png", all_files),
                      grep("M.png", all_files))]
 
 #strip extensions
@@ -48,15 +61,18 @@ rgb2solid <- function(image, color){
   return(image)
 }
 
-for(i in seq_along(files)){
-  image <- readPNG(files[i])
-  if(solid){
-    image_new <- rgb2solid(image, color = solid_color)
-  } else{
-    image_gray <- apply(image, MARGIN = c(1,2), FUN = rgb2gray, method = "white")
-    #transpose array to be same as original
-    image_new <- aperm(image_gray, perm = c(2,3,1))
+for(k in seq_along(solid_color)){
+  for(i in seq_along(files)){
+    image <- readPNG(files[i])
+    if(solid){
+      image_new <- rgb2solid(image, color = solid_color[k])
+    } else{
+      image_gray <- apply(image, MARGIN = c(1,2), FUN = rgb2gray, method = "white")
+      #transpose array to be same as original
+      image_new <- aperm(image_gray, perm = c(2,3,1))
+    }
+    #write out grayscale png
+    writePNG(image = image_new, target = paste0(files_no_ext[i], file_name_modifier[k], ".png"))
   }
-  #write out grayscale png
-  writePNG(image = image_new, target = paste0(files_no_ext[i], file_name_modifier, ".png"))
 }
+

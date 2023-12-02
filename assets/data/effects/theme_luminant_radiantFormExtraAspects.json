@@ -41,38 +41,155 @@
 			"humanSkin_drawLeftLegEquipmentAnyway",
 			"humanSkin_drawRightLegEquipmentAnyway",
 			"humanSkin_overrideStreakColor|fcf10a|1",
+			"humanSkin_overrideStreakColor|ff2020|1",
+			"humanSkin_overrideStreakColor|ffa500|1",
+			"humanSkin_overrideStreakColor|40ff40|1",
+			"humanSkin_overrideStreakColor|00ffff|1",
+			"humanSkin_overrideStreakColor|6060ff|1",
+			"humanSkin_overrideStreakColor|ff40ff|1",
+			"humanSkin_overrideStreakColor|202020|1",
 			"humanSkin_overrideStreakValue|0.8"
 		]
 	},
 	{
-		"class": "Test",
-		"value": "(1-self.themeSkin_lightTint)-self.themeSkin_lightCyan",
-		"threshold": "1",
-		"onPass": {
-			"class": "Aspects",
-			"addAspects": [
-				{
-					"id": "humanSkin_overrideHairColor|fcf10a|1",
-					"value": "1",
-					"merge": "replace"
+		"class": "DoFirstValid",
+		"outcomes": [
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightRed",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|ff2020|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
 				}
-			]
-		},
-		"onFail": {
-			"class": "Test",
-			"value": "self.themeSkin_lightCyan",
-			"threshold": "1",
-			"onPass": {
-				"class": "Aspects",
-				"addAspects": [
-					{
-						"id": "humanSkin_overrideHairColor|00ffff|1",
-						"value": "1",
-						"merge": "replace"
-					}
-				]
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightOrange",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|ffa500|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightGreen",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|40ff40|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightCyan",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|00ffff|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightBlue",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|6060ff|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightMagenta",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|ff40ff|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightWhite",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|ffffff|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "self.themeSkin_lightShadowy",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|202020|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
+			},
+			{
+				"class": "Test",
+				"value": "1-self.themeSkin_lightTint",
+				"threshold": "1",
+				"onPass": {
+					"class": "Aspects",
+					"addAspects": [
+						{
+							"id": "humanSkin_overrideHairColor|fcf10a|1",
+							"value": "1",
+							"merge": "replace"
+						}
+					]
+				}
 			}
-		}
+		]
 	}
 ]
 }

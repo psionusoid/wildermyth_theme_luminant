@@ -44,8 +44,8 @@
 		"stopBlockingTime": "noBlocking",
 		"minimumBlockTime": "600",
 		"particles": [
-			{ "script": "flashcone2", "setPosition": "self" },
-			{ "script": "flashcone2", "setPosition": "targetTile" }
+			{ "script": "flashStep", "setPosition": "self" },
+			{ "script": "flashStep", "setPosition": "targetTile" }
 		],
 		"audioOverride": { "attackStartCue": "Characters/DefaultHuman/Ability_Protector" },
 		"always": {
