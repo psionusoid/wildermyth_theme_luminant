@@ -24,16 +24,7 @@
 				"value": "1",
 				"merge": "replace"
 			},
-			{ "id": "humanSkin_overrideStreakValue|1.0", "value": "1", "merge": "replace" },
-			{ "id": "themeAbility_ranged", "value": "1" },
-			{ "id": "themeAbility_rangedNoLOS", "value": "1" },
-			{ "id": "attackRange|0|2.1|melee", "value": "1" },
-			{
-				"id": "attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
-				"value": "1"
-			},
-			{ "id": "hasRangedNoLOS", "value": "1" },
-			{ "id": "themeAbility_melee", "value": "1" }
+			{ "id": "humanSkin_overrideStreakValue|1.0", "value": "1", "merge": "replace" }
 		],
 		"removeAspects": [
 			"humanSkin_drawLeftArmEquipmentAnyway",
@@ -50,6 +41,35 @@
 			"humanSkin_overrideStreakColor|202020|1",
 			"humanSkin_overrideStreakValue|0.8"
 		]
+	},
+	{
+		"class": "Test",
+		"value": "self.themePiece_light_leftArmLatent",
+		"threshold": "1",
+		"onPass": {
+			"class": "Aspects",
+			"addAspects": [
+				{ "id": "themeAbility_ranged", "value": "1" },
+				{ "id": "themeAbility_rangedNoLOS", "value": "1" },
+				{
+					"id": "attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
+					"value": "1"
+				},
+				{ "id": "hasRangedNoLOS", "value": "1" }
+			]
+		}
+	},
+	{
+		"class": "Test",
+		"value": "self.themePiece_light_rightArmLatent",
+		"threshold": "1",
+		"onPass": {
+			"class": "Aspects",
+			"addAspects": [
+				{ "id": "attackRange|0|1.6|melee", "value": "1" },
+				{ "id": "themeAbility_melee", "value": "1" }
+			]
+		}
 	},
 	{
 		"class": "DoFirstValid",

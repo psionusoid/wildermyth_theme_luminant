@@ -33,14 +33,31 @@
 			"humanSkin_overrideHairColor|6060ff|1",
 			"humanSkin_overrideHairColor|ff40ff|1",
 			"humanSkin_overrideHairColor|ffffff|1",
-			"humanSkin_overrideHairColor|202020|1",
-			"themeAbility_melee",
-			"hasRangedNoLOS",
-			"attackRange|0|2.1|melee",
-			"attackRange|0|6.6|rangedNonWeapon",
-			"themeAbility_rangedNoLOS",
-			"themeAbility_ranged"
+			"humanSkin_overrideHairColor|202020|1"
 		]
+	},
+	{
+		"class": "Test",
+		"value": "self.themePiece_light_leftArmLatent",
+		"threshold": "1",
+		"onPass": {
+			"class": "Aspects",
+			"removeAspects": [
+				"hasRangedNoLOS",
+				"attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
+				"themeAbility_rangedNoLOS",
+				"themeAbility_ranged"
+			]
+		}
+	},
+	{
+		"class": "Test",
+		"value": "self.themePiece_light_rightArmLatent",
+		"threshold": "1",
+		"onPass": {
+			"class": "Aspects",
+			"removeAspects": [ "themeAbility_melee", "attackRange|0|1.6|melee" ]
+		}
 	},
 	{
 		"class": "DoFirstValid",
