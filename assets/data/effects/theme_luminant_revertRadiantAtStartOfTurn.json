@@ -38,7 +38,7 @@
 	},
 	{
 		"class": "Test",
-		"value": "self.themePiece_light_leftArmLatent",
+		"value": "self.theme_luminant_radiantFormLeftArm",
 		"threshold": "1",
 		"onPass": {
 			"class": "Aspects",
@@ -46,17 +46,22 @@
 				"hasRangedNoLOS",
 				"attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
 				"themeAbility_rangedNoLOS",
-				"themeAbility_ranged"
+				"themeAbility_ranged",
+				"theme_luminant_radiantFormLeftArm"
 			]
 		}
 	},
 	{
 		"class": "Test",
-		"value": "self.themePiece_light_rightArmLatent",
+		"value": "self.theme_luminant_radiantFormRightArm",
 		"threshold": "1",
 		"onPass": {
 			"class": "Aspects",
-			"removeAspects": [ "themeAbility_melee", "attackRange|0|1.6|melee" ]
+			"removeAspects": [
+				"themeAbility_melee",
+				"attackRange|0|1.6|melee",
+				"theme_luminant_radiantFormRightArm"
+			]
 		}
 	},
 	{

@@ -8,6 +8,18 @@
 },
 {
 	"modId": "theme_luminant",
+	"id": "theme_luminant_radiantFormLeftArm",
+	"STUB": "Aspect to track whether the left luminant arm was present when Radiant Form was used (useful for the case where an omenroad theme shrine is used while radiant form is active)",
+	"importance": -1
+},
+{
+	"modId": "theme_luminant",
+	"id": "theme_luminant_radiantFormRightArm",
+	"STUB": "Aspect to track whether the left luminant arm was present when Radiant Form was used (useful for the case where an omenroad theme shrine is used while radiant form is active)",
+	"importance": -1
+},
+{
+	"modId": "theme_luminant",
 	"id": "theme_luminant_radiantFormUsed",
 	"effects": [
 		"theme_luminant_radiantFormExtraAspects",

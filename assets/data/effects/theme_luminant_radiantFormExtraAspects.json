@@ -55,7 +55,8 @@
 					"id": "attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
 					"value": "1"
 				},
-				{ "id": "hasRangedNoLOS", "value": "1" }
+				{ "id": "hasRangedNoLOS", "value": "1" },
+				{ "id": "theme_luminant_radiantFormLeftArm", "value": "1" }
 			]
 		}
 	},
@@ -67,7 +68,8 @@
 			"class": "Aspects",
 			"addAspects": [
 				{ "id": "attackRange|0|1.6|melee", "value": "1" },
-				{ "id": "themeAbility_melee", "value": "1" }
+				{ "id": "themeAbility_melee", "value": "1" },
+				{ "id": "theme_luminant_radiantFormRightArm", "value": "1" }
 			]
 		}
 	},
