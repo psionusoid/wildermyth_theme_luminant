@@ -12,7 +12,7 @@
 "ability": {
 	"icon": "fireleash",
 	"category": "attackAbility",
-	"priority": "1+(100*theme_luminant_radiantFormUsed)",
+	"priority": "1+(100*max(theme_luminant_radiantFormUsed,themePiece_light_leftArm))",
 	"branchableAbilityType": "standardRanged"
 },
 "targets": [

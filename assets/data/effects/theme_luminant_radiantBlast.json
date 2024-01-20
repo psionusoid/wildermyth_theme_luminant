@@ -12,7 +12,7 @@
 "verb": "ATTACK",
 "ability": {
 	"icon": "flashcone",
-	"priority": "2+(100*theme_luminant_radiantFormUsed)",
+	"priority": "2+(100*max(theme_luminant_radiantFormUsed,themePiece_light_rightArm))",
 	"extraUI": { "overrideDamageType": "MAGIC", "overrideRangeShown": "1.6+self.BONUS_RANGE" },
 	"branchableAbilityType": "standardMelee"
 },
