@@ -2,6 +2,7 @@
 "author": "psionusoid",
 "name": "Luminant Theme",
 "blurb": "Mod for the luminant theme",
+"visibility": "Public",
 "tags": [ "Event", "Abilities", "Hero", "Transformation" ],
 "url": "https://wildermyth.com/wiki/luminant_theme",
 "alwaysOn": true
