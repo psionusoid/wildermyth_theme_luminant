@@ -167,7 +167,8 @@
 			"themeAbility_ranged",
 			"themeAbility_rangedNoLOS",
 			"attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
-			"hasRangedNoLOS"
+			"hasRangedNoLOS",
+			"ATTACHMENTS_workingLeftArm"
 		],
 		"canBeAwardedRandomly": false,
 		"applyOnHeal": false
@@ -257,7 +258,7 @@
 			}
 		],
 		"effects": [ "theme_luminant_radiantBlast", "defaultMoveFeedbackMelee|2.1|flameArmMelee" ],
-		"extraAspects": [ "themeAbility_melee" ],
+		"extraAspects": [ "themeAbility_melee", "ATTACHMENTS_workingRightArm" ],
 		"canBeAwardedRandomly": false,
 		"applyOnHeal": false
 	},
@@ -483,7 +484,8 @@
 				"rigMode": "twoHanded"
 			}
 		],
-		"effects": [ "theme_luminant_radiantBeam" ]
+		"effects": [ "theme_luminant_radiantBeam" ],
+		"extraAspects": [ "ATTACHMENTS_workingLeftArm" ]
 	},
 	{
 		"id": "rightArmLatent",
@@ -604,7 +606,8 @@
 				"rigMode": "twoHanded"
 			}
 		],
-		"effects": [ "theme_luminant_radiantBlast" ]
+		"effects": [ "theme_luminant_radiantBlast" ],
+		"extraAspects": [ "ATTACHMENTS_workingRightArm" ]
 	},
 	{
 		"id": "leftLegLatent",
