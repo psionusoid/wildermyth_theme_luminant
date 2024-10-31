@@ -161,7 +161,8 @@
 		],
 		"effects": [
 			"theme_luminant_radiantBeam",
-			"defaultSecondaryMoveFeedbackNoLOS|5.6+self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam"
+			"defaultSecondaryMoveFeedbackNoLOS|5.6+self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam",
+			"theme_luminant_update_leftArm"
 		],
 		"extraAspects": [
 			"themeAbility_ranged",
@@ -257,7 +258,11 @@
 				"rigMode": "twoHanded"
 			}
 		],
-		"effects": [ "theme_luminant_radiantBlast", "defaultMoveFeedbackMelee|2.1|flameArmMelee" ],
+		"effects": [
+			"theme_luminant_radiantBlast",
+			"defaultMoveFeedbackMelee|2.1|flameArmMelee",
+			"theme_luminant_update_rightArm"
+		],
 		"extraAspects": [ "themeAbility_melee", "ATTACHMENTS_workingRightArm" ],
 		"canBeAwardedRandomly": false,
 		"applyOnHeal": false
@@ -484,7 +489,7 @@
 				"rigMode": "twoHanded"
 			}
 		],
-		"effects": [ "theme_luminant_radiantBeam" ],
+		"effects": [ "theme_luminant_radiantBeam", "theme_luminant_update_leftArmLatent" ],
 		"extraAspects": [ "ATTACHMENTS_workingLeftArm" ]
 	},
 	{
@@ -606,7 +611,7 @@
 				"rigMode": "twoHanded"
 			}
 		],
-		"effects": [ "theme_luminant_radiantBlast" ],
+		"effects": [ "theme_luminant_radiantBlast", "theme_luminant_update_rightArmLatent" ],
 		"extraAspects": [ "ATTACHMENTS_workingRightArm" ]
 	},
 	{
