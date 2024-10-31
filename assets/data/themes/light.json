@@ -260,7 +260,7 @@
 		],
 		"effects": [
 			"theme_luminant_radiantBlast",
-			"defaultMoveFeedbackMelee|2.1|flameArmMelee",
+			"defaultMoveFeedbackMelee|1.6|theme_luminant_radiantBlast",
 			"theme_luminant_update_rightArm"
 		],
 		"extraAspects": [ "themeAbility_melee", "ATTACHMENTS_workingRightArm" ],
