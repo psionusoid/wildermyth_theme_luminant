@@ -1,0 +1,27 @@
+{
+"id": "theme_luminant_update_leftArm",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "theme_luminant_update_leftArm",
+	"modId": "theme_luminant",
+	"author": "psionusoid"
+},
+"type": "ABILITIES_CHANGED",
+"targets": [
+	{ "template": "SELF" }
+],
+"outcomes": [
+	{
+		"class": "Test",
+		"target": "self",
+		"value": "1-ATTACHMENTS_workingLeftArm",
+		"threshold": "1",
+		"onPass": {
+			"class": "ApplyTheme",
+			"theme": "light",
+			"piece": "leftArm",
+			"ignoreRestrictions": true
+		}
+	}
+]
+}

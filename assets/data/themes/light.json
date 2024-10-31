@@ -161,13 +161,15 @@
 		],
 		"effects": [
 			"theme_luminant_radiantBeam",
-			"defaultSecondaryMoveFeedbackNoLOS|5.6+self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam"
+			"defaultSecondaryMoveFeedbackNoLOS|5.6+self.themePiece_light_rightArmLatent+self.themePiece_light_rightArm+self.commonDeck_bowmaster+self.commonDeck_bowmaster_upgrade|theme_luminant_radiantBeam",
+			"theme_luminant_update_leftArm"
 		],
 		"extraAspects": [
 			"themeAbility_ranged",
 			"themeAbility_rangedNoLOS",
 			"attackRange|0|5.6+themePiece_light_rightArmLatent+themePiece_light_rightArm|rangedNonWeapon",
-			"hasRangedNoLOS"
+			"hasRangedNoLOS",
+			"ATTACHMENTS_workingLeftArm"
 		],
 		"canBeAwardedRandomly": false,
 		"applyOnHeal": false
@@ -256,8 +258,12 @@
 				"rigMode": "twoHanded"
 			}
 		],
-		"effects": [ "theme_luminant_radiantBlast", "defaultMoveFeedbackMelee|2.1|flameArmMelee" ],
-		"extraAspects": [ "themeAbility_melee" ],
+		"effects": [
+			"theme_luminant_radiantBlast",
+			"defaultMoveFeedbackMelee|2.1|flameArmMelee",
+			"theme_luminant_update_rightArm"
+		],
+		"extraAspects": [ "themeAbility_melee", "ATTACHMENTS_workingRightArm" ],
 		"canBeAwardedRandomly": false,
 		"applyOnHeal": false
 	},
@@ -483,7 +489,8 @@
 				"rigMode": "twoHanded"
 			}
 		],
-		"effects": [ "theme_luminant_radiantBeam" ]
+		"effects": [ "theme_luminant_radiantBeam", "theme_luminant_update_leftArmLatent" ],
+		"extraAspects": [ "ATTACHMENTS_workingLeftArm" ]
 	},
 	{
 		"id": "rightArmLatent",
@@ -604,7 +611,8 @@
 				"rigMode": "twoHanded"
 			}
 		],
-		"effects": [ "theme_luminant_radiantBlast" ]
+		"effects": [ "theme_luminant_radiantBlast", "theme_luminant_update_rightArmLatent" ],
+		"extraAspects": [ "ATTACHMENTS_workingRightArm" ]
 	},
 	{
 		"id": "leftLegLatent",
