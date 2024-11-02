@@ -1,0 +1,23 @@
+{
+"modId": "theme_luminant",
+"modInjections": [
+	{
+		"jsonPath": "targets/[4]/aspectValues",
+		"type": "objectList",
+		"addJson": {
+			"class": "com.worldwalkergames.legacy.game.model.effect.AbilityTarget$AspectValue",
+			"id": "themePiece_light_rightArmLatent",
+			"forbidden": true
+		}
+	},
+	{
+		"jsonPath": "targets/[4]/aspectValues",
+		"type": "objectList",
+		"addJson": {
+			"class": "com.worldwalkergames.legacy.game.model.effect.AbilityTarget$AspectValue",
+			"id": "themePiece_light_rightArm",
+			"forbidden": true
+		}
+	}
+]
+}

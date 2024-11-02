@@ -1,0 +1,22 @@
+{
+"modId": "theme_luminant",
+"modInjections": [
+	{
+		"jsonPath": "mysticBlazingSword/targets",
+		"type": "objectList",
+		"addJson": {
+			"class": "com.worldwalkergames.legacy.game.model.effect.AbilityTarget",
+			"role": "targetTile",
+			"template": "TILE",
+			"relativeTo": "target",
+			"range": null,
+			"roleMustFit": "target"
+		}
+	},
+	{
+		"jsonPath": "outcomes/[0]/always/outcomes/[0]/tileRole",
+		"type": "enumeration",
+		"enumeration": { "class": "abilityTargetRole", "value": "targetTile" }
+	}
+]
+}
